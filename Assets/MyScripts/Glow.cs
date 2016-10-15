@@ -5,66 +5,75 @@ public class Glow : MonoBehaviour {
 
     private float rr=255f, gg = 255f, bb = 255f;
     bool isGrow = false;
+    public Color lerpedColor = Color.white;
+
+    private Material currentMaterial;
 
     void Start() {
-        StartCoroutine(ChangeColor(0.1f));
+        //StartCoroutine(ChangeColor(0.1f));
+       
     }
 
-    IEnumerator ChangeColor(float seconds) {
+    //IEnumerator ChangeColor(float seconds) {
 
-        while (true)
-        {
-            Material[] currentMaterial = GetComponent<Renderer>().materials;
-            for (int i = 0; i < currentMaterial.Length; i++)
-            {
-                Material newMaterial = new Material(currentMaterial[i]);
+       
+    //    while (true)
+    //    {
+    //        Material[] currentMaterial = GetComponent<Renderer>().materials;
+    //        for (int i = 0; i < currentMaterial.Length; i++)
+    //        {
+    //            Material newMaterial = new Material(currentMaterial[i]);
 
-                Color newColor = new Color(rr/255,gg/255,bb/255);
+    //            Color newColor = new Color(rr/255,gg/255,bb/255);
 
-                //Debug.Log(newColor);
+    //            //Debug.Log(newColor);
 
-                newMaterial.SetColor("_Color", newColor);
-                //Debug.Log("hi" + newMaterial.color);
+    //            newMaterial.SetColor("_Color", newColor);
+    //            //Debug.Log("hi" + newMaterial.color);
 
-                currentMaterial[i] = newMaterial;
-            }
+    //            currentMaterial[i] = newMaterial;
+    //        }
 
-            GetComponent<Renderer>().materials = currentMaterial;
+    //        GetComponent<Renderer>().materials = currentMaterial;
 
 
-            UpdateColorValue();
+    //        UpdateColorValue();
 
-            yield return new WaitForSeconds(seconds);
-        }
-    }
+    //        yield return new WaitForSeconds(seconds);
+    //    }
+    //}
 
-    void UpdateColorValue()
-    {
-        if (isGrow)
-        {
-            rr += 10;
-            bb += 10;
-        }
-        else
-        {
-            rr -= 10;
-            bb -= 10;
-        }
+    //void UpdateColorValue()
+    //{
+    //    if (isGrow)
+    //    {
+    //        rr += 10;
+    //        bb += 10;
+    //    }
+    //    else
+    //    {
+    //        rr -= 10;
+    //        bb -= 10;
+    //    }
 
-        if(rr < 170)
-        {
-            isGrow = true;
+    //    if(rr < 170)
+    //    {
+    //        isGrow = true;
+    //    }
 
-        }
+    //    if(rr > 250){
+    //        isGrow = false;
+    //    }
 
-        if(rr > 250){
-            isGrow = false;
-        }
-
-    }
+    //}
 
 	// Update is called once per frame
 	void Update () {
-	
+        currentMaterial = GetComponent<Renderer>().material;
+        Material newMaterial = new Material(currentMaterial);
+        newMaterial.SetColor("_Color", lerpedColor);
+
+        GetComponent<Renderer>().material = newMaterial;
+        lerpedColor = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 1));
 	}
 }
