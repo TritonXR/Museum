@@ -15,7 +15,7 @@ public class Activate : MonoBehaviour {
 	void Update () {
 
 
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetMouseButtonDown(0)) {
         
             objActivate.SetActive(!objActivate.activeSelf);
             
