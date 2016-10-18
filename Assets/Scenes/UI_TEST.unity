@@ -1305,7 +1305,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Engine
+  m_Text: Wheels
 --- !u!222 &1067776606
 CanvasRenderer:
   m_ObjectHideFlags: 0
