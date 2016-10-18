@@ -7,16 +7,44 @@ public class Glow : MonoBehaviour {
     bool isGrow = false;
     public Color lerpedColor = Color.white;
 
-    private Material currentMaterial;
+    private Material[] currentMaterials;
+    private Color[] originColors;
 
     void Start() {
         //StartCoroutine(ChangeColor(0.1f));
-       
+        currentMaterials = GetComponent<Renderer>().materials;
+        originColors = new Color[currentMaterials.Length];
+        for(int ii = 0; ii < currentMaterials.Length; ii++)
+        {
+            originColors[ii] = currentMaterials[ii].color;
+        }
+
     }
+
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+
+        for(int i = 0; i < currentMaterials.Length; i++)
+        {
+            Material newMaterial = new Material(currentMaterials[i]);
+            newMaterial.SetColor("_Color", lerpedColor);
+
+            currentMaterials[i] = newMaterial;
+            lerpedColor = Color.Lerp(originColors[i], Color.black, Mathf.PingPong(Time.time, 1));
+        }
+
+        GetComponent<Renderer>().materials = currentMaterials;
+
+
+    }
+
 
     //IEnumerator ChangeColor(float seconds) {
 
-       
+
     //    while (true)
     //    {
     //        Material[] currentMaterial = GetComponent<Renderer>().materials;
@@ -67,13 +95,5 @@ public class Glow : MonoBehaviour {
 
     //}
 
-	// Update is called once per frame
-	void Update () {
-        currentMaterial = GetComponent<Renderer>().material;
-        Material newMaterial = new Material(currentMaterial);
-        newMaterial.SetColor("_Color", lerpedColor);
 
-        GetComponent<Renderer>().material = newMaterial;
-        lerpedColor = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 1));
-	}
 }

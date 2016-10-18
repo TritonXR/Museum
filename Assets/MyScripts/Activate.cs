@@ -15,11 +15,17 @@ public class Activate : MonoBehaviour {
 	void Update () {
 
 
-        if (Input.GetMouseButtonDown(0)) {
-        
-            objActivate.SetActive(!objActivate.activeSelf);
-            
-        }
 
+    }
+
+    void OnMouseDown()
+    {
+
+        //if (Input.GetMouseButtonDown(0))
+        //{
+
+            objActivate.SetActive(!objActivate.activeSelf);
+
+        //}
     }
 }
