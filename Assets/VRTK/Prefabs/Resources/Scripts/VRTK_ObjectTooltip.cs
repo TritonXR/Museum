@@ -66,7 +66,7 @@ namespace VRTK
 
         private void SetText(string name)
         {
-            var tmpText = transform.FindChild("TooltipCanvas/" + name).GetComponent<Text>();
+            var tmpText = transform.FindChild("TooltipCanvas/ScrollRect/" + name).GetComponent<Text>();
             tmpText.material = Resources.Load("UIText") as Material;
             //tmpText.text = displayText.Replace("\\n", "\n");
             tmpText.color = fontColor;
