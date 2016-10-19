@@ -9,6 +9,7 @@ public class Activate : MonoBehaviour {
 
     void Start() {
         objActivate = GetComponentInChildren<VRTK_ObjectTooltip>().gameObject;
+        objActivate.SetActive(false);
     }
 
 	// Update is called once per frame

@@ -68,7 +68,7 @@ namespace VRTK
         {
             var tmpText = transform.FindChild("TooltipCanvas/" + name).GetComponent<Text>();
             tmpText.material = Resources.Load("UIText") as Material;
-            tmpText.text = displayText.Replace("\\n", "\n");
+            //tmpText.text = displayText.Replace("\\n", "\n");
             tmpText.color = fontColor;
             tmpText.fontSize = fontSize;
         }
