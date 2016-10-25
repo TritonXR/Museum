@@ -19,14 +19,27 @@ public class Activate : MonoBehaviour {
 
     }
 
-    void OnMouseDown()
+    void OnMouseEnter()
     {
 
         //if (Input.GetMouseButtonDown(0))
         //{
 
-            objActivate.SetActive(!objActivate.activeSelf);
+            objActivate.SetActive(true);
 
         //}
     }
+
+    void OnMouseExit()
+    {
+
+        //if (Input.GetMouseButtonDown(0))
+        //{
+
+        objActivate.SetActive(true);
+
+        //}
+    }
+
+
 }
