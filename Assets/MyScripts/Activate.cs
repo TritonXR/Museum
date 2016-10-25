@@ -36,7 +36,7 @@ public class Activate : MonoBehaviour {
         //if (Input.GetMouseButtonDown(0))
         //{
 
-        objActivate.SetActive(true);
+        objActivate.SetActive(false);
 
         //}
     }
