@@ -15,7 +15,7 @@ using System.Collections;
  * 
  */
 
-public class Groundctl : MonoBehaviour {
+public class directPlane : MonoBehaviour {
 
     static private bool atPlayer = false;
     string objAtPlayer = "";
@@ -24,7 +24,7 @@ public class Groundctl : MonoBehaviour {
 
     Vector3 startPos; //Beginning position of the lerp
     public Vector3 endPos; //Ending position of the lerp
-    public Quaternion startRot;
+    Quaternion startRot;
     static public float dur = 3.0f; //duration of the lerp
     
 
@@ -74,18 +74,18 @@ public class Groundctl : MonoBehaviour {
             }
             this.transform.position = endPos;
             atPlayer = true;
-            objAtPlayer = hit.transform.gameObject.name;
             running = false;
         }
         else //For lerping back to originial position
         {
             running = true;
             Quaternion endRot = transform.rotation;
-            if (objAtPlayer != hit.transform.gameObject.name)
+            /*
+            if (objAtPlayer != hit.transform.gameObject.name)  ////MEANT TO USE THIS FOR MORE THAN ONE PLANE AT PLAYER
             {
                 Debug.Log("Insert More Stuff Here Later");
             }
-
+            */
             for (float i = 0; i < dur; i += Time.deltaTime)
             {
                 Vector3 newPos = Vector3.Lerp(endPos, startPos, i / dur);
@@ -108,11 +108,18 @@ public class Groundctl : MonoBehaviour {
 
     public void OnMouseDown()
     {
+        Activate();
+    }
+
+    public void Activate()
+    {
         if (!running)
         {
             StartCoroutine(MovePlane());
         }
     }
+
+
 
     //If object has this script, set a boolean to true
     //Coroutine to deactivate boolean 
