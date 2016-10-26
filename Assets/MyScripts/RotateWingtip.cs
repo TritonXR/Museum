@@ -3,24 +3,47 @@ using System.Collections;
 
 public class RotateWingtip : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+    public float amount;
+    public float seconds;
+    public Vector3 end;
 
-    public Transform from;
-    public Transform to;
+    private Quaternion start; 
+    private Quaternion endQ;
 
-    public static Vector3 start = new Vector3(2.924f, 18.908f, -5.062f);
+    // Use this for initialization
+    void Start () {
 
-    private Quaternion startR = Quaternion.Euler(start);
+        if (amount > 1f){
+            amount = 1f;
+        }
 
-    public static Vector3 end = new Vector3(18.482f, 17.416f, -5.333f);
-    public float speed = 0.5f;
-    private Quaternion endR = Quaternion.Euler(end);
-	// Update is called once per frame
+        if (amount < -1f){
+            amount = -1;
+        }
 
-	void Update () {
-        transform.rotation = Quaternion.Lerp(startR, endR, Time.time * speed);
-	}
+
+        //if (amount)
+        start = transform.localRotation;
+
+        print(start.eulerAngles);
+
+        endQ = Quaternion.Euler(end);
+
+        //end.y = start.eulerAngles.y;
+        //end.z = start.eulerAngles.z;
+
+        StartCoroutine(RotateWing(seconds, amount));
+
+    }
+
+    IEnumerator RotateWing(float seconds, float amount) {
+        for (float i = 0; i < seconds; i+= Time.deltaTime)
+        {
+            
+            transform.rotation = Quaternion.Lerp(start, Quaternion.Euler(end*amount), i/seconds);
+            yield return null;
+        }
+    }
+
+
 }
