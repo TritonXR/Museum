@@ -5,7 +5,8 @@ public class RotateWingtip : MonoBehaviour {
 
     public float amount;
     public float seconds;
-    public Vector3 end;
+    public Vector3 upEnd;
+    public Vector3 downEnd;
 
     private Quaternion start; 
     private Quaternion endQ;
@@ -25,9 +26,15 @@ public class RotateWingtip : MonoBehaviour {
         //if (amount)
         start = transform.localRotation;
 
-        print(start.eulerAngles);
-
-        endQ = Quaternion.Euler(end);
+        if (amount < 0)
+        {
+            amount = Mathf.Abs(amount);
+            endQ = Quaternion.Euler(downEnd);
+        }
+        else
+        {
+            endQ = Quaternion.Euler(upEnd);
+        }
 
         //end.y = start.eulerAngles.y;
         //end.z = start.eulerAngles.z;
@@ -40,7 +47,7 @@ public class RotateWingtip : MonoBehaviour {
         for (float i = 0; i < seconds; i+= Time.deltaTime)
         {
             
-            transform.rotation = Quaternion.Lerp(start, Quaternion.Euler(end*amount), i/seconds);
+            transform.rotation = Quaternion.Lerp(start, endQ , i/seconds * amount);
             yield return null;
         }
     }
