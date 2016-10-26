@@ -5,10 +5,12 @@ public class Glow : MonoBehaviour {
 
     private float rr=255f, gg = 255f, bb = 255f;
     bool isGrow = false;
-    public Color lerpedColor = Color.white;
+
+    
 
     private Material[] currentMaterials;
     private Color[] originColors;
+    private Material newMaterial;
 
     void Start() {
         //StartCoroutine(ChangeColor(0.1f));
@@ -17,25 +19,24 @@ public class Glow : MonoBehaviour {
         for(int ii = 0; ii < currentMaterials.Length; ii++)
         {
             originColors[ii] = currentMaterials[ii].color;
+            print(currentMaterials[ii]);
         }
-
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        
 
-        for(int i = 0; i < currentMaterials.Length; i++)
+        for(int ii = 0; ii < currentMaterials.Length; ii++)
         {
-            Material newMaterial = new Material(currentMaterials[i]);
+            Color lerpedColor = Color.Lerp(originColors[ii], Color.black, Mathf.PingPong(Time.time, 1));
+            newMaterial = new Material(currentMaterials[ii]);
             newMaterial.SetColor("_Color", lerpedColor);
 
-            currentMaterials[i] = newMaterial;
-            lerpedColor = Color.Lerp(originColors[i], Color.black, Mathf.PingPong(Time.time, 1));
+            currentMaterials[ii] = newMaterial;
         }
-
+        
         GetComponent<Renderer>().materials = currentMaterials;
 
 

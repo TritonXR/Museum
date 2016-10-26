@@ -1,0 +1,65 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.7.1088
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl WhiteGloss
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j17875.tif
+
+newmtl Gear3DoorAExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jg3da.tif
+
+newmtl Chrome
+Ka 0 0 0
+Kd 0.921569 0.921569 0.921569
+Ks 1 1 1
+illum 2
+Ns 588.134
+
+newmtl LandingLightLense
+Ka 0 0 0
+Kd 0.407843 0.407843 0.407843
+Ks 0.9 0.9 0.9
+illum 2
+Ns 256
+d 0.32
+
+newmtl Gear1DoorAExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jg1da.tif
+map_bump 8jg1da_b.tif
+bump 8jg1da_b.tif
+
+newmtl FuselagePort
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfp.tif
+map_bump 8jfp_b.tif
+bump 8jfp_b.tif
+
+newmtl Gear2DoorAExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jg3da.tif

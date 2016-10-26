@@ -1,0 +1,761 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.7.1088
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl WingTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jwt.tif
+map_bump 8jwt_b.tif
+bump 8jwt_b.tif
+
+newmtl WhiteGloss
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j17875.tif
+
+newmtl WingBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jwb.tif
+map_bump 8jwb_b.tif
+bump 8jwb_b.tif
+
+newmtl Infinity
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+illum 2
+Ns 2.14355
+
+newmtl WingTopFwd
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j11136.tif
+map_bump 8jwtf_b.tif
+bump 8jwtf_b.tif
+
+newmtl Chrome
+Ka 0 0 0
+Kd 0.921569 0.921569 0.921569
+Ks 1 1 1
+illum 2
+Ns 588.134
+
+newmtl RedLenses
+Ka 0.219608 0 0
+Kd 0.219608 0 0
+Ks 1 0.913726 0.913726
+illum 2
+Ns 256
+d 0.5
+
+newmtl HorizontalTailTopPort
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jhttp.tif
+map_bump 8jhttp_b.tif
+bump 8jhttp_b.tif
+
+newmtl HorizontalTailBtmPort
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jhtbp.tif
+map_bump 8jhtbp_b.tif
+bump 8jhtbp_b.tif
+
+newmtl FlapPortATop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfpat.tif
+map_bump 8jfpa_b.tif
+bump 8jfpa_b.tif
+
+newmtl FlapPortABtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfpab.tif
+map_bump 8jfpa_b.tif
+bump 8jfpa_b.tif
+
+newmtl FuselagePort
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfp.tif
+map_bump 8jfp_b.tif
+bump 8jfp_b.tif
+
+newmtl NoseCone
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 128
+map_Kd 8jnc.tif
+map_bump 8jnc_b.tif
+bump 8jnc_b.tif
+
+newmtl FuselageTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jft.tif
+map_bump 8jft_b.tif
+bump 8jft_b.tif
+
+newmtl TailCone
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 445.722
+map_Kd 8jtc.tif
+map_bump 8jtc_b.tif
+bump 8jtc_b.tif
+
+newmtl FuselageBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfb.tif
+map_bump 8jfb_b.tif
+bump 8jfb_b.tif
+
+newmtl BlackGlossExt
+Ka 0 0 0
+Kd 0.117647 0.117647 0.117647
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+
+newmtl FuselageStbd
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfs.tif
+map_bump 8jfs_b.tif
+bump 8jfs_b.tif
+
+newmtl Steel
+Ka 0 0 0
+Kd 0.788235 0.772549 0.717647
+Ks 0.9 0.9 0.9
+illum 2
+Ns 337.794
+
+newmtl NoseSensor
+Ka 0 0 0
+Kd 0.0784314 0.0784314 0.0784314
+Ks 0.9 0.9 0.9
+illum 2
+Ns 256
+
+newmtl FlatLtGullGray
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8j36440.tif
+
+newmtl ExhaustCone
+Ka 0 0 0
+Kd 0.501961 0.490196 0.482353
+Ks 0.9 0.9 0.9
+illum 2
+Ns 256
+
+newmtl RedGloss
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j11136.tif
+
+newmtl FlatBlackExt
+Ka 0 0 0
+Kd 0.156863 0.156863 0.156863
+Ks 0.9 0.9 0.9
+illum 2
+Ns 8
+
+newmtl Scoops
+Ka 0 0 0
+Kd 0.639216 0.627451 0.611765
+Ks 0.9 0.9 0.9
+illum 2
+Ns 445.722
+
+newmtl VentStrakePortExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jvs.tif
+map_bump 8jvs_b.tif
+bump 8jvs_b.tif
+
+newmtl VentStrakePortInt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jvs.tif
+map_bump 8jvs_b.tif
+bump 8jvs_b.tif
+
+newmtl VentStrakeStbdExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jvs.tif
+map_bump 8jvs_b.tif
+bump 8jvs_b.tif
+
+newmtl VentStrakeStbdInt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jvs.tif
+map_bump 8jvs_b.tif
+bump 8jvs_b.tif
+
+newmtl CanopyGlass
+Ka 0 0 0
+Kd 0.321569 0.321569 0.321569
+Ks 0.9 0.9 0.9
+illum 2
+Ns 362.039
+d 0.38
+
+newmtl InteriorBlack
+Ka 0 0 0
+Kd 0.176471 0.176471 0.176471
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+
+newmtl InteriorGray
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 8j36231.tif
+
+newmtl CockpitSideConsoles
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 8jcsc.tif
+
+newmtl CockpitFwdConsoles
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 8jcfc.tif
+
+newmtl InstrumentPanel
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 8jip.tif
+
+newmtl RadarScopeLense
+Ka 0 0 0
+Kd 0.184314 0.0235294 0.0235294
+Ks 0.898039 0.74902 0.74902
+illum 2
+Ns 8
+
+newmtl HUDGlass
+Ka 0 0 0
+Kd 0.301961 0.329412 0.301961
+Ks 0.988235 0.988235 0.988235
+illum 2
+Ns 256
+d 0.32
+
+newmtl CanopyPort
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jc.tif
+map_bump 8jc_b.tif
+bump 8jc_b.tif
+
+newmtl CanopyStbd
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jc.tif
+map_bump 8jc_b.tif
+bump 8jc_b.tif
+
+newmtl FlapPortBTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfpbt.tif
+map_bump 8jfpb_b.tif
+bump 8jfpb_b.tif
+
+newmtl FlapPortBBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfpbb.tif
+map_bump 8jfpb_b.tif
+bump 8jfpb_b.tif
+
+newmtl InbdSlatPortABtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j17875.tif
+
+newmtl InbdSlatPortATop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8j36440.tif
+
+newmtl InbdSlatPortBTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jispbt.tif
+map_bump 8jispb_m.tif
+bump 8jispb_m.tif
+
+newmtl InbdSlatPortBBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jispbb.tif
+map_bump 8jispb_m.tif
+bump 8jispb_m.tif
+
+newmtl OutbdSlatPortATop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8j36440.tif
+
+newmtl OutbdSlatPortABtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j17875.tif
+
+newmtl OutbdSlatPortBTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jospbt.tif
+map_bump 8jospb_b.tif
+bump 8jospb_b.tif
+
+newmtl OutbdSlatPortBBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jospbb.tif
+map_bump 8jospb_b.tif
+bump 8jospb_b.tif
+
+newmtl InbdSlatStbdBTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jissbt.tif
+map_bump 8jissb_b.tif
+bump 8jissb_b.tif
+
+newmtl InbdSlatStbdBBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jissbb.tif
+map_bump 8jissb_b.tif
+bump 8jissb_b.tif
+
+newmtl OutbdSlatStbdATop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8j36440.tif
+
+newmtl OutbdSlatStbdABtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j17875.tif
+
+newmtl OutbdSlatStbdBTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8jossbt.tif
+map_bump 8jossb_b.tif
+bump 8jossb_b.tif
+
+newmtl OutbdSlatStbdBBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jossbb.tif
+map_bump 8jossb_b.tif
+bump 8jossb_b.tif
+
+newmtl FlapStbdBBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfsbb.tif
+map_bump 8jfsb_b.tif
+bump 8jfsb_b.tif
+
+newmtl FlapStbdBTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfsbt.tif
+map_bump 8jfsb_b.tif
+bump 8jfsb_b.tif
+
+newmtl FlapStbdATop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfsat.tif
+map_bump 8jfsa_b.tif
+bump 8jfsa_b.tif
+
+newmtl FlapStbdABtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jfsab.tif
+map_bump 8jfsa_b.tif
+bump 8jfsa_b.tif
+
+newmtl RudderPort
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jr.tif
+map_bump 8jr_b.tif
+bump 8jr_b.tif
+
+newmtl RudderStbd
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jr.tif
+map_bump 8jr_b.tif
+bump 8jr_b.tif
+
+newmtl TireBlack
+Ka 0 0 0
+Kd 0.176471 0.176471 0.176471
+Ks 0.9 0.9 0.9
+illum 2
+Ns 3.03143
+
+newmtl BlackHandle
+Ka 0 0 0
+Kd 0.137255 0.137255 0.137255
+Ks 1 1 1
+illum 2
+Ns 32
+
+newmtl RedButtons
+Ka 0 0 0
+Kd 0.72549 0.14902 0.14902
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+
+newmtl SeatYellow
+Ka 0 0 0
+Kd 1 0.788235 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+
+newmtl SeatBuckles
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 1 1 1
+illum 2
+Ns 181.019
+
+newmtl SeatGreen
+Ka 0 0 0
+Kd 0.498039 0.847059 0.32549
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+
+newmtl SeatCushions
+Ka 0 0 0
+Kd 0.509804 0.490196 0.380392
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+
+newmtl SeatChute
+Ka 0 0 0
+Kd 0.462745 0.509804 0.380392
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+
+newmtl SeatBelts
+Ka 0 0 0
+Kd 0.596078 0.592157 0.568627
+Ks 0.9 0.9 0.9
+illum 2
+Ns 8
+
+newmtl SeatEjectHandles
+Ka 0.588 0.588 0.588
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 8jseh.tif
+
+newmtl HorizontalTailTopStbd
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jhtts.tif
+map_bump 8jhtts_b.tif
+bump 8jhtts_b.tif
+
+newmtl HorizontalTailBtmStbd
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jhtbs.tif
+map_bump 8jhtbs_b.tif
+bump 8jhtbs_b.tif
+
+newmtl Tailhook
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jth.tif
+
+newmtl WingtipPortTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jwtpt.tif
+map_bump 8jwtpt_b.tif
+bump 8jwtpt_b.tif
+
+newmtl WingtipPortBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jwtpb.tif
+map_bump 8jwtpb_b.tif
+bump 8jwtpb_b.tif
+
+newmtl StrobeLenses
+Ka 0 0 0
+Kd 0.219608 0.219608 0.219608
+Ks 1 1 1
+illum 2
+Ns 256
+d 0.5
+
+newmtl InbdSlatStbdABtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8j17875.tif
+
+newmtl InbdSlatStbdATop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 12.1257
+map_Kd 8j36440.tif
+
+newmtl WingtipStbdTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jwtst.tif
+map_bump 8jwtst_b.tif
+bump 8jwtst_b.tif
+
+newmtl WingtipStbdBtm
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jwtsb.tif
+map_bump 8jwtsb_b.tif
+bump 8jwtsb_b.tif
+
+newmtl BlueLenses
+Ka 0 0.168627 0.219608
+Kd 0 0.168627 0.219608
+Ks 0.913726 0.964706 1
+illum 2
+Ns 256
+d 0.5
+
+newmtl Pylons
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jpy.tif
+map_bump 8jpy_b.tif
+bump 8jpy_b.tif
+
+newmtl Gear3DoorAExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jg3da.tif
+
+newmtl Gear1DoorAExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+map_Kd 8jg1da.tif
+map_bump 8jg1da_b.tif
+bump 8jg1da_b.tif
+
+newmtl LandingLightLense
+Ka 0 0 0
+Kd 0.407843 0.407843 0.407843
+Ks 0.9 0.9 0.9
+illum 2
+Ns 256
+d 0.32

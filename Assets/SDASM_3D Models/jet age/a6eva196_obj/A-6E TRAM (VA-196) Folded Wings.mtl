@@ -1,0 +1,438 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 5.5 5.5.3.2642 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl White_Gloss
+Ka 0.25098 0.25098 0.25098
+Kd 0.956863 0.952941 0.933333
+Ks 1 1 1
+illum 2
+Ns 73.5167
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl LGhostGray
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 9636375.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WinFoldCoversStbd
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 96wfocs.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl A_6E_VA_196_CAG
+Ka 0 0 0
+Kd 0.564706 0.564706 0.564706
+Ks 1 1 1
+illum 2
+Ns 2
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WinFoldCoversPort
+Ka 0 0 0
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 96wfocp.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl AileronPortTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 9636375.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Red_Gloss
+Ka 0 0 0
+Kd 0.627451 0 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 73.5167
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl AileronPortBtm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 9636375.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl FuselagePortSide
+Ka 1 1 1
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 2
+map_Kd 96fu_m.tif
+map_bump 96fu_m.tif
+bump 96fu_m.tif
+map_opacity 96fu_m.tif
+map_d 96fu_m.tif
+refl 96fu_m.tif
+map_kS 96fu_m.tif
+map_kA 96fu_m.tif
+map_Ns 96fu_m.tif
+
+newmtl WTBrakeStbdBtm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wtbsb.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WTBrakeStbdTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wtbst.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl SlatOutbdStbdTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96sost.tif
+map_bump 96sost_b.tif
+bump 96sost_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl SlatOutbdStbdBtm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96sosb.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Gunmetal
+Ka 0 0 0
+Kd 0.682353 0.682353 0.682353
+Ks 1 1 1
+illum 2
+Ns 388.023
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Gray_Plumbing
+Ka 0.47451 0.494118 0.494118
+Kd 0.65098 0.67451 0.67451
+Ks 0.9 0.9 0.9
+illum 2
+Ns 36.7583
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Satin_Black
+Ka 0 0 0
+Kd 0.0784314 0.0784314 0.0784314
+Ks 0.929412 0.929412 0.929412
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingStbdTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wlst.tif
+map_bump 96wlst_b.tif
+bump 96wlst_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingletStbdBttm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wlsb.tif
+map_bump 96wlsb_b.tif
+bump 96wlsb_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl DGhostGray
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 13.9288
+map_Kd 9636320.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Sensors
+Ka 0 0 0
+Kd 0.768628 0.784314 0.796079
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WTBrakePortBtm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wtbpb.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WTBrakePortTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wtbpt.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Red_Light
+Ka 0 0 0
+Kd 0.176471 0 0
+Ks 1 0.635294 0.635294
+illum 2
+Ns 128
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingletPortTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wlpt.tif
+map_bump 96wlpt_b.tif
+bump 96wlpt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingletPortBttm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96wlpb.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl SlatOutbdPortTop
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96sopt.tif
+map_bump 96sopt_b.tif
+bump 96sopt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl SlatOutbdPortBtm
+Ka 0 0 0
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 13.9288
+map_Kd 96sopb.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

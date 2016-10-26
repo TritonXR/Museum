@@ -1,0 +1,48 @@
+newmtl Preview
+Ns 50
+Ka 0 0 0
+Kd 0.67215 0.832756 0.136526
+Ks 0.11761 0.0686488 0.179771
+d 1
+newmtl FUSE
+Ns 10
+Ka 0 0 0
+Kd 0.0901961 0.12549 0.2
+Ks 0.898039 0.898039 0.898039
+map_Kd f9f-fuse.bmp
+d 1
+newmtl MIX
+Ns 10
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0.898039 0.898039 0.898039
+map_Kd f9f-var.bmp
+d 1
+newmtl 08 - Default
+Ns 10
+Ka 0 0 0
+Kd 0.203922 0.203922 0.203922
+Ks 0.898039 0.898039 0.898039
+map_Kd ClrGlass.TGA
+d 1
+newmtl WINGS
+Ns 10
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0.898039 0.898039 0.898039
+map_Kd f9f-wing.bmp
+d 1
+newmtl MAT3
+Ns 10
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0.898039 0.898039 0.898039
+map_Kd f9f-3.tga
+d 1
+newmtl 09 - seat
+Ns 10
+Ka 0 0 0
+Kd 0.588235 0.588235 0.588235
+Ks 0.898039 0.898039 0.898039
+map_Kd F9F-seat.bmp
+d 1

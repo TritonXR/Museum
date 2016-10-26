@@ -1,0 +1,452 @@
+#
+# Wavefront material file: c:\winnt\profiles\admini~1\desktop\obj\discboos.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 01/02/19101 20:45:53
+#
+# Bounding box of geometry = (-474.737,0.146943,-2162.83) to (474.737,988.292,160.256).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl etank
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.776471 0.552941 0.337255
+	Ks 0.05 0.05 0.047451
+	Ka 0.607843 0.432858 0.264013
+	map_Kd etcolor.bmp
+
+newmtl hull
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.776471 0.552941 0.337255
+	Ks 0.05 0.05 0.047451
+	Ka 0.607843 0.432858 0.264013
+	map_Kd et.bmp
+
+newmtl band
+	Ns 10
+	d 1
+	illum 2
+	Kd 0.776471 0.552941 0.337255
+	Ks 0.044902 0.044902 0.044902
+	Ka 0.0980392 0.0698158 0.0425827
+	map_Kd etband.bmp
+
+newmtl gray
+	Ns 5
+	d 1
+	illum 2
+	Kd 0.615686 0.623529 0.639216
+	Ks 0.0179608 0.0179608 0.0179608
+	Ka 0.0980392 0.0980392 0.0980392
+
+newmtl color
+	Ns 17
+	d 1
+	illum 2
+	Kd 0.960784 0.960784 0.960784
+	Ks 0.14 0.14 0.14
+	Ka 0.184314 0.184314 0.184314
+
+newmtl black
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.176471 0.176471 0.176471
+	Ks 0.02 0.02 0.02
+	Ka 0 0 0
+
+newmtl nozzle
+	Ns 7
+	d 1
+	illum 2
+	Kd 0.211765 0.211765 0.211765
+	Ks 0.107765 0.107765 0.107765
+	Ka 0 0 0
+
+newmtl fuse01_right
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fuse1r.bmp
+
+newmtl fuse01_left
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fuse1l.bmp
+
+newmtl fuse02_right
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fuse2r.bmp
+
+newmtl fuse02_left
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fuse2l.bmp
+
+newmtl bay_door_right
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd bdoorr.bmp
+
+newmtl bat_door_left
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd bdoorl.bmp
+
+newmtl rudder
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd rudd.bmp
+
+newmtl black_tile_color
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.117647 0.117647 0.117647
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.101961 0.101961 0.101961
+
+newmtl off_white_tile_c
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.980392 0.980392 0.94902
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.094902
+	map_Kd ivory.bmp
+
+newmtl wing_left_top
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd winglt.bmp
+
+newmtl wing_right_top
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd wingrt.bmp
+
+newmtl stab_right_top
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd stabrt.bmp
+
+newmtl stab_left_top
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd stablt.bmp
+
+newmtl fuse_bttm
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fuseb.bmp
+
+newmtl wing_left_bttm
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd winglb.bmp
+
+newmtl wing_right_bttm
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd wingrb.bmp
+
+newmtl fuse_nose_bottm
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fnose.bmp
+
+newmtl fuse_bttm_rear
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fusebr.bmp
+
+newmtl stab_right_bttm
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd stabrb.bmp
+
+newmtl stab_left_bttm
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd stablb.bmp
+
+newmtl connector_cover_
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd concvr.bmp
+
+newmtl connector_cov1
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd concvl.bmp
+
+newmtl gear_bays
+	Ns 16
+	d 1
+	illum 2
+	Kd 0.941176 0.941176 0.941176
+	Ks 0.6 0.6 0.6
+	Ka 0.0980392 0.0980392 0.0980392
+
+newmtl main_gear_doors
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd mgdoor.bmp
+
+newmtl body_flap
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd bflap.bmp
+
+newmtl front_gear_doors
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd fgdoor.bmp
+
+newmtl hatch
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd hatch.bmp
+
+newmtl pod
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd pod.bmp
+
+newmtl ivory
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd ivory.bmp
+
+newmtl exhaust
+	Ns 5
+	d 1
+	illum 2
+	Kd 0.360784 0.360784 0.360784
+	Ks 0.044902 0.044902 0.044902
+	Ka 0.101961 0.101961 0.101961
+
+newmtl chrome
+	Ns 33
+	d 1
+	illum 2
+	Kd 0.433333 0.433333 0.433333
+	Ks 1.2 1.2 1.2
+	Ka 0 0 0
+
+newmtl tires
+	Ns 2
+	d 1
+	illum 2
+	Kd 0.192157 0.196078 0.2
+	Ks 0.107765 0.107765 0.107765
+	Ka 0.164706 0.164706 0.164706
+
+newmtl glass
+	Ns 33
+	d 0.32
+	illum 2
+	Kd 0.254902 0.254902 0.254902
+	Ks 1 1 1
+	Ka 0 0 0
+
+newmtl interior_color
+	Ns 6
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.044902 0.044902 0.044902
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd interior.bmp
+
+newmtl nose_top
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd noset.bmp
+
+newmtl bay_doors_interi
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.179608 0.179608 0.179608
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd bintd.bmp
+
+newmtl bay_bulkheads
+	Ns 13
+	d 1
+	illum 2
+	Kd 0.24902 0.24902 0.24902
+	Ks 1.04 1.04 1.04
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd bayf.bmp
+
+newmtl handles
+	Ns 21
+	d 1
+	illum 2
+	Kd 0.984314 0.788235 0.156863
+	Ks 0.22451 0.22451 0.22451
+	Ka 0.101961 0.101961 0.101961
+
+newmtl copper
+	Ns 33
+	d 1
+	illum 2
+	Kd 0.401961 0.156863 0
+	Ks 1.28 0.499512 0
+	Ka 0.0980392 0.0980392 0.0980392
+
+newmtl gloss_black
+	Ns 41
+	d 1
+	illum 2
+	Kd 0.0784314 0.0784314 0.0784314
+	Ks 0.898039 0.898039 0.898039
+	Ka 0 0 0
+
+newmtl white_insulation
+	Ns 8
+	d 1
+	illum 2
+	Kd 0.901961 0.901961 0.901961
+	Ks 0.1 0.1 0.1
+	Ka 0.243137 0.243137 0.243137
+
+newmtl arm_section_1
+	Ns 8
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd arm1.bmp
+
+newmtl arm_section_2
+	Ns 8
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd arm2.bmp
+

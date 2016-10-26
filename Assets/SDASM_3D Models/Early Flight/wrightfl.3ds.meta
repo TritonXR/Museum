@@ -1,0 +1,128 @@
+fileFormatVersion: 2
+guid: 47c43296018057a47b11a28e8f307a5a
+timeCreated: 1477505300
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: wfcont
+    100002: wffuel
+    100004: wfhinge
+    100006: wfpeng
+    100008: wfprop
+    100010: wfpshaft
+    100012: wfrad
+    100014: wfrib1
+    100016: wfsups
+    100018: wfwing1
+    100020: wfwires
+    100022: //RootNode
+    400000: wfcont
+    400002: wffuel
+    400004: wfhinge
+    400006: wfpeng
+    400008: wfprop
+    400010: wfpshaft
+    400012: wfrad
+    400014: wfrib1
+    400016: wfsups
+    400018: wfwing1
+    400020: wfwires
+    400022: //RootNode
+    2300000: wfcont
+    2300002: wffuel
+    2300004: wfhinge
+    2300006: wfpeng
+    2300008: wfprop
+    2300010: wfpshaft
+    2300012: wfrad
+    2300014: wfrib1
+    2300016: wfsups
+    2300018: wfwing1
+    2300020: wfwires
+    3300000: wfcont
+    3300002: wffuel
+    3300004: wfhinge
+    3300006: wfpeng
+    3300008: wfprop
+    3300010: wfpshaft
+    3300012: wfrad
+    3300014: wfrib1
+    3300016: wfsups
+    3300018: wfwing1
+    3300020: wfwires
+    4300000: wfcont
+    4300002: wffuel
+    4300004: wfhinge
+    4300006: wfpeng
+    4300008: wfprop
+    4300010: wfpshaft
+    4300012: wfrad
+    4300014: wfrib1
+    4300016: wfsups
+    4300018: wfwing1
+    4300020: wfwires
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

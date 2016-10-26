@@ -1,0 +1,5 @@
+Thank you for purchasing my product!
+
+This is WWI Drachen observation ballon. The model was created after many archives photos. To achieve more realism, there was used the Noise modificator on the balloon. Unfortunately, non-max formats doesn't support modificators, so I prepared two copies of the balloon, one is unaffected by Noise modificator (normal model) and one is affected by Noise modificator (crumpled). This give you choice what's better. Also, strip look of the balloon is achived by MultiMaterial, that isn't support 3ds format. Hovewer, faces IDs, which are used in the material, still can be used for creating strip material. This is very easy, just remember faces with ID 1 are light color, faces with ID 2 are dark color. Map and textures coordinates were saved in 3ds format.
+
+If you have any questions or comments, please, contact me at alex_kontz@mail.ru

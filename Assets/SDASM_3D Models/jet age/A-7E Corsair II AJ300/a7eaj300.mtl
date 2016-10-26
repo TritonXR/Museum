@@ -1,0 +1,656 @@
+#
+# Wavefront material file: d:\3d projects\projects\a-7e corsair ii aj300\a7eaj300.mtl
+#
+# Converted by the PolyTrans geometry converter from Okino Computer Graphics, Inc.
+# Date/time of export: 12/21/19103 22:05:23
+#
+# Bounding box of geometry = (-234.685,-0.000118256,-315.534) to (234.685,223.327,238.057).
+
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl fuselage_right
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7fusr.bmp
+
+newmtl fuselage_left
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7fusl.bmp
+
+newmtl vert_tail_r
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7vtar.bmp
+
+newmtl vert_tail_l
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7vtal.bmp
+
+newmtl rudder_r
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7rudr.bmp
+
+newmtl rudder_l
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7rudl.bmp
+
+newmtl wingroot_r_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wrt.bmp
+
+newmtl wingroot_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wlt.bmp
+
+newmtl wingroot_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wrb.bmp
+
+newmtl wingroot_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wlb.bmp
+
+newmtl white_gloss
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.980392 0.976471 0.968627
+	Ks 1 1 1
+	Ka 0.980392 0.976471 0.968627
+	map_Kd 717875.bmp
+
+newmtl red_gloss
+	Ns 23
+	d 1
+	illum 2
+	Kd 0.658824 0.129412 0.129412
+	Ks 0.628627 0.628627 0.628627
+	Ka 0.0980392 0.0980392 0.0980392
+
+newmtl winglet_r_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wlrt.bmp
+
+newmtl winglet_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wlrb.bmp
+
+newmtl htail_r_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7tprt.bmp
+
+newmtl htail_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7tprb.bmp
+
+newmtl htail_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.501961 0.501961 0.501961
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7tplt.bmp
+
+newmtl htail_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7tplb.bmp
+
+newmtl fuselage_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7fust.bmp
+
+newmtl fuselage_bottom
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7fusb.bmp
+
+newmtl flap_r_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7flprt.bmp
+
+newmtl flap_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7flprb.bmp
+
+newmtl flap_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7flplt.bmp
+
+newmtl flap_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7flplb.bmp
+
+newmtl aileron_r_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7alr.bmp
+
+newmtl aileron_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7alr.bmp
+
+newmtl inbd_slat_r_top
+	Ns 8
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7isrt.bmp
+
+newmtl inbd_slat_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7isrb.bmp
+
+newmtl inbd_slat_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7islt.bmp
+
+newmtl inbd_slat_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7islb.bmp
+
+newmtl otbd_slat_r_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7osrt.bmp
+
+newmtl otbd_slat_r_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7osrb.bmp
+
+newmtl otbd_slat_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7oslt.bmp
+
+newmtl otbd_slat_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7oslb.bmp
+
+newmtl antenna_lwr_fwd
+	Ns 8
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7antf.bmp
+
+newmtl antenna_lwr_rear
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7antr.bmp
+
+newmtl pylons_1n8
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7st18.bmp
+
+newmtl pylons_2n7
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7st27.bmp
+
+newmtl pylons_3n6
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7st36.bmp
+
+newmtl steel
+	Ns 21
+	d 1
+	illum 2
+	Kd 0.354902 0.34902 0.345098
+	Ks 1.2 1.18011 1.16685
+	Ka 0.709804 0.698039 0.690196
+
+newmtl insignia_white
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 717875.bmp
+
+newmtl lt_gull_gry
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 716440.bmp
+
+newmtl flat_black
+	Ns 3
+	d 1
+	illum 2
+	Kd 0.196078 0.196078 0.196078
+	Ks 0.107765 0.107765 0.107765
+	Ka 0.196078 0.196078 0.196078
+
+newmtl yellowzincchrmat
+	Ns 8
+	d 1
+	illum 2
+	Kd 0.74902 0.772549 0.364706
+	Ks 0.107765 0.107765 0.107765
+	Ka 0.772549 0.768627 0.364706
+
+newmtl canopy_r
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.501961 0.501961 0.501961
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.101961 0.101961 0.101961
+	map_Kd 7can.bmp
+
+newmtl canopy_l
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.501961 0.501961 0.501961
+	Ks 0.886275 0.886275 0.886275
+	Ka 0.101961 0.101961 0.101961
+	map_Kd 7can.bmp
+
+newmtl land_lights
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7llit.bmp
+
+newmtl port_vent_cvr
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 717875.bmp
+
+newmtl cpit_glass
+	Ns 43
+	d 0.32
+	illum 2
+	Kd 0.321569 0.321569 0.321569
+	Ks 1 1 1
+	Ka 0 0 0
+
+newmtl cpit_blu_glass
+	Ns 43
+	d 0.4
+	illum 2
+	Kd 0.231373 0.298039 0.356863
+	Ks 1 1 1
+	Ka 0.101961 0.101961 0.101961
+
+newmtl tire_black
+	Ns 3
+	d 1
+	illum 2
+	Kd 0.313726 0.313726 0.313726
+	Ks 0.0718431 0.0718431 0.0718431
+	Ka 0.313726 0.313726 0.313726
+
+newmtl chrome
+	Ns 23
+	d 1
+	illum 2
+	Kd 0.431373 0.431373 0.431373
+	Ks 1.6 1.6 1.6
+	Ka 0.454902 0.454902 0.454902
+
+newmtl red_lights
+	Ns 51
+	d 0.8
+	illum 2
+	Kd 0.431373 0.0431373 0.0431373
+	Ks 1 0.952941 0.952941
+	Ka 0.337255 0.0352941 0.0352941
+
+newmtl winglet_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wllt.bmp
+
+newmtl winglet_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7wllb.bmp
+
+newmtl aileron_l_top
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7all.bmp
+
+newmtl aileron_l_btm
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7all.bmp
+
+newmtl refueling_probe
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7rprb.bmp
+
+newmtl gear1_door2
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7g1d2.bmp
+
+newmtl gear1_door1
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7g1d1.bmp
+
+newmtl tailhook
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7thok.bmp
+
+newmtl tanks
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7dtnk.bmp
+
+newmtl horizontal_fins
+	Ns 199
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7dtf.bmp
+
+newmtl flat_black1
+	Ns 3
+	d 1
+	illum 2
+	Kd 0.196078 0.196078 0.196078
+	Ks 0.107765 0.107765 0.107765
+	Ka 0.196078 0.196078 0.196078
+
+newmtl d_gull_gry
+	Ns 5
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.501961 0.501961 0.501961
+
+newmtl hud_glass
+	Ns 33
+	d 0.44
+	illum 2
+	Kd 0.247059 0.313726 0.278431
+	Ks 0.898039 0.898039 0.898039
+	Ka 0.0784314 0.101961 0.0941176
+
+newmtl side_consoles
+	Ns 5
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7ecnsl.bmp
+
+newmtl inst_panel
+	Ns 5
+	d 1
+	illum 2
+	Kd 0.498039 0.498039 0.498039
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.0980392 0.0980392 0.0980392
+	map_Kd 7eipnl.bmp
+
+newmtl aluminum
+	Ns 21
+	d 1
+	illum 2
+	Kd 0.433333 0.433333 0.433333
+	Ks 0.88 0.88 0.88
+	Ka 0.486275 0.486275 0.486275
+
+newmtl red_plastic
+	Ns 21
+	d 1
+	illum 2
+	Kd 0.839216 0.152941 0.152941
+	Ks 0.42 0.42 0.42
+	Ka 0.529412 0 0
+
+newmtl white
+	Ns 21
+	d 1
+	illum 2
+	Kd 0.952941 0.952941 0.952941
+	Ks 0.42 0.42 0.42
+	Ka 0.521569 0.521569 0.521569
+
+newmtl olive_drab
+	Ns 5
+	d 1
+	illum 2
+	Kd 0.607843 0.596078 0.435294
+	Ks 0.0898039 0.0898039 0.0898039
+	Ka 0.607843 0.596078 0.435294
+
+newmtl yellow_gloss
+	Ns 33
+	d 1
+	illum 2
+	Kd 1 0.847059 0
+	Ks 0.44902 0.44902 0.44902
+	Ka 1 0.847059 0
+

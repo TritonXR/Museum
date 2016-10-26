@@ -1,0 +1,679 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  Deep Exploration 5.5 5.5.3.2642 Release
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl GearBays
+Ka 0.1 0.1 0.1
+Kd 0.941177 0.941177 0.941177
+Ks 1 1 1
+illum 2
+Ns 42.2243
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl BayBulkheads
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 1 1 1
+illum 2
+Ns 97.0059
+map_Kd enbbh.tif
+map_bump enbbh_b.tif
+bump enbbh_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl OrbiterEndeavour
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl BlackTileColor
+Ka 0.101961 0.101961 0.101961
+Kd 0.117647 0.117647 0.117647
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl FuselageFlap
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfufl.tif
+map_bump enfufl_b.tif
+bump enfufl_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Exhaust
+Ka 0.101961 0.101961 0.101961
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 9.18959
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Glass
+Ka 0 0 0
+Kd 0.254902 0.254902 0.254902
+Ks 1 1 1
+illum 2
+Ns 128
+d 0.32
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Gear1Doors
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd eng1d.tif
+map_bump eng1d_b.tif
+bump eng1d_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl MainGearDoors
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enmgd.tif
+map_bump enmgd_b.tif
+bump enmgd_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Handles
+Ka 0.101961 0.101961 0.101961
+Kd 0.984314 0.788235 0.156863
+Ks 0.9 0.9 0.9
+illum 2
+Ns 64
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl White_Insulation
+Ka 0.243137 0.243137 0.243137
+Kd 0.901961 0.901961 0.901961
+Ks 1 1 1
+illum 2
+Ns 16
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Copper
+Ka 0.1 0.1 0.1
+Kd 0.803922 0.313726 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 512
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Gloss_Black
+Ka 0 0 0
+Kd 0.0784314 0.0784314 0.0784314
+Ks 0.9 0.9 0.9
+illum 2
+Ns 181.019
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Arm_Section_1
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+map_Kd ena1.tif
+map_bump ena1_b.tif
+bump ena1_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Arm_Section_2
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+map_Kd ena2.tif
+map_bump ena2_b.tif
+bump ena2_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl BayDoorsInterior
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enbdi.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl BayDoorR
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enbdr.tif
+map_bump enbd_b.tif
+bump enbd_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Chrome
+Ka 0 0 0
+Kd 0.866667 0.866667 0.866667
+Ks 1 1 1
+illum 2
+Ns 588.134
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Interior_Color
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 11.3137
+map_Kd eni.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Hatch
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enh.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl FuseNoseBttm
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfun.tif
+map_bump enfun_b.tif
+bump enfun_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fuse1R
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfu1r.tif
+map_bump enfu1r_b.tif
+bump enfu1r_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fuse1L
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfu1l.tif
+map_bump enfu1r_b.tif
+bump enfu1r_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl NoseTop
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfunt.tif
+map_bump enfunt_b.tif
+bump enfunt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fuse2R
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfu2r.tif
+map_bump enfu2r_b.tif
+bump enfu2r_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl FuselagePods
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfup.tif
+map_bump enfup_b.tif
+bump enfup_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Fuse02L
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfu2l.tif
+map_bump enfu2r_b.tif
+bump enfu2r_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Ivory
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwtc.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Rudder
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enr.tif
+map_bump enr_b.tif
+bump enr_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl FuseBttmRear
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfubr.tif
+map_bump enfubr_b.tif
+bump enfubr_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WhiteTileColor
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwtc.tif
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl FuseBttm
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enfub.tif
+map_bump enfub_b.tif
+bump enfub_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingRightBttm
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwrb.tif
+map_bump enwrb_b.tif
+bump enwrb_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingRightTop
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwrt.tif
+map_bump enwrt_b.tif
+bump enwrt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingLeftBttm
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwlb.tif
+map_bump enwlb_b.tif
+bump enwlb_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingLeftTop
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwlt.tif
+map_bump enwlt_b.tif
+bump enwlt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl ConnectCoverR
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enccr.tif
+map_bump enccr_b.tif
+bump enccr_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl Tires
+Ka 0.164706 0.164706 0.164706
+Kd 0.172549 0.176471 0.180392
+Ks 0.9 0.9 0.9
+illum 2
+Ns 3.03143
+map_Kd 
+map_bump 
+bump 
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingFlapRB
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwfrb.tif
+map_bump enwfrb_b.tif
+bump enwfrb_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingFlapRT
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwfrt.tif
+map_bump enwfrt_b.tif
+bump enwfrt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingFlapLB
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwflb.tif
+map_bump enwflb_b.tif
+bump enwflb_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 
+
+newmtl WingFlapLT
+Ka 0.1 0.1 0.1
+Kd 1 1 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+map_Kd enwflt.tif
+map_bump enwflt_b.tif
+bump enwflt_b.tif
+map_opacity 
+map_d 
+refl 
+map_kS 
+map_kA 
+map_Ns 

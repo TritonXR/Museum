@@ -1,0 +1,571 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.7.1088
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl AlumSilver
+Ka 0 0 0
+Kd 0.87451 0.87451 0.87451
+Ks 1 1 1
+illum 2
+Ns 256
+
+newmtl TireBlack
+Ka 0 0 0
+Kd 0.196078 0.196078 0.196078
+Ks 0.9 0.9 0.9
+illum 2
+Ns 2.63902
+
+newmtl Chrome
+Ka 0 0 0
+Kd 0.929412 0.929412 0.929412
+Ks 1 1 1
+illum 2
+Ns 588.134
+
+newmtl G1TireTread
+Ka 0 0 0
+Kd 0.196078 0.196078 0.196078
+Ks 0.9 0.9 0.9
+illum 2
+Ns 2.63902
+map_bump egg1tt_b.tif
+bump egg1tt_b.tif
+
+newmtl PolAlumExt
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egpae.tif
+
+newmtl TailTurret
+Ka 0 0 0
+Kd 0.87451 0.87451 0.87451
+Ks 1 1 1
+illum 2
+Ns 256
+map_bump egtgt_b.tif
+bump egtgt_b.tif
+
+newmtl TailgunTurretBag
+Ka 0 0 0
+Kd 0.552941 0.537255 0.505882
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+
+newmtl Gunmetal
+Ka 0 0 0
+Kd 0.219608 0.215686 0.207843
+Ks 0.9 0.9 0.9
+illum 2
+Ns 16
+
+newmtl Engines
+Ka 0 0 0
+Kd 0.364706 0.4 0.423529
+Ks 0.9 0.9 0.9
+illum 2
+Ns 388.023
+
+newmtl ElevTrimBtmL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevtl.tif
+map_bump egevtl_b.tif
+bump egevtl_b.tif
+
+newmtl ElevTrimTopL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevtl.tif
+map_bump egevtl_b.tif
+bump egevtl_b.tif
+
+newmtl ElevTrimBtmR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevtr.tif
+map_bump egevtr_b.tif
+bump egevtr_b.tif
+
+newmtl ElevTrimTopR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevtr.tif
+map_bump egevtr_b.tif
+bump egevtr_b.tif
+
+newmtl ElevBtmR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevr.tif
+map_bump egevr_b.tif
+bump egevr_b.tif
+
+newmtl ElevTopR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevr.tif
+map_bump egevr_b.tif
+bump egevr_b.tif
+
+newmtl RudderR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egrr.tif
+map_bump egr_b.tif
+bump egr_b.tif
+
+newmtl RudderL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egrl.tif
+map_bump egr_b.tif
+bump egr_b.tif
+
+newmtl BombBayFwdDoors
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egbbfd.tif
+map_bump egbbfd_b.tif
+bump egbbfd_b.tif
+
+newmtl FlapBtmR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egfprb.tif
+map_bump egfprb_b.tif
+bump egfprb_b.tif
+
+newmtl FlapTopR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egfprt.tif
+map_bump egfprt_b.tif
+bump egfprt_b.tif
+
+newmtl GreenZinc
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd eggz.tif
+
+newmtl BombBayRearDoors
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egbbrd.tif
+map_bump egbbrd_b.tif
+bump egbbrd_b.tif
+
+newmtl FuselageR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egfur.tif
+map_bump egfur_b.tif
+bump egfur_b.tif
+
+newmtl FuselageTop
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egfut.tif
+map_bump egfut_b.tif
+bump egfut_b.tif
+
+newmtl Nose
+Ka 0 0 0
+Kd 0.27451 0.27451 0.27451
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+
+newmtl WingTopR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egwrt.tif
+map_bump egwrt_b.tif
+bump egwrt_b.tif
+
+newmtl WingBtmR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egwrb.tif
+map_bump egwrb_b.tif
+bump egwrb_b.tif
+
+newmtl FuselageL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egful.tif
+map_bump egful_b.tif
+bump egful_b.tif
+
+newmtl WingTopL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egwlt.tif
+map_bump egwlt_b.tif
+bump egwlt_b.tif
+
+newmtl WingBtmL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egwlb.tif
+map_bump egwlb_b.tif
+bump egwlb_b.tif
+
+newmtl HtailTopL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd eghtlt.tif
+map_bump eghtlt_b.tif
+bump eghtlt_b.tif
+
+newmtl HtailBtmL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd eghtlb.tif
+map_bump eghtlb_b.tif
+bump eghtlb_b.tif
+
+newmtl HtailTopR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd eghtrt.tif
+map_bump eghtrt_b.tif
+bump eghtrt_b.tif
+
+newmtl HtailBtmR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd eghtrb.tif
+map_bump eghtrb_b.tif
+bump eghtrb_b.tif
+
+newmtl VTailR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egvtr.tif
+map_bump egvt_b.tif
+bump egvt_b.tif
+
+newmtl VTailL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egvtl.tif
+map_bump egvt_b.tif
+bump egvt_b.tif
+
+newmtl YellowZincChromate
+Ka 0 0 0
+Kd 0.952941 0.862745 0.364706
+Ks 0.9 0.9 0.9
+illum 2
+Ns 18.3792
+
+newmtl BlackBoxes
+Ka 0 0 0
+Kd 0.141176 0.141176 0.141176
+Ks 0.9 0.9 0.9
+illum 2
+Ns 8
+
+newmtl CpitGlass
+Ka 0 0 0
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 256
+d 0.32
+
+newmtl OliveDrab
+Ka 0 0 0
+Kd 0.4 0.388235 0.278431
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+
+newmtl BlackPadding
+Ka 0 0 0
+Kd 0.156863 0.156863 0.156863
+Ks 0.9 0.9 0.9
+illum 2
+Ns 45.2548
+
+newmtl RadioOpPanel
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd egrop.tif
+
+newmtl EngPanel
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd egengp.tif
+
+newmtl InstPanels
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd egip.tif
+
+newmtl AisleStand
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd egis.tif
+
+newmtl RedHandles
+Ka 0 0 0
+Kd 0.596078 0.12549 0.12549
+Ks 0.9 0.9 0.9
+illum 2
+Ns 32
+
+newmtl PropsFront
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 64
+map_Kd egpropf.tif
+
+newmtl PropsBack
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 0.9 0.9 0.9
+illum 2
+Ns 64
+map_Kd egpropb.tif
+
+newmtl BlueRed
+Ka 0 0 0
+Kd 0 0.14902 0.215686
+Ks 0.807843 0.905882 1
+illum 2
+Ns 128
+
+newmtl LightRed
+Ka 0 0 0
+Kd 0.215686 0 0
+Ks 1 0.807843 0.807843
+illum 2
+Ns 128
+
+newmtl RudderTrimR
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egrt.tif
+map_bump egrt_b.tif
+bump egrt_b.tif
+
+newmtl RudderTrimL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egrt.tif
+map_bump egrt_b.tif
+bump egrt_b.tif
+
+newmtl ElevBtmL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevl.tif
+map_bump egevl_b.tif
+bump egevl_b.tif
+
+newmtl ElevTopL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egevl.tif
+map_bump egevl_b.tif
+bump egevl_b.tif
+
+newmtl FlapBtmL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egfplb.tif
+map_bump egfplb_b.tif
+bump egfplb_b.tif
+
+newmtl FlapTopL
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egfplt.tif
+map_bump egfplt_b.tif
+bump egfplt_b.tif
+
+newmtl Gear1Door2Ext
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egg1d2.tif
+map_bump egg1d_b.tif
+bump egg1d_b.tif
+
+newmtl Gear1Door1Ext
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd egg1d1.tif
+map_bump egg1d_b.tif
+bump egg1d_b.tif
+
+newmtl Exhaust
+Ka 0 0 0
+Kd 0.196078 0.180392 0.172549
+Ks 0.9 0.9 0.9
+illum 2
+Ns 4
+
+newmtl Engine3
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd ege3.tif
+map_bump ege3_b.tif
+bump ege3_b.tif
+
+newmtl Engine4
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd ege4.tif
+map_bump ege4_b.tif
+bump ege4_b.tif
+
+newmtl Engine2
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd ege2.tif
+map_bump ege2_b.tif
+bump ege2_b.tif
+
+newmtl Engine1
+Ka 0 0 0
+Kd 0.588 0.588 0.588
+Ks 1 1 1
+illum 2
+Ns 337.794
+map_Kd ege1.tif
+map_bump ege1_b.tif
+bump ege1_b.tif

@@ -1,0 +1,351 @@
+newmtl default
+	Ns 32
+	d 1
+	illum 2
+	Kd 0.4 0.4 0.4
+	Ks 0.7 0.7 0.7
+	Ka 0.3 0.3 0.3
+
+newmtl Cylinder
+	Ns 39
+	d 1
+	illum 2
+	Kd 0.068549 0.0745098 0.0894118
+	Ks 0.0216471 0.0235294 0.0282353
+	Ka 0 0 0
+	map_Kd wingfill.jpg
+
+newmtl PatchPolyh_1
+	Ns 83
+	d 1
+	illum 2
+	Kd 0.0351765 0.0351765 0.0351765
+	Ks 0.0550196 0.0550196 0.0550196
+	Ka 0.000901961 0.000901961 0.000901961
+
+newmtl Rounded_cylinder_1
+	Ns 54
+	d 1
+	illum 2
+	Kd 0.0126275 0.0137255 0.0164706
+	Ks 0.0775686 0.0843137 0.101176
+	Ka 0 0 0
+
+newmtl Torus
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.190588 0.190588 0.190588
+	Ks 0.0211765 0.0211765 0.0211765
+	Ka 0 0 0
+
+newmtl noname_100
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.9 0.9 0.9
+	Ks 0.1 0.1 0.1
+	Ka 0 0 0
+	map_Kd fusem copy44.jpg
+
+newmtl noname_100__10
+	Ns 145
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0 0 0
+	Ka 0 0 0
+
+newmtl noname_100__11
+	Ns 19
+	d 1
+	illum 2
+	Kd 0.216824 0.216824 0.232471
+	Ks 0.163569 0.163569 0.175373
+	Ka 0 0 0
+
+newmtl noname_100__12
+	Ns 105
+	d 1
+	illum 2
+	Kd 0.0465882 0.0465882 0.0522353
+	Ks 0.212235 0.212235 0.237961
+	Ka 0 0 0
+
+newmtl noname_100__13
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.0352941 0.9 0.0105882
+	Ks 0.00392157 0.1 0.00117647
+	Ka 0 0 0
+	map_Kd topcwing33.jpg
+
+newmtl noname_100__14
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.0105882 0.9 0.0776471
+	Ks 0.00117647 0.1 0.00862745
+	Ka 0 0 0
+	map_Kd wing2p2 copy2.jpg
+
+newmtl noname_100__15
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.0176471 0.9 0.0105882
+	Ks 0.00196078 0.1 0.00117647
+	Ka 0 0 0
+	map_Kd wingtopde.jpg
+
+newmtl noname_100__16
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.0176471 0.9 0.0105882
+	Ks 0.00196078 0.1 0.00117647
+	Ka 0 0 0
+	map_Kd wingfill.jpg
+
+newmtl noname_100__17
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.0176471 0.9 0.0105882
+	Ks 0.00196078 0.1 0.00117647
+	Ka 0 0 0
+	map_Kd wingtopd2b copy4.jpg
+
+newmtl noname_100__18
+	Ns 38
+	d 1
+	illum 2
+	Kd 0.129647 0.129647 0.129647
+	Ks 0.0938824 0.0938824 0.0938824
+	Ka 0.00447059 0.00447059 0.00447059
+
+newmtl noname_100__19
+	Ns 38
+	d 1
+	illum 2
+	Kd 0.0420784 0.0420784 0.0420784
+	Ks 0.10302 0.10302 0.10302
+	Ka 0.0145098 0.0145098 0.0145098
+
+newmtl noname_100__2
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.9 0.9 0.9
+	Ks 0.1 0.1 0.1
+	Ka 0 0 0
+	map_Kd wood4.tga
+
+newmtl noname_100__20
+	Ns 111
+	d 1
+	illum 2
+	Kd 0.0741177 0.0741177 0.082353
+	Ks 0.0317647 0.0317647 0.0352941
+	Ka 0 0 0
+
+newmtl noname_100__21
+	Ns 38
+	d 1
+	illum 2
+	Kd 0.0337255 0.0337255 0.0337255
+	Ks 0.0447059 0.0447059 0.0447059
+	Ka 0 0 0
+
+newmtl noname_100__22
+	Ns 60
+	d 1
+	illum 2
+	Kd 0.78 0.78 0.78
+	Ks 0.22 0.22 0.22
+	Ka 0 0 0
+	map_Kd dh2elvstab2.jpg
+
+newmtl noname_100__23
+	Ns 60
+	d 1
+	illum 2
+	Kd 0.78 0.78 0.78
+	Ks 0.22 0.22 0.22
+	Ka 0 0 0
+	map_Kd dh2rudstab2.jpg
+
+newmtl noname_100__24
+	Ns 27
+	d 1
+	illum 2
+	Kd 0.0688235 0.0741176 0.0882353
+	Ks 0.0841177 0.0905882 0.107843
+	Ka 0 0 0
+
+newmtl noname_100__3
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.9 0.9 0.9
+	Ks 0.1 0.1 0.1
+	Ka 0 0 0
+	map_Kd grayfil.jpg
+
+newmtl noname_100__4
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.9 0.9 0.9
+	Ks 0.1 0.1 0.1
+	Ka 0 0 0
+	map_Kd wingfill.jpg
+
+newmtl noname_100__5
+	Ns 54
+	d 1
+	illum 2
+	Kd 0.0126275 0.0137255 0.0164706
+	Ks 0.0775686 0.0843137 0.101176
+	Ka 0 0 0
+
+newmtl noname_100__6
+	Ns 4
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0 0 0
+	Ka 0 0 0
+
+newmtl noname_100__7
+	Ns 19
+	d 1
+	illum 2
+	Kd 0.286118 0.286118 0.306235
+	Ks 0.215843 0.215843 0.23102
+	Ka 0 0 0
+
+newmtl noname_100__8
+	Ns 18
+	d 1
+	illum 2
+	Kd 0.190118 0.190118 0.190118
+	Ks 0.205961 0.205961 0.205961
+	Ka 0 0 0
+
+newmtl noname_100__9
+	Ns 19
+	d 1
+	illum 2
+	Kd 0.122941 0.122941 0.134118
+	Ks 0.0927451 0.0927451 0.101176
+	Ka 0 0 0
+
+newmtl noname_45
+	Ns 117
+	d 1
+	illum 2
+	Kd 0.0211765 0.0211765 0.0211765
+	Ks 0.0964706 0.0964706 0.0964706
+	Ka 0 0 0
+
+newmtl noname_45__2
+	Ns 4
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.882353 0.909804 1
+	Ka 0.282353 0.291137 0.32
+
+newmtl noname_45__3
+	Ns 95
+	d 1
+	illum 2
+	Kd 0.160627 0.160627 0.168157
+	Ks 0.0903529 0.0903529 0.0945882
+	Ka 0.0602353 0.0602353 0.0630588
+
+newmtl noname_45__4
+	Ns 33
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.396078 0.407843 0.407843
+	Ka 0 0 0
+
+newmtl noname_45__5
+	Ns 95
+	d 1
+	illum 2
+	Kd 0.0727843 0.0727843 0.0761961
+	Ks 0.178196 0.178196 0.186549
+	Ka 0 0 0
+
+newmtl noname_45__6
+	Ns 33
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.976471 1 1
+	Ka 0 0 0
+
+newmtl noname_45__7
+	Ns 33
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 0.317647 0.329412 0.329412
+	Ka 0 0 0
+
+newmtl noname_45__8
+	Ns 38
+	d 1
+	illum 2
+	Kd 0.0592941 0.0345882 0.0252549
+	Ks 0.787765 0.459529 0.335529
+	Ka 0.347294 0.202588 0.147922
+
+newmtl noname_45__9
+	Ns 4
+	d 1
+	illum 2
+	Kd 0 0 0
+	Ks 1 1 1
+	Ka 0.32 0.32 0.32
+
+newmtl noname_96
+	Ns 27
+	d 1
+	illum 2
+	Kd 0.0252549 0.027451 0.0329412
+	Ks 0.0649412 0.0705882 0.0847059
+	Ka 0 0 0
+
+newmtl noname_96__2
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.9 0.9 0.9
+	Ks 0.1 0.1 0.1
+	Ka 0 0 0
+	map_Kd bluefill.jpg
+
+newmtl noname_96__3
+	Ns 4
+	d 1
+	illum 2
+	Kd 0.0211765 0.9 0.0564706
+	Ks 0.00235294 0.1 0.00627451
+	Ka 0 0 0
+	map_Kd dh2rudderc.jpg
+
+newmtl noname_99
+	Ns 60
+	d 1
+	illum 2
+	Kd 0.0244706 0.78 0.0305882
+	Ks 0.00690196 0.22 0.00862745
+	Ka 0 0 0
+	map_Kd dh2elv05 copy.jpg
+

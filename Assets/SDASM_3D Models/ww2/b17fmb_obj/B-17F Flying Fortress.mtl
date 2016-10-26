@@ -1,0 +1,510 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.0.448
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl BtmTurret
+Ka 0 0 0
+Kd 0.894118 0.894118 0.894118
+Ks 1 1 1
+illum 2
+Ns 181.019
+
+newmtl GreenZincChromat
+Ka 0 0 0
+Kd 0.439216 0.486275 0.278431
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 8
+
+newmtl Flat_Black
+Ka 0 0 0
+Kd 0.117647 0.117647 0.117647
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+
+newmtl WindowGlass
+Ka 0 0 0
+Kd 0.392157 0.392157 0.392157
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 294.067
+d 0.34
+
+newmtl FuselageBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FFUB.BMP
+map_bump FFUB_B.BMP
+bump FFUB_B.BMP
+
+newmtl TireBlack
+Ka 0 0 0
+Kd 0.164706 0.164706 0.164706
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 2.63902
+
+newmtl Chrome
+Ka 0 0 0
+Kd 0.862745 0.862745 0.862745
+Ks 1 1 1
+illum 2
+Ns 445.722
+
+newmtl Rudder
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FRUD.BMP
+map_bump FRUD_B.BMP
+bump FRUD_B.BMP
+
+newmtl ElevRTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FELVRT.BMP
+map_bump FELVR_B.BMP
+bump FELVR_B.BMP
+
+newmtl ElevRBtm
+Ka 0.584314 0.584314 0.584314
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FELVRB.BMP
+map_bump FELVR_B.BMP
+bump FELVR_B.BMP
+
+newmtl AileronRBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FAILRB.BMP
+map_bump FAILR_B.BMP
+bump FAILR_B.BMP
+
+newmtl AileronRTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FAILRT.BMP
+map_bump FAILR_B.BMP
+bump FAILR_B.BMP
+
+newmtl NeutralGray
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd F36270.BMP
+
+newmtl ElevTrimsTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FFABRIC.BMP
+
+newmtl RudderTrim
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FFABRIC.BMP
+
+newmtl FlapRInt
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 64
+map_Kd FFLPR.BMP
+map_bump FFLPR_B.BMP
+bump FFLPR_B.BMP
+
+newmtl DoorExt
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FDE.BMP
+
+newmtl ElevLTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FELVLT.BMP
+map_bump FELVL_B.BMP
+bump FELVL_B.BMP
+
+newmtl ElevLBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FELVLB.BMP
+map_bump FELVL_B.BMP
+bump FELVL_B.BMP
+
+newmtl AileronLBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FAILLB.BMP
+map_bump FAILL_B.BMP
+bump FAILL_B.BMP
+
+newmtl AileronLTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FAILLT.BMP
+map_bump FAILL_B.BMP
+bump FAILL_B.BMP
+
+newmtl OliveDrab
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd F34088.BMP
+
+newmtl Engine4Cowling
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FEC4.BMP
+map_bump FEC_B.BMP
+bump FEC_B.BMP
+
+newmtl EngHoses
+Ka 0 0 0
+Kd 0.0784314 0.0784314 0.0784314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 64
+
+newmtl Engines
+Ka 0 0 0
+Kd 0.87451 0.87451 0.87451
+Ks 1 1 1
+illum 2
+Ns 128
+
+newmtl Exhaust
+Ka 0 0 0
+Kd 0.235294 0.223529 0.211765
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+
+newmtl FlapLInt
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 64
+map_Kd FFLPL.BMP
+map_bump FFLPL_B.BMP
+bump FFLPL_B.BMP
+
+newmtl PropDomes
+Ka 0 0 0
+Kd 0.117647 0.117647 0.117647
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4.59479
+
+newmtl PropMounts
+Ka 0.686275 0.701961 0.709804
+Kd 0.686275 0.701961 0.709804
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 222.861
+
+newmtl PropsFront
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 362.039
+map_Kd FPROPF.BMP
+
+newmtl PropsBack
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 362.039
+map_Kd FPROPB.BMP
+
+newmtl Gunmetal
+Ka 0 0 0
+Kd 0.156863 0.164706 0.176471
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 24.2515
+
+newmtl Engine4
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FENG4.BMP
+map_bump FENG4_B.BMP
+bump FENG4_B.BMP
+
+newmtl WingRBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FWRB.BMP
+map_bump FWRB_B.BMP
+bump FWRB_B.BMP
+
+newmtl FuselageR
+Ka 0 0 0
+Kd 0.588235 0.427451 0.54902
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FFUR.BMP
+map_bump FFUR_B.BMP
+bump FFUR_B.BMP
+
+newmtl FuselageTop
+Ka 0 0 0
+Kd 0.396078 0.588235 0.317647
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FFUT.BMP
+map_bump FFUT_B.BMP
+bump FFUT_B.BMP
+
+newmtl HtailsBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FHTB.BMP
+map_bump FHT_B.BMP
+bump FHT_B.BMP
+
+newmtl HtailsTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FHTT.BMP
+map_bump FHT_B.BMP
+bump FHT_B.BMP
+
+newmtl WingRTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FWRT.BMP
+map_bump FWRT_B.BMP
+bump FWRT_B.BMP
+
+newmtl FuselageL
+Ka 0 0 0
+Kd 0.313726 0.443137 0.588235
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FFUL.BMP
+map_bump FFUL_B.BMP
+bump FFUL_B.BMP
+
+newmtl WingLBtm
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FWLB.BMP
+map_bump FWLB_B.BMP
+bump FWLB_B.BMP
+
+newmtl WingLTop
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FWLT.BMP
+map_bump FWLT_B.BMP
+bump FWLT_B.BMP
+
+newmtl Infinity
+Ka 0 0 0
+Kd 0 0 0
+Ks 0 0 0
+illum 2
+Ns 2.14355
+
+newmtl Engine3
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FENG3.BMP
+map_bump FENG3_B.BMP
+bump FENG3_B.BMP
+
+newmtl Engine1
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FENG1.BMP
+map_bump FENG1_B.BMP
+bump FENG1_B.BMP
+
+newmtl Engine2
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FENG2.BMP
+map_bump FENG2_B.BMP
+bump FENG2_B.BMP
+
+newmtl SilverInterior
+Ka 0 0 0
+Kd 0.901961 0.901961 0.901961
+Ks 1 1 1
+illum 2
+Ns 256
+
+newmtl PwoodFloors
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+map_Kd FPWOOD.BMP
+
+newmtl Table
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+map_Kd FTBL.BMP
+
+newmtl PwoodRear
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+map_Kd FPWR.BMP
+
+newmtl BombRacks
+Ka 0 0 0
+Kd 0.835294 0.835294 0.835294
+Ks 1 1 1
+illum 2
+Ns 181.019
+
+newmtl BombShackles
+Ka 0 0 0
+Kd 0.607843 0.615686 0.619608
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+
+newmtl PilotSeats
+Ka 0 0 0
+Kd 0.952941 0.815686 0.270588
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 6.06287
+
+newmtl Leather
+Ka 0 0 0
+Kd 0.603922 0.52549 0.415686
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 13.9288
+
+newmtl Ceramic
+Ka 0.392157 0.392157 0.392157
+Kd 0.866667 0.847059 0.8
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 4
+
+newmtl Engine3Cowling
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FEC3.BMP
+map_bump FEC_B.BMP
+bump FEC_B.BMP
+
+newmtl Engine2Cowling
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FEC2.BMP
+map_bump FEC_B.BMP
+bump FEC_B.BMP
+
+newmtl Engine1Cowling
+Ka 0 0 0
+Kd 0.584314 0.584314 0.584314
+Ks 0.898039 0.898039 0.898039
+illum 2
+Ns 16
+map_Kd FEC1.BMP
+map_bump FEC_B.BMP
+bump FEC_B.BMP
