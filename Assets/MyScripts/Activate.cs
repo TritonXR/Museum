@@ -4,19 +4,25 @@ using System.Collections;
 
 public class Activate : MonoBehaviour {
 
+    public AudioClip myClip;
+    public MovieTexture mov;
 
     private GameObject objActivate;
-
+ 
     void Start() {
         objActivate = GetComponentInChildren<VRTK_ObjectTooltip>().gameObject;
         objActivate.SetActive(false);
+
+        this.gameObject.AddComponent<AudioSource>();
+        this.GetComponent<AudioSource>().clip = myClip;
+
+        mov = GetComponent<Renderer>().material.mainTexture as MovieTexture;
     }
 
-	// Update is called once per frame
-	void Update () {
 
-
-
+    void OnMouseDown()
+    {
+        this.GetComponent<AudioSource>().Play();
     }
 
     void OnMouseEnter()
@@ -26,6 +32,10 @@ public class Activate : MonoBehaviour {
         //{
 
             objActivate.SetActive(true);
+
+        if (Input.GetMouseButtonDown(1)) {
+            mov.Play();
+        }
 
         //}
     }

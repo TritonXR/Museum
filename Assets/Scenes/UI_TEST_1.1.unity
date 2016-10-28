@@ -129,6 +129,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224000013487938066, guid: 3b30aa595bfe74f4b952a6b7a017886f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000012795215898, guid: 3b30aa595bfe74f4b952a6b7a017886f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000013283545544, guid: 3b30aa595bfe74f4b952a6b7a017886f,
+        type: 2}
+      propertyPath: myClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8c158128f7be09a4da0705a73f9eff62, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3b30aa595bfe74f4b952a6b7a017886f, type: 2}
   m_IsPrefabParent: 0
