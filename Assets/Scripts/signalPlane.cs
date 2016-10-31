@@ -5,6 +5,9 @@ public class signalPlane : MonoBehaviour
 {
     Ray gaze;
     bool signal;
+    bool initMovement;
+
+
 
     // Use this for initialization
     void Start()
@@ -28,11 +31,31 @@ public class signalPlane : MonoBehaviour
                 }
             }
         }
+
     }
 
     public void OnMouseDown()
     {
-        signal = true;
+        //signal = true;
     }
 
+
+    //needs to be tested
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.GetComponent<controlPoint>())
+        {
+            int ptNum = collision.collider.gameObject.GetComponent<controlPoint>().syncNum;
+            if (ptNum == 1)
+            {
+                initMovement = true; //begins the controller movement
+            }
+            else if (ptNum == 2 && initMovement == true)
+            {
+                signal = true; //ends the controller movement, signals the plane
+                initMovement = false; 
+
+            }
+        }
+    }
 }
