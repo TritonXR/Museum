@@ -18,6 +18,13 @@ public class signalPlane : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetMouseButtonDown(0)) {
+            signal = true;
+        }
+        else
+        {
+            signal = false;
+        }
         gaze = new Ray(Singleton.instance.player.transform.position, Singleton.instance.player.transform.forward); //the ray that comes out of the camera
         RaycastHit plane2move; //access to the object that we're looking at
         if (Physics.Raycast(gaze, out plane2move, Mathf.Infinity)) //actually casting the ray
