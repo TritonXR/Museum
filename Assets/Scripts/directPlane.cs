@@ -54,38 +54,47 @@ public class directPlane : VRTK_InteractableObject {
     //For movement of the object on click
     IEnumerator MovePlane()
     {
-
+        int forwardMult = 5;
         running = true;
         
         if (!atPlayer) //For the lerping towards the player 
         {
             startPos = this.transform.position; //start position at player
-            endPos = Singleton.instance.player.transform.position + Singleton.instance.player.transform.forward; //end position at player
+            endPos = Singleton.instance.player.transform.position + (Singleton.instance.player.transform.forward * forwardMult); //end position at player
+            endPos.y = startPos.y;
             transform.LookAt(Singleton.instance.player.transform);
 
-            yield return StartCoroutine(lerpPlane(endPos));
-            //yield return lerpPlane(endPos);
+
+            yield return StartCoroutine(lerpPlane(endPos)); //lerping rotation and position
 
             this.transform.position = endPos; //snap to end position
             atPlayer = true; //plane is now at player
         }
         else //For lerping back to originial position
         {
-            endPos = startPos; //set start position to 
-            startPos = this.transform.position;
+            endPos = startPos; //set end position to original idle position 
+            startPos = this.transform.position; //setting the start position to the current position
 
-            yield return StartCoroutine(lerpPlane(endPos));
+            yield return StartCoroutine(lerpPlane(endPos)); //lerp
 
-            this.transform.position = endPos;
-            atPlayer = false;
+            this.transform.position = endPos; //snap to end
+            atPlayer = false; //no plane at player
         }
        
         running = false;
     }
 
+    //Lerping the plane
     IEnumerator lerpPlane(Vector3 toEndPos)
     {
+        //Rotation of the plane
+
+        //Locks the X axis for the rotation
         Quaternion endRot = transform.rotation;
+        Vector3 toEndRot = endRot.eulerAngles;
+        toEndRot.x = startRot.eulerAngles.x; 
+        endRot = Quaternion.Euler(toEndRot);
+
         for (float i = 0; i < dur; i += Time.deltaTime)
         {
             Quaternion newRot = Quaternion.Lerp(startRot, endRot, i / dur);
