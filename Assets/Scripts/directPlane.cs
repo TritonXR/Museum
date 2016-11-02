@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using VRTK;
 
 
 
@@ -15,7 +16,7 @@ using System.Collections;
  * 
  */
 
-public class directPlane : MonoBehaviour {
+public class directPlane : VRTK_InteractableObject {
 
     static private bool atPlayer = false;
     string objAtPlayer = "";
@@ -23,19 +24,19 @@ public class directPlane : MonoBehaviour {
     bool running;
 
     Vector3 startPos; //Beginning position of the lerp
-    public Vector3 endPos; //Ending position of the lerp
     Quaternion startRot;
     static public float dur = 3.0f; //duration of the lerp
     
 
-	void Start () {
+	protected override void Start () {
+        base.Start();
         Debug.Log("Begin");
         startRot = transform.rotation;
         startPos = transform.position;
     }
 
 
-    void Update()
+    protected override void Update()
     {
        if (Input.GetMouseButtonDown(0))
         {
@@ -54,12 +55,15 @@ public class directPlane : MonoBehaviour {
     //For movement of the object on click
     IEnumerator MovePlane()
     {
-        //Info for the lerp:
-        //Duration time: 3 seconds
+        //Ending position of the lerp
+        Vector3 endPos = Singleton.instance.player.transform.position + Singleton.instance.player.transform.forward;
+
         if (!atPlayer) //For the lerping towards the player 
         {
             running = true;
             transform.LookAt(Singleton.instance.player.transform);
+
+            //Rotation of the plane
             Quaternion endRot = transform.rotation;
             for (float i = 0; i < dur; i += Time.deltaTime)
             {
@@ -67,7 +71,9 @@ public class directPlane : MonoBehaviour {
                 this.transform.rotation = newRot;
                 yield return null;
             }
-            for(float j = 0; j < dur; j += Time.deltaTime)
+
+            //Translation of the plane
+            for (float j = 0; j < dur; j += Time.deltaTime)
             {
                 Vector3 newPos = Vector3.Lerp(startPos, endPos, j / dur);
                 this.transform.position = newPos;
@@ -81,12 +87,7 @@ public class directPlane : MonoBehaviour {
         {
             running = true;
             Quaternion endRot = transform.rotation;
-            /*
-            if (objAtPlayer != hit.transform.gameObject.name)  ////MEANT TO USE THIS FOR MORE THAN ONE PLANE AT PLAYER
-            {
-                Debug.Log("Insert More Stuff Here Later");
-            }
-            */
+       
             for (float i = 0; i < dur; i += Time.deltaTime)
             {
                 Vector3 newPos = Vector3.Lerp(endPos, startPos, i / dur);
@@ -120,7 +121,11 @@ public class directPlane : MonoBehaviour {
         }
     }
 
-
+    public override void StartUsing(GameObject usingObject)
+    {
+        base.StartUsing(usingObject);
+        Activate();
+    }
 
     //If object has this script, set a boolean to true
     //Coroutine to deactivate boolean 
