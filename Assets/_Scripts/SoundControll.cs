@@ -14,12 +14,12 @@ public class SoundControll : MonoBehaviour {
 	void Update () {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            sfx.PlayTakeOff();
+            sfx.PlayEngineIdle();
         }
 
         if (Input.GetKeyDown(KeyCode.W))
         {
-            sfx.PlayEngine();
+            sfx.PlayEngineRun();
         }
 	}
 }

@@ -39,8 +39,14 @@ public class RotateWingtip : MonoBehaviour {
         //end.y = start.eulerAngles.y;
         //end.z = start.eulerAngles.z;
 
-        StartCoroutine(RotateWing(seconds, amount));
+    }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            StartCoroutine(RotateWing(seconds, amount));
+        }
     }
 
     IEnumerator RotateWing(float seconds, float amount) {

@@ -4,37 +4,55 @@ using System.Collections;
 public class SoundEffect : MonoBehaviour
 {
 
-    public AudioClip TakeOffSound;
-    public AudioClip EngineSound;
-    public AudioClip StartSound;
+    public AudioClip EngineIdleSound;
+    public AudioClip EngineRunSound;
+    public AudioClip LandingSound;
+    public AudioClip EngineStartSound;
 
 
-    private AudioSource m_TakeOff;
-    private AudioSource m_Engine;
-    private AudioSource m_Start;
+    private AudioSource m_EngineIdle;
+    private AudioSource m_EngineRun;
+    private AudioSource m_Landing;
+    //private AudioSource m_EngineStart;
 
     void Start()
     {
-        m_TakeOff = this.gameObject.AddComponent<AudioSource>();
-        m_TakeOff.clip = TakeOffSound;
+        m_EngineIdle = this.gameObject.AddComponent<AudioSource>();
+        m_EngineIdle.clip = EngineIdleSound;
 
-        m_Engine = this.gameObject.AddComponent<AudioSource>();
-        m_Engine.clip = EngineSound;
+        m_EngineRun = this.gameObject.AddComponent<AudioSource>();
+        m_EngineRun.clip = EngineRunSound;
 
-        m_Start = this.gameObject.AddComponent<AudioSource>();
-        m_Start.clip = StartSound;
+        m_Landing = this.gameObject.AddComponent<AudioSource>();
+        m_Landing.clip = LandingSound;
 
     }
 
-    public void PlayTakeOff()
+    public void PlayEngineIdle()
     {
-        
-        m_TakeOff.Play();
+        if (m_EngineRun.isPlaying)
+        {
+            m_EngineRun.Stop();
+        }
+
+        m_EngineIdle.loop = true;
+        m_EngineIdle.Play();
     }
 
-    public void PlayEngine()
+    public void PlayEngineRun()
     {
-        m_Engine.loop = true;
-        m_Engine.Play();
+        if (m_EngineIdle.isPlaying)
+        {
+            m_EngineIdle.Stop();
+
+        }
+
+        m_EngineRun.loop = true;
+        m_EngineRun.Play();
+    }
+
+    public void PlayLanding()
+    {
+        m_Landing.Play();
     }
 }
