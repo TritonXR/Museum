@@ -24,6 +24,7 @@ public class directPlane : VRTK_InteractableObject {
     bool running;
 
     Vector3 startPos; //Beginning position of the lerp
+    Vector3 endPos; 
     Quaternion startRot;
     static public float dur = 3.0f; //duration of the lerp
     
@@ -48,63 +49,55 @@ public class directPlane : VRTK_InteractableObject {
                 objAtPlayer = hit.transform.gameObject.name;
             }
         }
-        
-
-
     }
+    
     //For movement of the object on click
     IEnumerator MovePlane()
     {
-        //Ending position of the lerp
-        Vector3 endPos = Singleton.instance.player.transform.position + Singleton.instance.player.transform.forward;
 
+        running = true;
+        
         if (!atPlayer) //For the lerping towards the player 
         {
-            running = true;
+            startPos = this.transform.position; //start position at player
+            endPos = Singleton.instance.player.transform.position + Singleton.instance.player.transform.forward; //end position at player
             transform.LookAt(Singleton.instance.player.transform);
 
-            //Rotation of the plane
-            Quaternion endRot = transform.rotation;
-            for (float i = 0; i < dur; i += Time.deltaTime)
-            {
-                Quaternion newRot = Quaternion.Lerp(startRot, endRot, i / dur);
-                this.transform.rotation = newRot;
-                yield return null;
-            }
+            yield return StartCoroutine(lerpPlane(endPos));
+            //yield return lerpPlane(endPos);
 
-            //Translation of the plane
-            for (float j = 0; j < dur; j += Time.deltaTime)
-            {
-                Vector3 newPos = Vector3.Lerp(startPos, endPos, j / dur);
-                this.transform.position = newPos;
-                yield return null;
-            }
-            this.transform.position = endPos;
-            atPlayer = true;
-            running = false;
+            this.transform.position = endPos; //snap to end position
+            atPlayer = true; //plane is now at player
         }
         else //For lerping back to originial position
         {
-            running = true;
-            Quaternion endRot = transform.rotation;
-       
-            for (float i = 0; i < dur; i += Time.deltaTime)
-            {
-                Vector3 newPos = Vector3.Lerp(endPos, startPos, i / dur);
-                this.transform.position = newPos;
-                yield return null;
-            }
-            for (float j = 0; j < dur; j += Time.deltaTime)
-            {
-                Quaternion newRot = Quaternion.Lerp(endRot, startRot, j / dur);
-                this.transform.rotation = newRot;
-                yield return null;
-            }
+            endPos = startPos; //set start position to 
+            startPos = this.transform.position;
 
+            yield return StartCoroutine(lerpPlane(endPos));
 
-            this.transform.position = startPos;
+            this.transform.position = endPos;
             atPlayer = false;
-            running = false;
+        }
+       
+        running = false;
+    }
+
+    IEnumerator lerpPlane(Vector3 toEndPos)
+    {
+        Quaternion endRot = transform.rotation;
+        for (float i = 0; i < dur; i += Time.deltaTime)
+        {
+            Quaternion newRot = Quaternion.Lerp(startRot, endRot, i / dur);
+            this.transform.rotation = newRot;
+            yield return null;
+        }
+        //Translation of the plane
+        for (float j = 0; j < dur; j += Time.deltaTime)
+        {
+            Vector3 newPos = Vector3.Lerp(startPos, toEndPos, j / dur);
+            this.transform.position = newPos;
+            yield return null;
         }
     }
 
@@ -115,6 +108,8 @@ public class directPlane : VRTK_InteractableObject {
 
     public void Activate()
     {
+        Debug.Log(running);
+
         if (!running)
         {
             StartCoroutine(MovePlane());
