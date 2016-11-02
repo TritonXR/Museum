@@ -1036,10 +1036,10 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 993142997}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55570ff113324a949a8cc970863004b4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0b07d8164978ebe4c9749b56116b6b73, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1283,6 +1283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numDegrees: 1
   spinFaster: 2
+  speedMin: 0
   speedMax: 60
   whatAxis: {x: 1, y: 0, z: 0}
 --- !u!1 &1310331484
@@ -1660,6 +1661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numDegrees: 1
   spinFaster: 2
+  speedMin: 0
   speedMax: 3600
   whatAxis: {x: 1, y: 0, z: 0}
 --- !u!114 &1551515131
@@ -1673,7 +1675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ff83805da2763429ea941ab2d117f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numDegrees: 5
+  numDegrees: 7
   whatAxis: {x: 1, y: 0, z: 0}
   maxRotate: 1500
   minRotate: 0
@@ -1915,6 +1917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numDegrees: 1
   spinFaster: 2
+  speedMin: 0
   speedMax: 3600
   whatAxis: {x: 0, y: 0, z: 1}
 --- !u!1 &1699105863
@@ -2063,6 +2066,7 @@ GameObject:
   - 4: {fileID: 1736039625}
   - 114: {fileID: 1736039626}
   - 114: {fileID: 1736039627}
+  - 82: {fileID: 1736039628}
   m_Layer: 0
   m_Name: Proppeler Axis
   m_TagString: Untagged
@@ -2106,10 +2110,85 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c62951343a746b4eb07043176187430, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numDegrees: 5800
-  spinFaster: 2
+  numDegrees: 4700
+  spinFaster: -9
+  speedMin: 0
   speedMax: 4800
   whatAxis: {x: 0, y: 0, z: -1}
+--- !u!82 &1736039628
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1736039624}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0b07d8164978ebe4c9749b56116b6b73, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1857963870
 GameObject:
   m_ObjectHideFlags: 0

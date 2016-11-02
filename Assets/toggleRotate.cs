@@ -29,9 +29,15 @@ public class toggleRotate : MonoBehaviour
 
         curRotate += numDegrees; 
 
-        if (curRotate == maxRotate || curRotate == minRotate)
+        if (curRotate >= maxRotate)
         {
+            curRotate = maxRotate;
             numDegrees = numDegrees * -1; //toggle direction
+        }
+        else if (curRotate <= minRotate)
+        {
+            curRotate = minRotate;
+            numDegrees = numDegrees * -1;
         }
     }
 }

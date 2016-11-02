@@ -3,13 +3,19 @@ using System.Collections;
 
 public class rotate : MonoBehaviour {
     // numDegrees is the rotation per second
-    public int numDegrees = 1;
+    public float numDegrees = 1.0f;
     // spinFaster is how many degrees it'll rotate faster
-    public int spinFaster = 2;
-    // speedMax is what's the max degrees it should rotate per second
-    public int speedMax = 3600;
+    public float spinFaster = 2.0f;
+    // bounds the minimum and maximum speed to rotate
+    public float speedMin = 0.0f;
+    public float speedMax = 3600.0f;
     // whatAxis is the vector/axis we're going to rotate
     public Vector3 whatAxis = Vector3.forward;
+
+
+    /* Idea: Change spinFaster based on percentage of max so that the amount to
+     * increase or decrease isnt't linear (e.g. always going down 1)
+     */
 
 	// Use this for initialization
 	void Start () {
@@ -18,11 +24,11 @@ public class rotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(whatAxis * numDegrees * Time.deltaTime);
-
-        while (numDegrees < speedMax){
+        transform.Rotate(whatAxis * numDegrees * Time.deltaTime); //rotates 
+       
+        if (numDegrees < speedMax && numDegrees >= speedMin){
             numDegrees += spinFaster;
-            break;
+            numDegrees = Mathf.Clamp(numDegrees, speedMin, speedMax);
         }
     }
 }
