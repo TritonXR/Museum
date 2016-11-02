@@ -26,7 +26,7 @@ public class rotate : MonoBehaviour {
 	void Update () {
         transform.Rotate(whatAxis * numDegrees * Time.deltaTime); //rotates 
        
-        if (numDegrees < speedMax && numDegrees >= speedMin){
+        if (numDegrees <= speedMax && numDegrees >= speedMin){
             numDegrees += spinFaster;
             numDegrees = Mathf.Clamp(numDegrees, speedMin, speedMax);
         }
