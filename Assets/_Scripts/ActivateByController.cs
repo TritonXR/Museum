@@ -20,6 +20,7 @@
 
         public override void StartUsing(GameObject currentUsingObject)
         {
+            Debug.Log("ACTIVATE");
             base.StartUsing(currentUsingObject);
             objActivate.SetActive(true);
         }

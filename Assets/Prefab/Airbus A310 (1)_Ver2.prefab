@@ -1985,7 +1985,7 @@ MonoBehaviour:
   useOnlyIfGrabbed: 0
   holdButtonToUse: 1
   useOverrideButton: 8
-  pointerActivatesUseAction: 0
+  pointerActivatesUseAction: 1
   rumbleOnUse: {x: 0, y: 0}
   allowedUseControllers: 0
   hideControllerOnUse: 0
@@ -2077,7 +2077,7 @@ MonoBehaviour:
   useOnlyIfGrabbed: 0
   holdButtonToUse: 1
   useOverrideButton: 8
-  pointerActivatesUseAction: 0
+  pointerActivatesUseAction: 1
   rumbleOnUse: {x: 0, y: 0}
   allowedUseControllers: 0
   hideControllerOnUse: 0
