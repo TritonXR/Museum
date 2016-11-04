@@ -7,6 +7,8 @@ public class signalPlane : MonoBehaviour
     bool signal;
     bool initMovement;
 
+    GameObject plane1;
+    GameObject plane2;
 
 
     // Use this for initialization
@@ -16,18 +18,26 @@ public class signalPlane : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() //TODO: TEST PLANE MEMORY
     {
         gaze = new Ray(Singleton.instance.player.transform.position, Singleton.instance.player.transform.forward); //the ray that comes out of the camera
-        RaycastHit plane2move; //access to the object that we're looking at
-        if (Physics.Raycast(gaze, out plane2move, Mathf.Infinity)) //actually casting the ray
+        RaycastHit planeToMove; //access to the object that we're looking at
+        if (Physics.Raycast(gaze, out planeToMove, Mathf.Infinity)) //actually casting the ray
         {
-            if (plane2move.collider.gameObject.GetComponent<directPlane>()) //if the object has the directPlane component
+            if (planeToMove.collider.gameObject.GetComponent<directPlane>()) //if the object has the directPlane component
             {
-                //highlight plane here
+                if(plane1 == null)
+                {
+                    plane1 = planeToMove.collider.gameObject; //storing the plane 
+                }
+                else
+                {
+                    plane1 = plane2;
+                    plane2 = planeToMove.collider.gameObject;
+                }
                 if (signal || Input.GetKeyDown(KeyCode.S))
                 {
-                    plane2move.collider.gameObject.GetComponent<directPlane>().Activate();
+                    planeToMove.collider.gameObject.GetComponent<directPlane>().Activate();
                 }
             }
         }
