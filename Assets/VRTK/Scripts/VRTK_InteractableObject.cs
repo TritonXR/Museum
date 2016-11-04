@@ -375,6 +375,8 @@ namespace VRTK
         /// <param name="currentUsingObject">The game object that is currently using this object.</param>
         public virtual void StartUsing(GameObject currentUsingObject)
         {
+            Debug.Log("CLICKED");
+
             OnInteractableObjectUsed(SetInteractableObjectEvent(currentUsingObject));
             usingObject = currentUsingObject;
         }
