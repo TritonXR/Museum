@@ -64,10 +64,10 @@ public class directPlane : VRTK_InteractableObject {
             endPos = Singleton.instance.player.transform.position + (Singleton.instance.player.transform.forward * forwardMult); //end position at player
             endPos.y = startPos.y; //lock movement on the y axis
 
-
+            startPos = transform.position;
             transform.LookAt(Singleton.instance.player.transform); //points the plane in the direction of the player
 
-            yield return StartCoroutine(lerpPlaneRot()); //lerping rotation and position
+            yield return StartCoroutine(lerpPlaneRot(transform.rotation)); //lerping rotation from the start (inizialized at start) to the end position (lookAt)
             yield return StartCoroutine(lerpPlaneTrans(endPos));
 
             this.transform.position = endPos; //snap to end position
@@ -77,10 +77,11 @@ public class directPlane : VRTK_InteractableObject {
         {
             endPos = startPos; //set end position to original idle position 
             startPos = transform.position; //setting the start position to the current position
-
-
             yield return StartCoroutine(lerpPlaneTrans(endPos)); //lerp
-            yield return StartCoroutine(lerpPlaneRot());
+
+            endRot = startRot;
+            startRot = transform.rotation;
+            yield return StartCoroutine(lerpPlaneRot(endRot));
 
             this.transform.position = endPos; //snap to end
             atPlayer = false; //no plane at player
@@ -93,7 +94,7 @@ public class directPlane : VRTK_InteractableObject {
     IEnumerator lerpPlaneRot(Quaternion toEndRot)
     {
         //Rotation of the plane
-
+        
         //Locks the X axis for the rotation
         Quaternion endRot = transform.rotation;
         Vector3 endRotV3 =  toEndRot.eulerAngles;
