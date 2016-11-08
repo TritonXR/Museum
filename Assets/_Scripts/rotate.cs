@@ -25,10 +25,10 @@ public class rotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(whatAxis * numDegrees * Time.deltaTime); //rotates 
+        transform.Rotate(whatAxis * numDegrees ); //rotates 
        
         if (numDegrees <= speedMax && numDegrees >= speedMin){
-            numDegrees += spinFaster; //changes velocity
+            numDegrees += spinFaster * Time.deltaTime; //changes velocity
             numDegrees = Mathf.Clamp(numDegrees, speedMin, speedMax);
         }
 
