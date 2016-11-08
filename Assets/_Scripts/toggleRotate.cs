@@ -25,14 +25,14 @@ public class toggleRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(whatAxis * numDegrees); //*Time.deltaTime); //NOTE: Not related to time anymore
+        transform.Rotate(whatAxis * numDegrees); //NOTE: Not related to time anymore
 
         curRotate += numDegrees;
         curRotate = Mathf.Clamp(curRotate, minRotate, maxRotate);
 
         if (curRotate >= maxRotate) //if you hit the max rotation
         {
-            numDegrees = numDegrees * -1; //change direction
+            numDegrees = numDegrees * -1 ; //change direction
         }
         else if (curRotate <= minRotate) //if you hit the min rotation
         {
