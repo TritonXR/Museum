@@ -8,7 +8,6 @@ public class signalPlane : MonoBehaviour
     bool initMovement;
 
     GameObject plane1;
-    GameObject plane2;
 
 
     // Use this for initialization
@@ -20,29 +19,39 @@ public class signalPlane : MonoBehaviour
     // Update is called once per frame
     void Update() //TODO: TEST PLANE MEMORY
     {
+        /*
         gaze = new Ray(Singleton.instance.player.transform.position, Singleton.instance.player.transform.forward); //the ray that comes out of the camera
         RaycastHit planeToMove; //access to the object that we're looking at
         if (Physics.Raycast(gaze, out planeToMove, Mathf.Infinity)) //actually casting the ray
         {
             if (planeToMove.collider.gameObject.GetComponent<directPlane>()) //if the object has the directPlane component
             {
-                if(plane1 == null)
+                if( plane1 == null || signal)
                 {
                     plane1 = planeToMove.collider.gameObject; //storing the plane 
+                    plane1.GetComponent<directPlane>().Activate();
+                    Debug.Log(plane1.name);
                 }
-                else
+                else if (signal)
                 {
-                    plane1 = plane2;
-                    plane2 = planeToMove.collider.gameObject;
+                    Debug.Log(plane1.name);
+                    plane1.GetComponent<directPlane>().Activate(); //activate plane to get it to move back 
+                    plane1 = planeToMove.collider.gameObject; 
+                    plane1.GetComponent<directPlane>().Activate();
+                    Debug.Log(plane1.name);
                 }
-                if (signal || Input.GetKeyDown(KeyCode.S))
-                {
-                    planeToMove.collider.gameObject.GetComponent<directPlane>().Activate();
-                }
-            }
-        }
+                */
 
+        /*
+        if (signal || Input.GetKeyDown(KeyCode.S))
+        {
+            planeToMove.collider.gameObject.GetComponent<directPlane>().Activate();
+        }
+        */
     }
+
+
+
 
     public void OnMouseDown()
     {
@@ -63,7 +72,7 @@ public class signalPlane : MonoBehaviour
             else if (ptNum == 2 && initMovement == true)
             {
                 signal = true; //ends the controller movement, signals the plane
-                initMovement = false; 
+                initMovement = false;
 
             }
         }

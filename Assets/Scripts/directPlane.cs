@@ -28,7 +28,7 @@ public class directPlane : VRTK_InteractableObject {
     Quaternion startRot;
     Quaternion endRot;
     static public float dur = 3.0f; //duration of the lerp
-    Object 
+    
     
 
 	protected override void Start () {
@@ -56,7 +56,7 @@ public class directPlane : VRTK_InteractableObject {
     //For movement of the object on click
     IEnumerator MovePlane()
     {
-        int forwardMult = 5;
+        int forwardMult = 7;
         running = true;
         
         if (!atPlayer) //For the lerping towards the player 
@@ -90,7 +90,6 @@ public class directPlane : VRTK_InteractableObject {
     IEnumerator lerpPlaneRot(Quaternion toEndRot)
     {
         //Rotation of the plane
-        
         //Locks the X axis for the rotation
         Quaternion endRot = transform.rotation;
         Vector3 endRotV3 =  toEndRot.eulerAngles;
@@ -104,7 +103,6 @@ public class directPlane : VRTK_InteractableObject {
             yield return null;
         }
         //Translation of the plane
-
     }
 
     IEnumerator lerpPlaneTrans(Vector3 toEndPos)
@@ -125,11 +123,24 @@ public class directPlane : VRTK_InteractableObject {
 
     public void Activate()
     {
-        Debug.Log(running);
-
+        
         if (!running)
         {
-            StartCoroutine(MovePlane());
+            Debug.Log("Activating!");
+            if(Singleton.instance.plane == null) //if there's no saved plane
+            {
+                Debug.Log("Block A - no saved plane");
+                Singleton.instance.plane = transform.gameObject; //Set this object as the saved plane
+                StartCoroutine(MovePlane()); //Move this plane
+            }
+            else
+            {
+                Debug.Log("Block B - saved plane");
+                Singleton.instance.plane.GetComponent<directPlane>().StartCoroutine(MovePlane()); //Move the plane saved in the singleton
+                Singleton.instance.plane = transform.gameObject; //save this object in the singleton
+                StartCoroutine(MovePlane()); //move this plane
+            }
+            //StartCoroutine(MovePlane());
         }
     }
 
