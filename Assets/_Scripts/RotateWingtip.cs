@@ -3,13 +3,17 @@ using System.Collections;
 
 public class RotateWingtip : MonoBehaviour {
 
+    [Tooltip("Amount should be from -1 to 1, neg moves down, pos moves up")]
     public float amount;
+    [Tooltip("The time it takes to finish rotating")]
     public float seconds;
+    [Tooltip("Need to manually find the max point of rotating up")]
     public Vector3 upEnd;
+    [Tooltip("Need to manually find the max point of rotating down")]
     public Vector3 downEnd;
 
     private Quaternion start; 
-    private Quaternion endQ;
+    private Quaternion end;
 
     // Use this for initialization
     void Start () {
@@ -29,11 +33,11 @@ public class RotateWingtip : MonoBehaviour {
         if (amount < 0)
         {
             amount = Mathf.Abs(amount);
-            endQ = Quaternion.Euler(downEnd);
+            end = Quaternion.Euler(downEnd);
         }
         else
         {
-            endQ = Quaternion.Euler(upEnd);
+            end = Quaternion.Euler(upEnd);
         }
 
         //end.y = start.eulerAngles.y;
@@ -53,7 +57,7 @@ public class RotateWingtip : MonoBehaviour {
         for (float i = 0; i < seconds; i+= Time.deltaTime)
         {
             
-            transform.rotation = Quaternion.Lerp(start, endQ , i/seconds * amount);
+            transform.rotation = Quaternion.Lerp(start, end , i/seconds * amount);
             yield return null;
         }
     }

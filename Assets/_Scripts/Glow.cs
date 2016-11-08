@@ -31,10 +31,7 @@ public class Glow : MonoBehaviour {
         for(int ii = 0; ii < currentMaterials.Length; ii++)
         {
             Color lerpedColor = Color.Lerp(originColors[ii], Color.black, Mathf.PingPong(Time.time, 1));
-            newMaterial = new Material(currentMaterials[ii]);
-            newMaterial.SetColor("_Color", lerpedColor);
-
-            currentMaterials[ii] = newMaterial;
+            currentMaterials[ii].SetColor("_Color", lerpedColor);
         }
         
         GetComponent<Renderer>().materials = currentMaterials;
