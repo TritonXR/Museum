@@ -18,8 +18,7 @@ using VRTK;
 
 public class directPlane : VRTK_InteractableObject {
 
-    static private bool atPlayer = false;
-    string objAtPlayer = "";
+    private bool atPlayer = false;
     RaycastHit hit;
     bool running;
 
@@ -33,7 +32,6 @@ public class directPlane : VRTK_InteractableObject {
 
 	protected override void Start () {
         base.Start();
-        Debug.Log("Begin");
         startRot = transform.rotation;
         startPos = transform.position;
     }
@@ -48,19 +46,22 @@ public class directPlane : VRTK_InteractableObject {
             if(Physics.Raycast(ray, out hit))
             {
                 Debug.Log(hit.transform.gameObject.name);
-                objAtPlayer = hit.transform.gameObject.name;
             }
         }
     }
     
     //For movement of the object on click
-    IEnumerator MovePlane()
+    public IEnumerator MovePlane()
     {
+        Debug.Log("MOVEPLANE");
         int forwardMult = 7;
         running = true;
-        
+
+        Debug.Log(name + " " + atPlayer);
+
         if (!atPlayer) //For the lerping towards the player 
         {
+            Debug.Log("Incoming");
             startPos = transform.position; //start position at player
             endPos = Singleton.instance.player.transform.position + (Singleton.instance.player.transform.forward * forwardMult); //end position at player
             endPos.y = startPos.y; //lock movement on the y axis
@@ -73,6 +74,7 @@ public class directPlane : VRTK_InteractableObject {
         }
         else //For lerping back to originial position
         {
+            Debug.Log("Outgoing");
             endPos = startPos; //set end position to original idle position 
             startPos = transform.position; //setting the start position to the current position
             endRot = startRot;
@@ -105,7 +107,7 @@ public class directPlane : VRTK_InteractableObject {
         //Translation of the plane
     }
 
-    IEnumerator lerpPlaneTrans(Vector3 toEndPos)
+    private IEnumerator lerpPlaneTrans(Vector3 toEndPos)
     {
         for (float j = 0; j < dur; j += Time.deltaTime)
         {
@@ -122,23 +124,27 @@ public class directPlane : VRTK_InteractableObject {
     }
 
     public void Activate()
-    {
-        
+    {        
         if (!running)
         {
-            Debug.Log("Activating!");
+
             if(Singleton.instance.plane == null) //if there's no saved plane
             {
-                Debug.Log("Block A - no saved plane");
+                Debug.Log("Block A");
                 Singleton.instance.plane = transform.gameObject; //Set this object as the saved plane
                 StartCoroutine(MovePlane()); //Move this plane
             }
+            else if (Singleton.instance.plane != transform.gameObject)
+            {
+                Debug.Log("Block B" + Singleton.instance.plane.name);
+                StartCoroutine(Singleton.instance.plane.GetComponent<directPlane>().MovePlane());
+                Singleton.instance.plane = transform.gameObject;//save this object in the singleton
+                StartCoroutine(MovePlane()); //move this plane
+            }
             else
             {
-                Debug.Log("Block B - saved plane");
-                Singleton.instance.plane.GetComponent<directPlane>().StartCoroutine(MovePlane()); //Move the plane saved in the singleton
-                Singleton.instance.plane = transform.gameObject; //save this object in the singleton
-                StartCoroutine(MovePlane()); //move this plane
+                Debug.Log("Block C");
+                StartCoroutine(MovePlane());
             }
             //StartCoroutine(MovePlane());
         }
