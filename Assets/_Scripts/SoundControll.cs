@@ -21,5 +21,9 @@ public class SoundControll : MonoBehaviour {
         {
             sfx.PlayEngineRun();
         }
-	}
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            sfx.PlayLanding();
+        }
+    }
 }
