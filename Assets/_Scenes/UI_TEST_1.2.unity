@@ -417,7 +417,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 845715248}
   m_HandleRect: {fileID: 845715247}
   m_Direction: 2
-  m_Value: 0.91730493
+  m_Value: 0.78796124
   m_Size: 0.61
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -734,7 +734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43852f3bbd97984c885305814f568e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &430089703
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,7 +920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43852f3bbd97984c885305814f568e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &607854133
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,6 +1286,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9219c30926a54994d817668e5b108862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myClip: {fileID: 0}
+  mov: {fileID: 0}
 --- !u!1 &832694061
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,6 +1571,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9219c30926a54994d817668e5b108862, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myClip: {fileID: 0}
+  mov: {fileID: 0}
 --- !u!65 &946579604
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1906,7 +1908,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000008016825, y: 9.6753235}
+  m_AnchoredPosition: {x: 0.000008016825, y: 24.808533}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &1283727994
@@ -2439,7 +2441,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43852f3bbd97984c885305814f568e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1730854975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,7 +2572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43852f3bbd97984c885305814f568e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1901603996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43852f3bbd97984c885305814f568e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lerpedColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1948335328
 GameObject:
   m_ObjectHideFlags: 0
