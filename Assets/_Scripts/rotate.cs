@@ -6,7 +6,7 @@ public class rotate : MonoBehaviour {
     public float numDegrees = 0.0f;
     // spinFaster is how many degrees it'll rotate faster (acceleration)
     public float spinFaster = 0.0f;
-    public float accelNum = 2.0f;
+    public float accelNum = 4.0f;
     // bounds the minimum and maximum speed to rotate
     public float speedMin = 0.0f;
     public float speedMax = 3600.0f;
@@ -25,10 +25,10 @@ public class rotate : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(whatAxis * numDegrees ); //rotates 
+        transform.Rotate(whatAxis * numDegrees * Time.deltaTime ); //rotates 
        
         if (numDegrees <= speedMax && numDegrees >= speedMin){
-            numDegrees += spinFaster * Time.deltaTime; //changes velocity
+            numDegrees +=  spinFaster; //* Time.deltaTime; //changes velocity
             numDegrees = Mathf.Clamp(numDegrees, speedMin, speedMax);
         }
 
