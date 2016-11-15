@@ -9,12 +9,14 @@
 
         public override void StartUsing(GameObject usingObject)
         {
+            Debug.Log("Whirlygig Start");
             base.StartUsing(usingObject);
             spinSpeed = 360f;
         }
 
         public override void StopUsing(GameObject usingObject)
         {
+            Debug.Log("Whirlygig Stop"); 
             base.StopUsing(usingObject);
             spinSpeed = 0f;
         }

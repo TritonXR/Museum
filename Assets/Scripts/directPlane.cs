@@ -53,15 +53,11 @@ public class directPlane : VRTK_InteractableObject {
     //For movement of the object on click
     public IEnumerator MovePlane()
     {
-        Debug.Log("MOVEPLANE");
         int forwardMult = 7;
         running = true;
 
-        Debug.Log(name + " " + atPlayer);
-
         if (!atPlayer) //For the lerping towards the player 
         {
-            Debug.Log("Incoming");
             startPos = transform.position; //start position at player
             endPos = Singleton.instance.player.transform.position + (Singleton.instance.player.transform.forward * forwardMult); //end position at player
             endPos.y = startPos.y; //lock movement on the y axis
@@ -74,7 +70,6 @@ public class directPlane : VRTK_InteractableObject {
         }
         else //For lerping back to originial position
         {
-            Debug.Log("Outgoing");
             endPos = startPos; //set end position to original idle position 
             startPos = transform.position; //setting the start position to the current position
             endRot = startRot;
@@ -130,20 +125,17 @@ public class directPlane : VRTK_InteractableObject {
 
             if(Singleton.instance.plane == null) //if there's no saved plane
             {
-                Debug.Log("Block A");
                 Singleton.instance.plane = transform.gameObject; //Set this object as the saved plane
                 StartCoroutine(MovePlane()); //Move this plane
             }
             else if (Singleton.instance.plane != transform.gameObject)
             {
-                Debug.Log("Block B" + Singleton.instance.plane.name);
                 StartCoroutine(Singleton.instance.plane.GetComponent<directPlane>().MovePlane());
                 Singleton.instance.plane = transform.gameObject;//save this object in the singleton
                 StartCoroutine(MovePlane()); //move this plane
             }
             else
             {
-                Debug.Log("Block C");
                 StartCoroutine(MovePlane());
                 Singleton.instance.plane = null;
             }
@@ -153,10 +145,18 @@ public class directPlane : VRTK_InteractableObject {
 
     public override void StartUsing(GameObject usingObject)
     {
+        Debug.Log("Plane Start");
         base.StartUsing(usingObject);
         Activate();
     }
 
+
+    public override void StopUsing(GameObject usingObject)
+    {
+        Debug.Log("Plane Stop");
+        base.StopUsing(usingObject);
+        Activate();
+    }
     //If object has this script, set a boolean to true
     //Coroutine to deactivate boolean 
 }

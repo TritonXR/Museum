@@ -29,7 +29,6 @@ public class Groundctl : MonoBehaviour {
     
 
 	void Start () {
-        Debug.Log("Begin");
         startRot = transform.rotation;
         startPos = transform.position;
     }
