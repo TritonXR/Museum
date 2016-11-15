@@ -145,6 +145,7 @@ public class directPlane : VRTK_InteractableObject {
             {
                 Debug.Log("Block C");
                 StartCoroutine(MovePlane());
+                Singleton.instance.plane = null;
             }
             //StartCoroutine(MovePlane());
         }
