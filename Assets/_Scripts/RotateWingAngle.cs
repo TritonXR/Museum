@@ -24,6 +24,25 @@ public class RotateWingAngle : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RotateWing(reverse);
+        }
+    }
+
+    public void RotateWing(bool reverse)
+    {
+        StartCoroutine(RotateWingCoroutine(seconds, amount, reverse));
+    }
+
+    IEnumerator RotateWingCoroutine(float seconds, float amount, bool reverse)
+    {
+
         // get the original eulerAngles in Quaternion
         start = transform.localRotation;
         //Debug.Log("Start = " + start.eulerAngles);
@@ -37,21 +56,8 @@ public class RotateWingAngle : MonoBehaviour
         }
 
         // standarlize the amount value
-        if(amount > 1) amount = 1;
-        if(amount < 0) amount = 0;
-
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            StartCoroutine(RotateWing(seconds,amount));
-        }
-    }
-
-    IEnumerator RotateWing(float seconds, float amount)
-    {
+        if (amount > 1) amount = 1;
+        if (amount < 0) amount = 0;
         
         startRotation = transform.localRotation.eulerAngles;
 
