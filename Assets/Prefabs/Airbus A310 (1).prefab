@@ -28,21 +28,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1000010324245890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 4000013178000666}
-  m_Layer: 0
-  m_Name: Camera
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &1000010515087730
 GameObject:
   m_ObjectHideFlags: 1
@@ -84,7 +69,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000013681503214}
   - 65: {fileID: 65000011029439154}
-  - 114: {fileID: 114000011823215186}
+  - 114: {fileID: 114000011560933308}
   m_Layer: 0
   m_Name: WheelCenter
   m_TagString: Untagged
@@ -221,8 +206,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010968301656}
-  - 114: {fileID: 114000011511387650}
   - 65: {fileID: 65000010231743254}
+  - 114: {fileID: 114000010385187072}
   m_Layer: 0
   m_Name: Center
   m_TagString: Untagged
@@ -258,21 +243,6 @@ GameObject:
   - 120: {fileID: 120000013329296178}
   m_Layer: 2
   m_Name: Line
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &1000011926476690
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 4000010984885454}
-  m_Layer: 0
-  m_Name: Sun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -543,6 +513,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 4000010421788236}
+  - 65: {fileID: 65000010631678938}
+  - 114: {fileID: 114000010540755100}
+  - 114: {fileID: 114000012488983378}
+  - 114: {fileID: 114000010074848432}
   m_Layer: 0
   m_Name: Airbus A310 (1)
   m_TagString: Untagged
@@ -657,14 +631,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013854819214}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.6814704, y: -0.46853018, z: -8.669264}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 2041.2488, y: 2.0636115, z: 1538.9}
+  m_LocalScale: {x: 5.314434, y: 5.314434, z: 5.314434}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_Children:
-  - {fileID: 4000013178000666}
   - {fileID: 4000013983622466}
-  - {fileID: 4000010984885454}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &4000010968301656
@@ -681,19 +653,6 @@ Transform:
   - {fileID: 4000013241256804}
   m_Father: {fileID: 4000011184325970}
   m_RootOrder: 0
---- !u!4 &4000010984885454
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011926476690}
-  m_LocalRotation: {x: -0.2752114, y: 0.42258143, z: 0.8526905, w: 0.13639086}
-  m_LocalPosition: {x: 3.9265184, y: 2.1918364, z: -8.001595}
-  m_LocalScale: {x: 0.22924675, y: 0.22924677, z: 0.22924677}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4000010421788236}
-  m_RootOrder: 2
 --- !u!4 &4000011067130186
 Transform:
   m_ObjectHideFlags: 1
@@ -828,19 +787,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4000013983622466}
   m_RootOrder: 5
---- !u!4 &4000013178000666
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000010324245890}
-  m_LocalRotation: {x: -0.073822565, y: 0.9568467, z: 0.021620113, w: -0.28022698}
-  m_LocalPosition: {x: 10.803825, y: 1.9876411, z: -7.881572}
-  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 4000010421788236}
-  m_RootOrder: 0
 --- !u!4 &4000013241256804
 Transform:
   m_ObjectHideFlags: 1
@@ -931,7 +877,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000010546511822}
-  m_LocalRotation: {x: -6.105716e-17, y: 0.9980327, z: -0.06269562, w: 4.7100777e-18}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0.15692747, z: 1.699368}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -948,7 +894,7 @@ Transform:
   - {fileID: 4000013831056386}
   - {fileID: 4000013533340242}
   m_Father: {fileID: 4000010421788236}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!4 &4000013996262602
 Transform:
   m_ObjectHideFlags: 1
@@ -1390,6 +1336,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65000010631678938
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013854819214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8, y: 2.06, z: 9.33}
+  m_Center: {x: 0, y: 1.23, z: -0.81}
 --- !u!65 &65000011029439154
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1402,6 +1360,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.2, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114000010074848432
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013854819214}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaa5cbb5219b84c42a5826d1b8c1a39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114000010211035902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1424,6 +1393,93 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e43852f3bbd97984c885305814f568e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000010385187072
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011704358712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e8f5a24ea9fc4f90f3776126356db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightOnTouch: 0
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  rumbleOnTouch: {x: 0, y: 0}
+  allowedTouchControllers: 0
+  hideControllerOnTouch: 0
+  isGrabbable: 0
+  isDroppable: 1
+  isSwappable: 1
+  holdButtonToGrab: 1
+  grabOverrideButton: 8
+  rumbleOnGrab: {x: 0, y: 0}
+  allowedGrabControllers: 0
+  precisionSnap: 0
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  hideControllerOnGrab: 0
+  stayGrabbedOnTeleport: 1
+  grabAttachMechanic: 0
+  detachThreshold: 500
+  springJointStrength: 500
+  springJointDamper: 50
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  isUsable: 1
+  useOnlyIfGrabbed: 0
+  holdButtonToUse: 1
+  useOverrideButton: 8
+  pointerActivatesUseAction: 1
+  rumbleOnUse: {x: 0, y: 0}
+  allowedUseControllers: 0
+  hideControllerOnUse: 0
+  usingState: 0
+  myClip: {fileID: 0}
+--- !u!114 &114000010540755100
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013854819214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6990aa10de485d43b19e6b8fadf9e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highlightOnTouch: 1
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  rumbleOnTouch: {x: 0, y: 0}
+  allowedTouchControllers: 0
+  hideControllerOnTouch: 0
+  isGrabbable: 0
+  isDroppable: 1
+  isSwappable: 1
+  holdButtonToGrab: 1
+  grabOverrideButton: 8
+  rumbleOnGrab: {x: 0, y: 0}
+  allowedGrabControllers: 0
+  precisionSnap: 0
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  hideControllerOnGrab: 0
+  stayGrabbedOnTeleport: 1
+  grabAttachMechanic: 0
+  detachThreshold: 500
+  springJointStrength: 500
+  springJointDamper: 50
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  isUsable: 1
+  useOnlyIfGrabbed: 0
+  holdButtonToUse: 0
+  useOverrideButton: 8
+  pointerActivatesUseAction: 1
+  rumbleOnUse: {x: 0, y: 0}
+  allowedUseControllers: 0
+  hideControllerOnUse: 0
+  usingState: 0
 --- !u!114 &114000010545915194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1648,20 +1704,7 @@ MonoBehaviour:
     this would result in a small fuselage mated to a comparatively large wing and
     oversized undercarriage, which would make the aircraft burn unnecessarily more
     fuel as it carries more weight."
---- !u!114 &114000011511387650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1000011704358712}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9219c30926a54994d817668e5b108862, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myClip: {fileID: 0}
-  mov: {fileID: 0}
---- !u!114 &114000011823215186
+--- !u!114 &114000011560933308
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -1669,11 +1712,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 1000010566754820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9219c30926a54994d817668e5b108862, type: 3}
+  m_Script: {fileID: 11500000, guid: 163e8f5a24ea9fc4f90f3776126356db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myClip: {fileID: 8300000, guid: 8c158128f7be09a4da0705a73f9eff62, type: 3}
-  mov: {fileID: 0}
+  highlightOnTouch: 0
+  touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
+  rumbleOnTouch: {x: 0, y: 0}
+  allowedTouchControllers: 0
+  hideControllerOnTouch: 0
+  isGrabbable: 0
+  isDroppable: 1
+  isSwappable: 1
+  holdButtonToGrab: 1
+  grabOverrideButton: 8
+  rumbleOnGrab: {x: 0, y: 0}
+  allowedGrabControllers: 0
+  precisionSnap: 0
+  rightSnapHandle: {fileID: 0}
+  leftSnapHandle: {fileID: 0}
+  hideControllerOnGrab: 0
+  stayGrabbedOnTeleport: 1
+  grabAttachMechanic: 0
+  detachThreshold: 500
+  springJointStrength: 500
+  springJointDamper: 50
+  throwMultiplier: 1
+  onGrabCollisionDelay: 0
+  isUsable: 1
+  useOnlyIfGrabbed: 0
+  holdButtonToUse: 1
+  useOverrideButton: 8
+  pointerActivatesUseAction: 1
+  rumbleOnUse: {x: 0, y: 0}
+  allowedUseControllers: 0
+  hideControllerOnUse: 0
+  usingState: 0
+  myClip: {fileID: 0}
 --- !u!114 &114000012042705334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1779,6 +1853,21 @@ MonoBehaviour:
   fontColor: {r: 0.7607844, g: 0.7607844, b: 0.7607844, a: 1}
   containerColor: {r: 0.20392159, g: 0.20392159, b: 0.20392159, a: 1}
   lineColor: {r: 0.20392159, g: 0.20392159, b: 0.20392159, a: 1}
+--- !u!114 &114000012488983378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013854819214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbdb056e7358462438c3f57ae0fde625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineIdleSound: {fileID: 8300000, guid: fdc5703a38f2efc4c87384e52b0b8e82, type: 3}
+  engineRunSound: {fileID: 8300000, guid: ccd9da5f61437c1419c963ef29acb8e6, type: 3}
+  landingSound: {fileID: 8300000, guid: 8a802dca80325cb4eb36cfaac954a122, type: 3}
+  engineStartSound: {fileID: 8300000, guid: 15d24b4445cb87d43b0f35b56e8efb99, type: 3}
 --- !u!114 &114000012499949100
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1905,16 +1994,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 
 --- !u!114 &114000012965602370
