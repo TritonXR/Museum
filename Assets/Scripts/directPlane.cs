@@ -58,6 +58,7 @@ public class directPlane : VRTK_InteractableObject {
 
         if (!atPlayer) //For the lerping towards the player 
         {
+            GetComponent<SoundEffect>().PlayEngineStart();
             startPos = transform.position; //start position at player
             endPos = Singleton.instance.player.transform.position + (Singleton.instance.player.transform.forward * forwardMult); //end position at player
             endPos.y = startPos.y; //lock movement on the y axis
@@ -70,6 +71,7 @@ public class directPlane : VRTK_InteractableObject {
         }
         else //For lerping back to originial position
         {
+            GetComponent<SoundEffect>().PlayLanding();
             endPos = startPos; //set end position to original idle position 
             startPos = transform.position; //setting the start position to the current position
             endRot = startRot;

@@ -4,55 +4,71 @@ using System.Collections;
 public class SoundEffect : MonoBehaviour
 {
 
-    public AudioClip EngineIdleSound;
-    public AudioClip EngineRunSound;
-    public AudioClip LandingSound;
-    public AudioClip EngineStartSound;
+    public AudioClip engineIdleSound;
+    public AudioClip engineRunSound;
+    public AudioClip landingSound;
+    public AudioClip engineStartSound;
 
 
-    private AudioSource m_EngineIdle;
-    private AudioSource m_EngineRun;
-    private AudioSource m_Landing;
+    private AudioSource engineSounds;
+    //private AudioSource m_EngineRun;
+    //private AudioSource m_Landing;
     //private AudioSource m_EngineStart;
 
     void Start()
     {
-        m_EngineIdle = this.gameObject.AddComponent<AudioSource>();
-        m_EngineIdle.clip = EngineIdleSound;
+        engineSounds = this.gameObject.AddComponent<AudioSource>();
+        engineSounds.clip = engineIdleSound;
+    }
 
-        m_EngineRun = this.gameObject.AddComponent<AudioSource>();
-        m_EngineRun.clip = EngineRunSound;
+    public void SwitchSound(AudioClip clipToChangeTo, bool loop)
+    {
+        if (engineSounds.isPlaying)
+        {
+            engineSounds.Stop();
+        }
 
-        m_Landing = this.gameObject.AddComponent<AudioSource>();
-        m_Landing.clip = LandingSound;
-
+        engineSounds.clip = clipToChangeTo;
+        engineSounds.loop = loop;
+        engineSounds.Play();
     }
 
     public void PlayEngineIdle()
     {
-        if (m_EngineRun.isPlaying)
-        {
-            m_EngineRun.Stop();
-        }
+        SwitchSound(engineIdleSound, true);
 
-        m_EngineIdle.loop = true;
-        m_EngineIdle.Play();
     }
 
     public void PlayEngineRun()
     {
-        if (m_EngineIdle.isPlaying)
-        {
-            m_EngineIdle.Stop();
-
-        }
-
-        m_EngineRun.loop = true;
-        m_EngineRun.Play();
+        SwitchSound(engineRunSound, true);
     }
 
     public void PlayLanding()
     {
-        m_Landing.Play();
+        SwitchSound(landingSound, false);
+    }
+
+    public void PlayEngineStart()
+    {
+        StartCoroutine(PlayTwoClips(engineStartSound, engineIdleSound));
+    }
+
+    /// <summary>
+    /// Play two sounds, the first doesn't loop and leads to the second sound that loops.
+    /// </summary>
+    /// <param name="engineStartSound"></param>
+    /// <param name="engineIdleSound"></param>
+    /// <returns></returns>
+    IEnumerator PlayTwoClips(AudioClip firstClip, AudioClip secondClip)
+    {
+        SwitchSound(firstClip, false);
+
+        while (engineSounds.isPlaying)
+        {
+            yield return null;
+        }
+
+        SwitchSound(secondClip, true);
     }
 }
