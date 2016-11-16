@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 1533398342}
-  totalTime: 600
+  totalTime: 543
 --- !u!1 &311199677
 GameObject:
   m_ObjectHideFlags: 0

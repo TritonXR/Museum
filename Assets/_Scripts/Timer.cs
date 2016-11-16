@@ -41,6 +41,10 @@ public class Timer : MonoBehaviour {
         minutes = Mathf.Floor(timeRemain / 60);
         minutesText = minutes.ToString();
         seconds = Mathf.RoundToInt(timeRemain % 60);
+        if(seconds == 60)
+        {
+            seconds = 59;
+        }
         secondsText = seconds.ToString();
 
         if (minutes < 10)
