@@ -7264,10 +7264,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   degreeX: 0
   degreeY: 0
-  degreeZ: 30
+  degreeZ: -30
   amount: 1
   seconds: 3
-  reverse: 1
+  reverse: 0
 --- !u!114 &114000010503219882
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7378,10 +7378,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   degreeX: 0
   degreeY: 0
-  degreeZ: 30
+  degreeZ: -30
   amount: 1
   seconds: 3
-  reverse: 1
+  reverse: 0
 --- !u!114 &114000013929216010
 MonoBehaviour:
   m_ObjectHideFlags: 1
