@@ -12,7 +12,7 @@ public class rotate : MonoBehaviour {
     public float speedMax = 3600.0f;
     // whatAxis is the vector/axis we're going to rotate
     public Vector3 whatAxis = Vector3.forward;
-
+    public bool isActive = false;
 
     /* Idea: Change spinFaster based on percentage of max so that the amount to
      * increase or decrease isnt't linear (e.g. always going down 1)
@@ -41,19 +41,21 @@ public class rotate : MonoBehaviour {
 
     //When activated, change acceleration number
     public void activate(){
-        if (spinFaster == 0) //change acceleration
+        if (!isActive) //change acceleration
         {
             spinFaster = accelNum;
+            isActive = true;
         }
         else //reset the acceleration
         {
-            if (numDegrees >= 0) //While the velocity is positive
-            {
-                spinFaster = -accelNum; //change acceleration to be negative (slows velocity down)
-            }
- 
-            
+            Deactivate();
         }
+    }
+
+    public void Deactivate()
+    {
+        spinFaster = -accelNum; //change acceleration to be negative (slows velocity down)
+        isActive = false;
     }
 
 }
