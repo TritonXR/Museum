@@ -674,6 +674,9 @@ GameObject:
   - 4: {fileID: 158460767}
   - 114: {fileID: 158460766}
   - 114: {fileID: 158460768}
+  - 114: {fileID: 158460771}
+  - 114: {fileID: 158460770}
+  - 114: {fileID: 158460769}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -718,6 +721,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeText: {fileID: 1533398342}
   totalTime: 543
+--- !u!114 &158460769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158460765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9259b84aeb7bf8d49a1f47caf57eb65f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &158460770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158460765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491c2e9ca135e164eaccf7729a277db8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &158460771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 158460765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94145fac880abcf4090ebaf78b4a9ded, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &177039562
 GameObject:
   m_ObjectHideFlags: 0
