@@ -1,0 +1,362 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.0.448
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl Light_Ghost
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f636375.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Chrome
+Ka 0.1 0.1 0.1
+Kd 0.929412 0.929412 0.929412
+Ks 1 1 1
+illum 2
+Ns 445.722
+
+newmtl Tire_Blk
+Ka 0.254902 0.254902 0.254902
+Kd 0.254902 0.254902 0.254902
+Ks 0.9 0.9 0.9
+illum 2
+Ns 5.65685
+
+newmtl Flat_Blk
+Ka 0.235294 0.235294 0.235294
+Kd 0.235294 0.235294 0.235294
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+
+newmtl Dark_Gull_Gry
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f636231.bmp
+
+newmtl Rotor_Color
+Ka 0.501961 0.490196 0.454902
+Kd 0.752941 0.733333 0.686275
+Ks 0.9 0.9 0.9
+illum 2
+Ns 90.5097
+
+newmtl Fuselage_R
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6fusr.bmp
+map_bump f6fusr_b.bmp
+bump f6fusr_b.bmp
+map_Ns f6fus_s.bmp
+
+newmtl Med_Blu_Gry
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f635237.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Inst_Panel
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6ip.bmp
+map_bump f6ip_b.bmp
+bump f6ip_b.bmp
+
+newmtl Cnrt_Console
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6cc.bmp
+map_bump f6cc_b.bmp
+bump f6cc_b.bmp
+
+newmtl Glass
+Ka 0.1 0.1 0.1
+Kd 0.368627 0.368627 0.368627
+Ks 1 1 1
+illum 2
+Ns 256
+d 0.36
+
+newmtl Glass_Dark
+Ka 0 0 0
+Kd 0 0 0
+Ks 0.9 0.9 0.9
+illum 2
+Ns 256
+d 0.36
+
+newmtl Lt_Gray
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f636495.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Red_Lights
+Ka 0.184314 0 0
+Kd 0.301961 0 0
+Ks 1 0.858824 0.858824
+illum 2
+Ns 256
+
+newmtl Lights_Blue
+Ka 0 0.219608 0.301961
+Kd 0 0.219608 0.301961
+Ks 0.788235 0.87451 0.898039
+illum 2
+Ns 256
+
+newmtl Roof_Screen
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f635237.bmp
+map_opacity f6rscr_o.bmp
+map_d f6rscr_o.bmp
+
+newmtl Tailp_Fold_2T
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6tprt.bmp
+map_bump f6tpr_b.bmp
+bump f6tpr_b.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Tailp_Fold_2B
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6tprb.bmp
+map_bump f6tpr_b.bmp
+bump f6tpr_b.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Tail_R
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6tr.bmp
+map_bump f6tr_b.bmp
+bump f6tr_b.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Tail_L
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6tl.bmp
+map_bump f6tl_b.bmp
+bump f6tl_b.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Rust_Color
+Ka 0.1 0.1 0.1
+Kd 0.694118 0.498039 0.380392
+Ks 0.9 0.9 0.9
+illum 2
+Ns 6.9644
+
+newmtl Co_Pilot_Door
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6dorc.bmp
+map_bump f6dor_b.bmp
+bump f6dor_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Ext_Tail_Black
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f637038.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Tailp_Fold_1T
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6tplt.bmp
+map_bump f6tpl_b.bmp
+bump f6tpl_b.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Tailp_Fold_1B
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6tplb.bmp
+map_bump f6tpl_b.bmp
+bump f6tpl_b.bmp
+map_Ns f6shin_s.bmp
+
+newmtl Pilot_Door
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6dorp.bmp
+map_bump f6dor_b.bmp
+bump f6dor_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Fuselage_Btm
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6fusb.bmp
+map_bump f6fusb_b.bmp
+bump f6fusb_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Wndshld_Frm
+Ka 0.1 0.1 0.1
+Kd 0.776471 0.490196 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6ws.bmp
+map_bump f6ws_b.bmp
+bump f6ws_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Nose_Fwd
+Ka 0.1 0.1 0.1
+Kd 0.494118 0.470588 1
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6nose.bmp
+map_bump f6nose_b.bmp
+bump f6nose_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Fuselage_Top
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6fust.bmp
+map_bump f6fust_b.bmp
+bump f6fust_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Nose_Number
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 11.3137
+map_Kd f6nnum.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Eng_Cvr_2
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6ecv2.bmp
+map_bump f6ecv_b.bmp
+bump f6ecv_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Fuselage_L
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6fusl.bmp
+map_bump f6fusl_b.bmp
+bump f6fusl_b.bmp
+map_Ns f6fus_s.bmp
+
+newmtl Eng_Cvr_1
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6ecv1.bmp
+map_bump f6ecv_b.bmp
+bump f6ecv_b.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Off_White_Sensors
+Ka 0.709804 0.701961 0.682353
+Kd 0.933333 0.92549 0.898039
+Ks 1 1 1
+illum 2
+Ns 13.9288
+
+newmtl Eng_Pod_2
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6ep2.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Eng_Pod_1
+Ka 0.1 0.1 0.1
+Kd 0.5 0.5 0.5
+Ks 0.9 0.9 0.9
+illum 2
+Ns 10.5561
+map_Kd f6ep1.bmp
+map_Ns f6dull_s.bmp
+
+newmtl Mirror
+Ka 0 0 0
+Kd 0 0 0
+Ks 1 1 1
+illum 2
+Ns 256

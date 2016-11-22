@@ -1,0 +1,201 @@
+#  ==========================================================================
+#  Wavefront Material file
+#  Exported by Red-i Productions' "Riptide Pro"
+#  (a commercial plugin for Cinema 4D PC & Mac, R9.6 or later)
+#  
+#  Red-i Productions
+#  http://skinprops.com
+#  
+#  ==========================================================================
+
+newmtl K_H
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd K_H.jpg
+
+newmtl H_FW
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Heckfahrw.jpg
+
+newmtl Rad_H
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Rad H.jpg
+
+newmtl default_Mat
+illum 2
+Kd 0.800000 0.800000 0.800000
+
+newmtl I_Rud_R
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd I_Rud_R.jpg
+
+newmtl I_Rud_L
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd I_Rud_L.jpg
+
+newmtl Prop
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Prop.jpg
+
+newmtl Kanzel_Z
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Kanzel_Z.jpg
+
+newmtl Glass
+Ns 50.781250
+d 0.000000
+Ni 1.000000
+illum 2
+Kd 0.693333 0.715294 0.721569
+map_Kd Glass.jpg
+
+newmtl Klappen
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Klappen.jpg
+
+newmtl Rad_V
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Rad V.jpg
+
+newmtl Fahrwerk
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Fahrwerk.jpg
+
+newmtl Raketen
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Raketen.jpg
+
+newmtl Bombe
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Bombe.jpg
+
+newmtl Halter
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Halter.jpg
+
+newmtl Black
+Ns 50.781250
+illum 2
+Kd 0.196275 0.196275 0.196275
+map_Kd Black.jpg
+
+newmtl Metal_D
+Ns 50.781250
+illum 2
+Kd 0.361446 0.361446 0.400000
+map_Kd Metal_D.jpg
+
+newmtl Kupfer
+Ns 50.781250
+illum 2
+Kd 0.192157 0.086275 0.058824
+map_Kd Kupfer.jpg
+
+newmtl Chrom
+Ns 50.781250
+illum 2
+Kd 0.501961 0.501961 0.501961
+map_Kd Chrom.jpg
+
+newmtl Tank
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd Tank.jpg
+
+newmtl Kanzel_I
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Kanzel_I.jpg
+
+newmtl Sitz
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Sitz.jpg
+
+newmtl Armatur
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Armatur.jpg
+
+newmtl F_Schei
+Ns 50.781250
+illum 2
+Kd 0.800000 0.800000 0.800000
+map_Kd F_Schei.jpg
+
+newmtl H_Flugel
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd H_Flugel.jpg
+
+newmtl Ruder
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Ruder.jpg
+
+newmtl Rumpf
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Rumpf.jpg
+
+newmtl Rudder
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Rudder.jpg
+
+newmtl Flugel_L
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Flugel_L.jpg
+
+newmtl A_Rud_L
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd A_Rud_L.jpg
+
+newmtl Flugel_R
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd Flugel_R.jpg
+
+newmtl A_Rud_R
+Ns 50.781250
+illum 2
+Kd 0.602353 0.602353 0.602353
+map_Kd A_Rud_R.jpg

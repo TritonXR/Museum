@@ -52,6 +52,7 @@ public class rotate : MonoBehaviour {
         }
     }
 
+    //Flips acceleration direction; should only be called by activate to slow down rotation
     public void Deactivate()
     {
         spinFaster = -accelNum; //change acceleration to be negative (slows velocity down)
