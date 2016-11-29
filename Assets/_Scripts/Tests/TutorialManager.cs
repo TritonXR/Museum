@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Collections;
 
 
+// WASTED..............
+
 public class TutorialManager : MonoBehaviour
 {
 

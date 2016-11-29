@@ -19,7 +19,7 @@ public class TutorialEmulator : MonoBehaviour {
 
     void Awake()
     {
-        part1Listener = new UnityAction(Part1);
+        part1Listener = new UnityAction(StartPart1);
 
     }
 
