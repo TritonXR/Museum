@@ -19,7 +19,7 @@ public class Glow : MonoBehaviour {
         for(int ii = 0; ii < currentMaterials.Length; ii++)
         {
             originColors[ii] = currentMaterials[ii].color;
-            print(currentMaterials[ii]);
+            //print(currentMaterials[ii]);
         }
     }
 

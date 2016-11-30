@@ -25,7 +25,7 @@ public class TutorialEmulator : MonoBehaviour {
 
     void OnEnable()
     {
-        TutorialManager.StartListening("part1",);
+        TutorialManager.StartListening("part1",StartPart1);
     }
 
     void StartPart1()
