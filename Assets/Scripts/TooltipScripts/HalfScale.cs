@@ -7,17 +7,23 @@ public class HalfScale : MonoBehaviour {
 
     public Scrollbar bar;
     private float currScale;
+    private float minScale;
+    private float maxScale;
+
 
 	// Use this for initialization
 	void Start () {
-        bar.value = (transform.localScale.x - 0.01f)/(0.19f); 
+        minScale = transform.localScale.x * 0.05f;
+        maxScale = transform.localScale.x * 5f; 
+        bar.value = (transform.localScale.x - minScale)/(maxScale - minScale);
+        StartCoroutine(ScalingPlane());
 	}
 	
     IEnumerator ScalingPlane()
     {
         while (true)
         {
-            currScale = bar.value * 0.19f + 0.01f;
+            currScale = bar.value * (maxScale - minScale) + minScale;
             transform.localScale = new Vector3(currScale, currScale, currScale);
             yield return null;
         }
