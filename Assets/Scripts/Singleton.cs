@@ -6,7 +6,7 @@ public class Singleton : MonoBehaviour {
     public static Singleton instance;
     public GameObject player;
     public GameObject plane;
-
+    public BatonHandler BatonHandler;
 	// Use this for initialization
 	void Start () {
 	    if (instance == null)
