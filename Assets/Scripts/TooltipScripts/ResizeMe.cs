@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class ResizeMe : MonoBehaviour {
     public GameObject player;
+    public GameObject eye;
     //public SteamVR_Camera head;
     public float maximumDiff;
 
     private float currentDiff;
     private float currentSize;
     private float currentHeight;
+    private float originalSize;
+    private Vector3 currentV;
     //private SteamVR_TrackedObject trackedObj;
     private SteamVR_Controller.Device rightDevice;
 
@@ -17,6 +20,8 @@ public class ResizeMe : MonoBehaviour {
 	void Start () {
         int rightIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost);
         rightDevice = SteamVR_Controller.Input(rightIndex);
+        originalSize = player.transform.localScale.x;
+        currentV = player.transform.localScale;
 
         StartCoroutine(CheckingResize());
 	}
@@ -28,19 +33,24 @@ public class ResizeMe : MonoBehaviour {
 
     IEnumerator CheckingResize()
     {
+        Debug.Log("Get in to the Resize function");
         while (true)
         {
-            currentHeight = rightDevice.GetAxis().y;
-            while (rightDevice.GetPressDown(SteamVR_Controller.ButtonMask.Touchpad)){
-                Debug.Log("Touch Pad is Pressed");
-                currentSize = player.transform.localScale.x;
-                currentDiff = rightDevice.GetAxis().y - currentHeight;
-                currentSize += currentDiff;
+            currentHeight = player.transform.position.y;
+            while (rightDevice.GetTouch(SteamVR_Controller.ButtonMask.Touchpad)){
+                //Debug.Log("Touch Pad is Pressed");
+                currentDiff = rightDevice.GetAxis().y - currentHeight ;
+                //Debug.LogFormat("Yaxis of right controller is: {0}", rightDevice.GetAxis().y);
+                currentSize = originalSize * currentDiff;
 
-                if (currentSize > 0)
-                {
-                    player.transform.localScale = new Vector3(currentSize, currentSize, currentSize);
-                }
+
+                //if (currentSize > 0)
+                //{
+                currentV.x = currentSize;
+                currentV.y = currentSize;
+                currentV.z = currentSize;
+                player.transform.localScale = currentV;
+                //}
 
                 yield return null;
             }
