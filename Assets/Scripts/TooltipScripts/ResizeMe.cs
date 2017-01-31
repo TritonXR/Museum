@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class ResizeMe : MonoBehaviour {
     public GameObject player;
-    public GameObject eye;
+    public GameObject CameraEye;
     //public SteamVR_Camera head;
-    public float maximumDiff;
+    //public float maximumDiff;
 
     private float currSize;
     private float currentHeight;
     private float prevSize;
-    private Vector3 currentV;
+    //private Vector3 currentV;
     //private SteamVR_TrackedObject trackedObj;
     private SteamVR_Controller.Device rightDevice;
 
@@ -19,31 +19,89 @@ public class ResizeMe : MonoBehaviour {
 	void Start () {
         int rightIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost);
         rightDevice = SteamVR_Controller.Input(rightIndex);
+        currSize = player.transform.localScale.x;
+        StartCoroutine(CheckingResize());
 
-        currentV = player.transform.localScale;
+        //currentV = player.transform.localScale;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (rightDevice.GetPressDown(SteamVR_Controller.ButtonMask.Touchpad)){
-            prevSize = player.transform.localScale.x;
-            currentHeight = rightDevice.GetAxis().y;
-        }
 
-        if (rightDevice.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
-        {
-            Resize();
-        }
-
-        if (rightDevice.GetPressUp(SteamVR_Controller.ButtonMask.Touchpad))
-        {
-            prevSize = player.transform.localScale.x;
-
-
-        }
 
     }
+
+    IEnumerator CheckingResize() {
+        while(true) {
+            if (rightDevice.GetPressDown(SteamVR_Controller.ButtonMask.Touchpad))
+            {
+                Debug.Log("GetPressDown");
+                Resize();
+
+            }
+
+            yield return null;
+        }
+    }
+
+    void Resize()
+    {
+        float difference = rightDevice.GetAxis().y - CameraEye.transform.position.y;
+
+        Debug.Log(rightDevice.GetAxis().y + "  " + CameraEye.transform.position.y );
+        if (difference > 0)
+        {
+            if (currSize < 1 && currSize > 0)
+            {
+                currSize = currSize + 0.1f;
+            }
+            else if (currSize >= 1)
+            {
+                currSize = currSize + 1f;
+            }
+            else
+            { 
+                // currSize <= 0
+            }
+        }
+        else if(difference < 0) {
+            if (currSize <= 1 && currSize > 0)
+            {
+                currSize = currSize - 0.1f;
+            }
+            else if(currSize > 1) {
+                currSize = currSize - 1f;
+            }
+            else {
+                // currSize <= 0
+            }
+        }
+        else {
+            
+        }
+
+        Debug.LogFormat("prevSize is: {0}", prevSize);
+        Debug.LogFormat("currSize is: {0}", currSize);
+
+
+        player.transform.localScale = new Vector3(currSize, currSize, currSize);
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     //IEnumerator CheckingResize()
     //{
@@ -73,10 +131,4 @@ public class ResizeMe : MonoBehaviour {
 
     //}
 
-    void Resize()
-    {
-        float updatedHeight = rightDevice.GetAxis().y;
-        currSize = 5 * ((updatedHeight - currentHeight) / currentHeight) * prevSize;
-        player.transform.localScale = new Vector3(currSize, currSize, currSize);
-    }
 }
