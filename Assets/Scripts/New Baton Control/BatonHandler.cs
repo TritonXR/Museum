@@ -14,7 +14,8 @@ public class BatonHandler : MonoBehaviour {
     public GameObject plane;
 
 
-    public static float dur = 3.0f;
+    public float movementMult = 5.0f;
+    public float dur = 1.0f;
 	// Use this for initialization
 	void Start () {
         if (instance == null)
@@ -36,20 +37,23 @@ public class BatonHandler : MonoBehaviour {
     {
         if(LPanel.active && RPanel.active)
         {
-            if (plane = planeGrabber.getPlaneAtGaze()) {
+            plane = planeGrabber.getPlaneAtGaze();
+            if (plane != null) {
                 StartCoroutine(planeForward(plane));
             }    
         }
     }
 
     IEnumerator planeForward(GameObject plane) {
+        Debug.Log("Start Forward");
         Vector3 startPos = plane.transform.position;
-        Vector3 endPos = plane.transform.position + plane.transform.forward;
+        Vector3 endPos = plane.transform.position + plane.transform.forward * movementMult;
 
         for (float j = 0; j < dur; j += Time.deltaTime)
         {
             Vector3 newPos = Vector3.Lerp(startPos, endPos, j / dur);
-            this.transform.position = newPos;
+            plane.transform.position = newPos;
+            Debug.Log("Loop");
             yield return null;
         }
 

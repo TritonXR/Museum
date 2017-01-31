@@ -11,15 +11,17 @@ public class PlaneGrabber : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        Debug.DrawRay(this.transform.position, this.transform.forward * 1000);
+    }
 
     // Returns the plane at the player's gaze. 
     public GameObject getPlaneAtGaze() {
         Ray gaze = new Ray(this.transform.position, this.transform.forward);
+
         RaycastHit gazeHit;
         if(Physics.Raycast(gaze, out gazeHit, Mathf.Infinity)) {
             if(gazeHit.collider.GetComponent<IsPlane>()) {
+                Debug.LogError("yay plane");
                 return gazeHit.collider.gameObject;
             }
             else {
