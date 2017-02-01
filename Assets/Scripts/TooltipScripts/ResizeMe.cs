@@ -34,7 +34,7 @@ public class ResizeMe : MonoBehaviour {
 
     IEnumerator CheckingResize() {
         while(true) {
-            if (rightDevice.GetPressDown(SteamVR_Controller.ButtonMask.Touchpad))
+            if (rightDevice.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
             {
                 Debug.Log("GetPressDown");
                 Resize();
@@ -50,31 +50,32 @@ public class ResizeMe : MonoBehaviour {
         float difference = rightDevice.GetAxis().y; // - CameraEye.transform.position.y;
 
         Debug.Log(rightDevice.GetAxis().y + "  " + CameraEye.transform.position.y );
+        
         if (difference > 0)
         {
-            if (currSize < 1 && currSize > 0)
+            if (currSize < 1 && currSize > 0.1)
             {
-                currSize = currSize + 0.1f;
+                currSize = currSize + 0.01f;
             }
             else if (currSize >= 1)
             {
-                currSize = currSize + 1f;
+                currSize = currSize + 0.1f;
             }
             else
-            { 
-                // currSize <= 0
+            {
+                currSize = 0.11f;
             }
         }
         else if(difference < 0) {
-            if (currSize <= 1 && currSize > 0)
+            if (currSize <= 1 && currSize > 0.1)
             {
-                currSize = currSize - 0.1f;
+                currSize = currSize - 0.01f;
             }
             else if(currSize > 1) {
-                currSize = currSize - 1f;
+                currSize = currSize - 0.1f;
             }
             else {
-                // currSize <= 0
+                currSize = 0.11f;
             }
         }
         else {
