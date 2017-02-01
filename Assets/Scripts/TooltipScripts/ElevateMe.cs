@@ -6,6 +6,7 @@ using UnityEngine;
 public class ElevateMe : MonoBehaviour
 {
     public GameObject player;
+    public GameObject text;
 
     private float currHeight;
 
@@ -18,7 +19,7 @@ public class ElevateMe : MonoBehaviour
         int rightIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
         leftDevice = SteamVR_Controller.Input(rightIndex);
         currHeight = player.transform.position.y;
-
+        text.SetActive(false);
 
         StartCoroutine(ChangingHeight());
 
@@ -32,9 +33,22 @@ public class ElevateMe : MonoBehaviour
         {
             if (leftDevice.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
             {
+                if (!text.activeSelf)
+                {
+                    text.SetActive(true);
+                }
+
                 Debug.Log("GetPressDown");
                 Elevate();
 
+            }
+            else
+            {
+
+                if (text.activeSelf)
+                {
+                    text.SetActive(false);
+                }
             }
 
             yield return null;
@@ -48,11 +62,11 @@ public class ElevateMe : MonoBehaviour
 
         if (difference > 0)
         {
-            currHeight = currHeight + 0.1f;
+            currHeight = currHeight + 0.05f;
         }
         else if (difference < 0)
         {
-            currHeight = currHeight - 0.1f;
+            currHeight = currHeight - 0.05f;
         }
 
 

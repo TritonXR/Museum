@@ -5,6 +5,7 @@ using UnityEngine;
 public class ResizeMe : MonoBehaviour {
     public GameObject player;
     public GameObject CameraEye;
+    public GameObject text;
     //public SteamVR_Camera head;
     //public float maximumDiff;
 
@@ -20,25 +21,32 @@ public class ResizeMe : MonoBehaviour {
         int rightIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Rightmost);
         rightDevice = SteamVR_Controller.Input(rightIndex);
         currSize = player.transform.localScale.x;
+
+        text.SetActive(false);
+
         StartCoroutine(CheckingResize());
 
-        //currentV = player.transform.localScale;
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-
-
-
-    }
 
     IEnumerator CheckingResize() {
         while(true) {
             if (rightDevice.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
             {
+                if (!text.activeSelf)
+                {
+                    text.SetActive(true);
+                }
+
                 Debug.Log("GetPressDown");
                 Resize();
+            }
+            else {
 
+                if (text.activeSelf)
+                {
+                    text.SetActive(false);
+                }
             }
 
             yield return null;
