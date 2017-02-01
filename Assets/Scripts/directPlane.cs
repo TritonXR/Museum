@@ -44,15 +44,15 @@ public class directPlane : VRTK_InteractableObject {
 
     protected override void Update()
     {
-       if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+       //if (Input.GetMouseButtonDown(0))
+       // {
+       //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if(Physics.Raycast(ray, out hit))
-            {
-                Debug.Log(hit.transform.gameObject.name);
-            }
-        }
+       //     if(Physics.Raycast(ray, out hit))
+       //     {
+       //         Debug.Log(hit.transform.gameObject.name);
+       //     }
+       // }
     }
     
     //For movement of the object on click

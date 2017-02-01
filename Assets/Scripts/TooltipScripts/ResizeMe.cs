@@ -47,7 +47,7 @@ public class ResizeMe : MonoBehaviour {
 
     void Resize()
     {
-        float difference = rightDevice.GetAxis().y - CameraEye.transform.position.y;
+        float difference = rightDevice.GetAxis().y; // - CameraEye.transform.position.y;
 
         Debug.Log(rightDevice.GetAxis().y + "  " + CameraEye.transform.position.y );
         if (difference > 0)
