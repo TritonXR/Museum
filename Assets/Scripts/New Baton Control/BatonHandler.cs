@@ -9,6 +9,8 @@ public class BatonHandler : MonoBehaviour {
     public BatonControl URPanel;
     public BatonControl BLPanel;
     public BatonControl BRPanel;
+    public BatonControl LPanel;
+    public BatonControl RPanel;
 
     public static BatonHandler instance;
     public PlaneGrabber planeGrabber;
@@ -20,6 +22,10 @@ public class BatonHandler : MonoBehaviour {
 
     bool moving;
     bool rotating;
+
+    Coroutine rotCoroutine;
+    Coroutine moveCoroutine;
+
 	// Use this for initialization
 	void Start () {
         if (instance == null)
@@ -48,10 +54,10 @@ public class BatonHandler : MonoBehaviour {
             if (moving)
             {
                 moving = false;
-                StopAllCoroutines();
+                StopCoroutine(moveCoroutine);
             }
             if (plane != null) {
-                StartCoroutine(planeForward(plane));
+                moveCoroutine = StartCoroutine(planeForward(plane));
      
             }    
         }
@@ -64,9 +70,9 @@ public class BatonHandler : MonoBehaviour {
                 if (moving)
                 {
                     moving = false;
-                    StopAllCoroutines();
+                    StopCoroutine(moveCoroutine);
                 }
-                StartCoroutine(planeBackward(plane));
+                moveCoroutine = StartCoroutine(planeBackward(plane));
             }
         }
 
@@ -78,10 +84,9 @@ public class BatonHandler : MonoBehaviour {
                 if (rotating)
                 {
                     rotating = false;
-                    StopCoroutine(planeLeft(plane));
-                    StopCoroutine(planeRight(plane));
+                    StopCoroutine(rotCoroutine);
                 }
-                StartCoroutine(planeLeft(plane));
+                rotCoroutine = StartCoroutine(planeLeft(plane));
             }
         }
 
@@ -93,12 +98,20 @@ public class BatonHandler : MonoBehaviour {
                 if (rotating)
                 {
                     rotating = false;
-                    StopCoroutine(planeLeft(plane));
-                    StopCoroutine(planeRight(plane));
+                    StopCoroutine(rotCoroutine);
                 }
-                StartCoroutine(planeRight(plane));
+                rotCoroutine = StartCoroutine(planeRight(plane));
             }
         }
+
+        //Stop
+        else if (LPanel.active && RPanel.active) {
+            if(plane!=null) {
+                StopAllCoroutines();
+            }
+        }
+
+
     }
 
     IEnumerator planeForward(GameObject plane) {
@@ -111,7 +124,6 @@ public class BatonHandler : MonoBehaviour {
         {
             Vector3 newPos = Vector3.Lerp(startPos, endPos, j / dur);
             plane.transform.position = newPos;
-            Debug.Log("Loop");
             yield return null;
         }
         moving = false;
@@ -128,7 +140,6 @@ public class BatonHandler : MonoBehaviour {
         {
             Vector3 newPos = Vector3.Lerp(startPos, endPos, j / dur);
             plane.transform.position = newPos;
-            Debug.Log("Loop");
             yield return null;
         }
         moving = false;
@@ -140,7 +151,7 @@ public class BatonHandler : MonoBehaviour {
         Debug.Log("Start Right");
         Quaternion startRot = plane.transform.rotation;
         Vector3 endRotEuler = startRot.eulerAngles;
-        endRotEuler.y += 10.0f;
+        endRotEuler.y += 20.0f;
         Quaternion endRot = Quaternion.Euler(endRotEuler);
 
 
@@ -159,7 +170,7 @@ public class BatonHandler : MonoBehaviour {
         Debug.Log("Start Left");
         Quaternion startRot = plane.transform.rotation;
         Vector3 endRotEuler = startRot.eulerAngles;
-        endRotEuler.y -= 10.0f;
+        endRotEuler.y -= 20.0f;
         Quaternion endRot = Quaternion.Euler(endRotEuler);
 
 
