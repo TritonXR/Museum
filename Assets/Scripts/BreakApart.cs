@@ -17,16 +17,14 @@ public class BreakApart : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        int count = 0;
+       
         if (collision.collider.gameObject.tag == "ground" && !exploded)
         {
             //Debug.Log("lalal");
             Boom();
-            count++;
             if(transform.childCount == 0)
             {
                 //Debug.Log("Now I have " + transform.childCount);
-                //Debug.Log(count);
                 exploded = true;
                 StartCoroutine(DeletePiece());
             }
@@ -45,13 +43,10 @@ public class BreakApart : MonoBehaviour {
         foreach (GameObject child in childsToDelete)
         {
             child.transform.parent = null;
-
             //if (child.tag != "Fire") is optional in case you don't wanna fire to fall
             child.AddComponent<Rigidbody>();
             child.GetComponent<Rigidbody>().mass = 30;
-            
         }
-
         //Debug.Log("What's up");
     }
 
@@ -59,14 +54,12 @@ public class BreakApart : MonoBehaviour {
     IEnumerator DeletePiece()
     {
         yield return new WaitForSeconds(10);
-
         foreach(GameObject childObj in childsToDelete)
         {
             Destroy(childObj);
         }
 
         childsToDelete.Clear();
-
         Destroy(transform.gameObject);
     }
 }
