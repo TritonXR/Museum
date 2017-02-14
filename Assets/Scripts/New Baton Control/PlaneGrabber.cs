@@ -20,8 +20,7 @@ public class PlaneGrabber : MonoBehaviour {
 
         RaycastHit gazeHit;
         if(Physics.Raycast(gaze, out gazeHit, Mathf.Infinity)) {
-            if(gazeHit.collider.GetComponent<IsPlane>()) {
-                Debug.LogError("yay plane");
+            if(gazeHit.collider.transform.root.GetComponent<IsPlane>()) {
                 return gazeHit.collider.gameObject;
             }
             else {

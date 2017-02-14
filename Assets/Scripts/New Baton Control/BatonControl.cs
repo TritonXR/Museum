@@ -22,13 +22,11 @@ public class BatonControl : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         active = true;
-        Debug.LogFormat("{0} Entered", other.gameObject.name);
         BatonHandler.instance.checkCombinations();
     }
 
     private void OnTriggerExit(Collider other)
     {
         active = false;
-        Debug.LogFormat("{0} Exited", other.gameObject.name);
     }
 }
