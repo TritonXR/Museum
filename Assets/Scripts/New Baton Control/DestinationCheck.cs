@@ -33,6 +33,7 @@ public class DestinationCheck : MonoBehaviour {
         if(frontCheck.active && backCheck.active)
         {
             BatonHandler.instance.StopAllCoroutines();
+            BatonHandler.instance.deactivateAllInput();
             GetComponent<Renderer>().material = finishedMat;
             Debug.Log("Plane at destination!");
             Destroy(BatonHandler.instance.plane.GetComponent<IsPlane>());

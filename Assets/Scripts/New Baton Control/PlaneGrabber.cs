@@ -24,12 +24,12 @@ public class PlaneGrabber : MonoBehaviour {
                 return gazeHit.collider.gameObject;
             }
             else {
-                Debug.LogError("Object at gaze is not a plane. " + gazeHit.collider.gameObject.name + " " + gazeHit.point);
+                //Debug.LogError("Object at gaze is not a plane. " + gazeHit.collider.gameObject.name + " " + gazeHit.point);
                 return null;
             }
         }
         else {
-            Debug.LogError("No object at gaze.");
+            //Debug.LogError("No object at gaze.");
             return null;
         }
     }

@@ -16,6 +16,10 @@ public class BatonHandler : MonoBehaviour {
     public PlaneGrabber planeGrabber;
     public GameObject plane;
 
+    public InputIndicator forwardArrow;
+    public InputIndicator backArrow;
+    public InputIndicator rightArrow;
+    public InputIndicator leftArrow;
 
     public float movementMult = 3.0f;
     public float dur = 0.5f;
@@ -54,6 +58,7 @@ public class BatonHandler : MonoBehaviour {
             if (moving)
             {
                 moving = false;
+                deactivateTransInput();
                 StopCoroutine(moveCoroutine);
             }
             if (plane != null) {
@@ -70,6 +75,7 @@ public class BatonHandler : MonoBehaviour {
                 if (moving)
                 {
                     moving = false;
+                    deactivateTransInput();
                     StopCoroutine(moveCoroutine);
                 }
                 moveCoroutine = StartCoroutine(planeBackward(plane));
@@ -84,6 +90,7 @@ public class BatonHandler : MonoBehaviour {
                 if (rotating)
                 {
                     rotating = false;
+                    deactivateRotInput();
                     StopCoroutine(rotCoroutine);
                 }
                 rotCoroutine = StartCoroutine(planeLeft(plane));
@@ -98,6 +105,7 @@ public class BatonHandler : MonoBehaviour {
                 if (rotating)
                 {
                     rotating = false;
+                    deactivateRotInput();
                     StopCoroutine(rotCoroutine);
                 }
                 rotCoroutine = StartCoroutine(planeRight(plane));
@@ -108,6 +116,7 @@ public class BatonHandler : MonoBehaviour {
         else if (LPanel.active && RPanel.active) {
             if(plane!=null) {
                 StopAllCoroutines();
+                deactivateAllInput();
             }
         }
 
@@ -116,7 +125,7 @@ public class BatonHandler : MonoBehaviour {
 
     IEnumerator planeForward(GameObject plane) {
         moving = true;
-        Debug.Log("Start Forward");
+        forwardArrow.activate();
         Vector3 startPos = plane.transform.position;
         Vector3 endPos = plane.transform.position + plane.transform.forward * movementMult * 2;
 
@@ -127,12 +136,13 @@ public class BatonHandler : MonoBehaviour {
             yield return null;
         }
         moving = false;
+        forwardArrow.deactivate();
     }
 
     IEnumerator planeBackward(GameObject plane)
     {
         moving = true;
-        Debug.Log("Start Backward");
+        backArrow.activate();
         Vector3 startPos = plane.transform.position;
         Vector3 endPos = plane.transform.position - (plane.transform.forward * movementMult);
 
@@ -143,12 +153,13 @@ public class BatonHandler : MonoBehaviour {
             yield return null;
         }
         moving = false;
+        backArrow.deactivate();
     }
 
     IEnumerator planeRight(GameObject plane)
     {
         rotating = true;
-        Debug.Log("Start Right");
+        rightArrow.activate();
         Quaternion startRot = plane.transform.rotation;
         Vector3 endRotEuler = startRot.eulerAngles;
         endRotEuler.y += 20.0f;
@@ -162,12 +173,13 @@ public class BatonHandler : MonoBehaviour {
             yield return null;
         }
         rotating = false;
+        rightArrow.deactivate();
     }
 
     IEnumerator planeLeft(GameObject plane)
     {
         rotating = true;
-        Debug.Log("Start Left");
+        leftArrow.activate();
         Quaternion startRot = plane.transform.rotation;
         Vector3 endRotEuler = startRot.eulerAngles;
         endRotEuler.y -= 20.0f;
@@ -181,6 +193,24 @@ public class BatonHandler : MonoBehaviour {
             yield return null;
         }
         rotating = false;
+        leftArrow.deactivate();
+    }
+
+   public void deactivateAllInput() {
+        forwardArrow.deactivate();
+        backArrow.deactivate();
+        rightArrow.deactivate();
+        leftArrow.deactivate();
+    }
+
+    void deactivateRotInput() {
+        rightArrow.deactivate();
+        leftArrow.deactivate();
+    }
+
+    void deactivateTransInput() {
+        forwardArrow.deactivate();
+        backArrow.deactivate();
     }
 
 }
