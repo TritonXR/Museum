@@ -16,6 +16,7 @@ public class BatonHandler : MonoBehaviour {
     public PlaneGrabber planeGrabber;
     public GameObject plane;
 
+    //Indication Arrows
     public InputIndicator forwardArrow;
     public InputIndicator backArrow;
     public InputIndicator rightArrow;
