@@ -5,6 +5,7 @@ using UnityEngine;
 public class ResizeMe : MonoBehaviour {
     public GameObject player;
     public GameObject CameraEye;
+    public GameObject rightController;
     public GameObject text;
     //public SteamVR_Camera head;
     //public float maximumDiff;
@@ -15,6 +16,8 @@ public class ResizeMe : MonoBehaviour {
     //private Vector3 currentV;
     //private SteamVR_TrackedObject trackedObj;
     private SteamVR_Controller.Device rightDevice;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +34,8 @@ public class ResizeMe : MonoBehaviour {
 
     IEnumerator CheckingResize() {
         while(true) {
-            if (rightDevice.GetPress(SteamVR_Controller.ButtonMask.Touchpad))
+
+            if (rightDevice.GetPress(SteamVR_Controller.ButtonMask.Trigger))
             {
                 if (!text.activeSelf)
                 {
@@ -55,7 +59,7 @@ public class ResizeMe : MonoBehaviour {
 
     void Resize()
     {
-        float difference = rightDevice.GetAxis().y; // - CameraEye.transform.position.y;
+        float difference = rightController.transform.position.y - CameraEye.transform.position.y;
 
         //Debug.Log(rightDevice.GetAxis().y + "  " + CameraEye.transform.position.y );
         
