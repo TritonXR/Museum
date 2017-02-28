@@ -10,10 +10,26 @@ public class ViveGrip_TouchDetection : MonoBehaviour {
   }
 
   void OnTriggerEnter(Collider other) {
+        
+    /* By Russell */
+        //if (other.gameObject.tag == "resizable")
+        //{
+        //    other.gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
+        //}
+    /* By Russell End */
+
     collidingObjects.Add(other.gameObject);
   }
 
   void OnTriggerExit(Collider other) {
+    
+    /* By Russell */
+        //if (other.gameObject.tag == "resizable")
+        //{
+        //    other.gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
+        //}
+    /* By Russell End */
+    
     collidingObjects.Remove(other.gameObject);
   }
 
@@ -21,6 +37,7 @@ public class ViveGrip_TouchDetection : MonoBehaviour {
     float closestDistance = Mathf.Infinity;
     GameObject touchedObject = null;
     foreach (GameObject gameObject in collidingObjects) {
+
       if (!ActiveViveGripObject(gameObject)) { continue; }
       float distance = Vector3.Distance(transform.position, gameObject.transform.position);
       if (distance < closestDistance) {

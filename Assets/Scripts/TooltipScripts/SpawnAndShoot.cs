@@ -50,7 +50,7 @@ public class SpawnAndShoot : MonoBehaviour {
 
     void CreatePlasma()
     {
-        Debug.Log("I am about to create a plasma");
+        //Debug.Log("I am about to create a plasma");
         if (myPlasma == null)
         {
             myPlasma = (GameObject)Instantiate(plasma, spawnPos.transform.position, spawnPos.transform.localRotation);
@@ -113,7 +113,7 @@ public class SpawnAndShoot : MonoBehaviour {
 
     void ShootPlasma()
     {
-        Debug.Log("I am going to shoot the plasma ");
+        //Debug.Log("I am going to shoot the plasma ");
         myPlasma.transform.parent = null;
         myPlasma.GetComponent<Rigidbody>().velocity = spawnPos.transform.forward * fireForce;
         leftDeviceGeneral.TriggerHapticPulse(3500);
