@@ -18,12 +18,15 @@ public class SpawnAndShoot : MonoBehaviour {
 
     private Vector3 zeroVec = new Vector3(0, 0, 0);
     private GameObject hittedObj;
+    private int leftIndex;
 
     // Use this for initialization
     void Start () {
-
-        int leftIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
-        leftDevice = SteamVR_Controller.Input(leftIndex);
+        if (leftController.activeSelf)
+        {
+            leftIndex = SteamVR_Controller.GetDeviceIndex(SteamVR_Controller.DeviceRelation.Leftmost);
+            leftDevice = SteamVR_Controller.Input(leftIndex);
+        }
 
         myPlasma = null;
 
@@ -36,7 +39,11 @@ public class SpawnAndShoot : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (leftController)
+        if(leftDevice == null)
+        {
+            leftDevice = SteamVR_Controller.Input(leftIndex);
+        }
+        if (leftController.activeSelf)
         {
             if (leftDevice.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
             {
