@@ -116,7 +116,7 @@ public class SpawnAndShoot : MonoBehaviour {
         Debug.Log("I am going to shoot the plasma ");
         myPlasma.transform.parent = null;
         myPlasma.GetComponent<Rigidbody>().velocity = spawnPos.transform.forward * fireForce;
-        leftDeviceGeneral.TriggerHapticPulse(3000);
+        leftDeviceGeneral.TriggerHapticPulse(3500);
         Destroy(myPlasma, 10);
         myPlasma = null;
     }
