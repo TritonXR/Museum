@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 65747881395357552}
   - component: {fileID: 65748902686649732}
   - component: {fileID: 114220156819603454}
+  - component: {fileID: 114489792451169302}
   m_Layer: 0
   m_Name: UpdatedFighter
   m_TagString: Untagged
@@ -7157,8 +7158,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 67.411354, y: 93.739235, z: 540.85834}
-  m_Center: {x: -0.017547607, y: 76.36661, z: -27.406311}
+  m_Size: {x: 67.411354, y: 87.672134, z: 527.62695}
+  m_Center: {x: -0.017547607, y: 79.4001, z: -34.046936}
 --- !u!65 &65213088484338640
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -7181,8 +7182,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 442.85965, y: 74.87824, z: 103.08068}
-  m_Center: {x: 0.104522705, y: 91.5037, z: -123.25592}
+  m_Size: {x: 442.85965, y: 23.167717, z: 83.81112}
+  m_Center: {x: 0.104522705, y: 98.43219, z: -113.63678}
 --- !u!65 &65687100465776458
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -7236,3 +7237,15 @@ MonoBehaviour:
   rotation:
     mode: 1
     localOrientation: {x: 0, y: 0, z: 0}
+--- !u!114 &114489792451169302
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054970659531596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e936d74e506a0e4db7083e7894cb5b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hueToSet: {r: 1, g: 1, b: 1, a: 0}

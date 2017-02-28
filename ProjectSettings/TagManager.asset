@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - ground
+  - resizable
   layers:
   - Default
   - TransparentFX
