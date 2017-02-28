@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ec6dd5709efec2f46969cec97fd8df23
+labels:
+- Input
+- Vive
+- Htc
+- Steamvr
+- Haptic
+timeCreated: 1462464689
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

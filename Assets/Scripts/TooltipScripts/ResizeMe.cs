@@ -38,7 +38,7 @@ public class ResizeMe : MonoBehaviour {
                     text.SetActive(true);
                 }
 
-                Debug.Log("GetPressDown");
+               // Debug.Log("GetPressDown");
                 Resize();
             }
             else {
@@ -57,7 +57,7 @@ public class ResizeMe : MonoBehaviour {
     {
         float difference = rightDevice.GetAxis().y; // - CameraEye.transform.position.y;
 
-        Debug.Log(rightDevice.GetAxis().y + "  " + CameraEye.transform.position.y );
+        //Debug.Log(rightDevice.GetAxis().y + "  " + CameraEye.transform.position.y );
         
         if (difference > 0)
         {
@@ -90,11 +90,12 @@ public class ResizeMe : MonoBehaviour {
             
         }
 
-        Debug.LogFormat("prevSize is: {0}", prevSize);
-        Debug.LogFormat("currSize is: {0}", currSize);
+        //Debug.LogFormat("prevSize is: {0}", prevSize);
+        //Debug.LogFormat("currSize is: {0}", currSize);
 
-
+        //Vector3 tempPlayer = player.transform.position;
         player.transform.localScale = new Vector3(currSize, currSize, currSize);
+        //player.transform.position = new Vector3(tempPlayer.x, currSize/2, tempPlayer.z);
         
     }
 

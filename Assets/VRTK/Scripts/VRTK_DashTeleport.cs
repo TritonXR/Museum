@@ -45,6 +45,8 @@ namespace VRTK
         public float capsuleBottomOffset = 0.5f;
         [Tooltip("The radius of the CapsuleCast.")]
         public float capsuleRadius = 0.5f;
+        [Tooltip("Russell: set the max teleport distance to avoid moving too fast.")]
+        public float maxTeleportAllowed = 10f;
 
         /// <summary>
         /// Emitted when the CapsuleCast towards the target has found that obstacles are in the way.
@@ -106,12 +108,12 @@ namespace VRTK
 
             foreach (RaycastHit hit in allHits)
             {
-                gameObjectInTheWay = hit.collider.gameObject != target.gameObject ? true : false;
+                gameObjectInTheWay = hit.collider.gameObject.tag == "ground" ? true : false;
             }
 
             if (gameObjectInTheWay)
             {
-                OnWillDashThruObjects(SetDashTeleportEvent(allHits));
+                //OnWillDashThruObjects(SetDashTeleportEvent(allHits));
             }
 
             if (maxDistance >= minDistanceForNormalLerp)
@@ -127,8 +129,26 @@ namespace VRTK
             float elapsedTime = 0;
             float t = 0;
 
+            float currentDis = Vector3.Distance(targetPosition, transform.position);
+
+            if (currentDis > maxTeleportAllowed)
+            {
+                Debug.Log("curretnDis is : " + currentDis);
+                float ratio = maxTeleportAllowed / currentDis;
+                Debug.Log("Ratio is : " + ratio);
+
+                Vector3 adjustedTarget = new Vector3((targetPosition.x - transform.position.x)*ratio + transform.position.x, targetPosition.y, (targetPosition.z - transform.position.z) * ratio + transform.position.z);
+
+                targetPosition = adjustedTarget;
+
+
+            }
+
             while (t < 1)
             {
+                Debug.Log("MyDistance is &&&&&&&&&&&&&&&&&:   " + Vector3.Distance(targetPosition,transform.position));
+
+                
                 transform.position = Vector3.Lerp(startPosition, targetPosition, t);
                 elapsedTime += Time.deltaTime;
                 t = elapsedTime / lerpTime;
@@ -143,7 +163,8 @@ namespace VRTK
                 yield return new WaitForEndOfFrame();
             }
 
-            if (gameObjectInTheWay)
+            // Russell: don't want this
+            if (gameObjectInTheWay&&false)
             {
                 OnDashedThruObjects(SetDashTeleportEvent(allHits));
             }
