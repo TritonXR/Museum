@@ -29,21 +29,35 @@ public class ViveGrip_Grabbable : MonoBehaviour {
     ViveGrip_Highlighter.AddTo(gameObject);
   }
 
-  // These are called this on the scripts of the attached object and children of the controller:
+    // These are called this on the scripts of the attached object and children of the controller:
 
-  // Called when touched and moved away from, respectively
-  //   void ViveGripTouchStart(ViveGrip_GripPoint gripPoint) {}
-  //   void ViveGripTouchStop(ViveGrip_GripPoint gripPoint) {}
+    // Called when touched and moved away from, respectively
+    //   void ViveGripTouchStart(ViveGrip_GripPoint gripPoint) {}
+    //   void ViveGripTouchStop(ViveGrip_GripPoint gripPoint) {}
 
-  // Called when touched and the grab button is pressed and released, respectively
-  //   void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {}
-  //   void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {}
+    // Called when touched and the grab button is pressed and released, respectively
+    //   void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {}
+    //   void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {}
 
-  // Called when highlighting changes
-  //   void ViveGripHighlightStart(ViveGrip_GripPoint gripPoint) {}
-  //   void ViveGripHighlightStop(ViveGrip_GripPoint gripPoint) {}
+    // Called when highlighting changes
+    //   void ViveGripHighlightStart(ViveGrip_GripPoint gripPoint) {}
+    //   void ViveGripHighlightStop(ViveGrip_GripPoint gripPoint) {}
 
-  public void OnDrawGizmosSelected() {
+    void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {
+        if (gameObject.tag == "resizable")
+        {
+            gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
+        }
+    }
+    void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {
+        if (gameObject.tag == "resizable")
+        {
+            gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
+        }
+    }
+
+
+    public void OnDrawGizmosSelected() {
     if (anchor != null && anchor.enabled) {
       Gizmos.DrawIcon(transform.position + RotatedAnchor(), "ViveGrip/anchor.png", true);
     }

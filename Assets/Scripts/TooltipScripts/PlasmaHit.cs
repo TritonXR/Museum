@@ -31,7 +31,7 @@ public class PlasmaHit : MonoBehaviour {
             // if plane is big right now
             if (!hittedObj.GetComponent<Resizable>().isLittle)
             {
-                if (!hittedObj.GetComponent<Resizable>().isImmune)
+                if (!hittedObj.GetComponent<Resizable>().isImmune && !hittedObj.GetComponent<Resizable>().isGrabbed)
                 {
                     if (!isExecuting)
                     {
@@ -46,7 +46,7 @@ public class PlasmaHit : MonoBehaviour {
             // if the plane is already little
             else
             {
-                if (!hittedObj.GetComponent<Resizable>().isImmune)
+                if (!hittedObj.GetComponent<Resizable>().isImmune && !hittedObj.GetComponent<Resizable>().isGrabbed)
                 {
                     if (!isExecuting)
                     {
@@ -69,6 +69,10 @@ public class PlasmaHit : MonoBehaviour {
     IEnumerator WaitAndResizeDown(GameObject hittedObj)
     {
         GameObject tempRibbon = (GameObject)Instantiate(myRibbon, hittedObj.transform.position, hittedObj.transform.localRotation);
+
+        // the safty check in case the ball is destroyed before it finish its duty
+        hittedObj.GetComponent<Resizable>().DoSaftyCheck(tempRibbon);
+
         yield return new WaitForSeconds(1f);
         hittedObj.GetComponent<Resizable>().ResizeDown();
         yield return new WaitForSeconds(0.5f);
@@ -87,6 +91,10 @@ public class PlasmaHit : MonoBehaviour {
     IEnumerator WaitAndResizeUp(GameObject hittedObj)
     {
         GameObject tempRibbon = (GameObject)Instantiate(myRibbon, hittedObj.transform.position, hittedObj.transform.localRotation);
+
+        // the safty check in case the ball is destroyed before it finish its duty
+        hittedObj.GetComponent<Resizable>().DoSaftyCheck(tempRibbon);
+
         yield return new WaitForSeconds(1f);
         hittedObj.GetComponent<Resizable>().ResizeUp();
         yield return new WaitForSeconds(0.5f);

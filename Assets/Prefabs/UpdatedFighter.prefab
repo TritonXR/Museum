@@ -182,9 +182,10 @@ GameObject:
   - component: {fileID: 65748902686649732}
   - component: {fileID: 114220156819603454}
   - component: {fileID: 114489792451169302}
+  - component: {fileID: 114828834137669914}
   m_Layer: 0
   m_Name: UpdatedFighter
-  m_TagString: Untagged
+  m_TagString: resizable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2006,9 +2007,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1054970659531596}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 58.41, y: 0, z: -84.57}
-  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_LocalScale: {x: 0.04611401, y: 0.04611401, z: 0.04611401}
   m_Children:
   - {fileID: 4163960652505852}
   - {fileID: 4874541746960896}
@@ -7249,3 +7250,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hueToSet: {r: 1, g: 1, b: 1, a: 0}
+--- !u!114 &114828834137669914
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1054970659531596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5063c0a31f58a7a468c7279175b4d827, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLittle: 0
+  isImmune: 0
+  scaleMutiplier: 0.05

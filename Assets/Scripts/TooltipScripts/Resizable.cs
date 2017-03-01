@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Resizable : MonoBehaviour {
 
-
+    [HideInInspector]
     public bool isLittle;
-
+    [HideInInspector]
     public bool isImmune;
+    [HideInInspector]
+    public bool isGrabbed;
 
-    //public bool isGrabbed;
+    public float scaleMutiplier;
 
     private Vector3 storedSize;
+    private Vector3 storedPos;
 
     private Quaternion storedRotation;
 
@@ -24,21 +27,14 @@ public class Resizable : MonoBehaviour {
 
         isImmune = false;
 
-        //isGrabbed = false;
+        isGrabbed = false;
 
         storedSize = transform.localScale;
-
-        storedRotation = transform.localRotation;
 
         GetComponent<ViveGrip_Grabbable>().enabled = false;
 
         StartCoroutine(WaitAndKinematic());
 
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
 		
 	}
     
@@ -48,7 +44,7 @@ public class Resizable : MonoBehaviour {
         GetComponent<ViveGrip_Grabbable>().enabled = true;
         GetComponent<Rigidbody>().isKinematic = false;
         float currScaleValue = transform.localScale.x;
-        float newScaleValue = currScaleValue * 0.25f;
+        float newScaleValue = currScaleValue * scaleMutiplier;
         transform.localScale = new Vector3(newScaleValue, newScaleValue, newScaleValue);
         
     }
@@ -56,8 +52,13 @@ public class Resizable : MonoBehaviour {
 
     public void ResizeUp()
     {
-        Debug.Log("I am plane, I am about to resize up!!!!!");
-        
+        transform.localScale = storedSize;
+        transform.localPosition = storedPos;
+        transform.localRotation = storedRotation;
+        isLittle = false;
+        GetComponent<ViveGrip_Grabbable>().enabled = false;
+        GetComponent<Rigidbody>().isKinematic = true;
+
     }
 
 
@@ -65,6 +66,8 @@ public class Resizable : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         GetComponent<Rigidbody>().isKinematic = true;
+        storedRotation = transform.localRotation;
+        storedPos = transform.localPosition;
         yield return null;
     }
 
@@ -73,30 +76,52 @@ public class Resizable : MonoBehaviour {
     {
         if (wantImmune)
         {
-            Debug.Log("I am Plane, I am Immune!!!!");
+            //Debug.Log("I am Plane, I am Immune!!!!");
             isImmune = true;
         }
         else
         {
             isImmune = false;
-            Debug.Log("I am Plane, and I am not Immune now!!!!");
+            //Debug.Log("I am Plane, and I am not Immune now!!!!");
         }
     }
 
-    //public void ToggleGrabbed(bool isGrabbing)
-    //{
+    public void ToggleGrabbed(bool isGrabbing)
+    {
 
-    //    if (isGrabbing)
-    //    {
-    //        isGrabbed = true;
-    //        Debug.Log("I am Grabbed");
-    //    }
+        if (isGrabbing)
+        {
+            isGrabbed = true;
+            Debug.Log("I am Grabbed");
+        }
 
-    //    else
-    //    {
-    //        isGrabbed = false;
-    //        Debug.Log("I am no longer Grabbed");
-    //    }
+        else
+        {
+            isGrabbed = false;
+            Debug.Log("I am no longer Grabbed");
+        }
+
+    }
+
+    public void DoSaftyCheck(GameObject rainbow) {
+        StartCoroutine(SaftyCheck(rainbow));
+    }
+
+    // check if the rain has been successfully destroyed after certain time
+    IEnumerator SaftyCheck(GameObject rainbow)
+    {
+
+        yield return new WaitForSeconds(2.6f);
+
+        if (isImmune)
+        {
+            isImmune = false;
+        }
         
-    //}
+        if(rainbow != null)
+        {
+            Destroy(rainbow);
+        }
+
+    }
 }
