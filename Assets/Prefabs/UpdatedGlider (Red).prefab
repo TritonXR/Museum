@@ -3456,7 +3456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thePlayer: {fileID: 0}
-  sensitiveDistance: 10
+  sensitiveDistance: 15
   planeInfoBox: {fileID: 1540067063556726}
   planeInfoBox2: {fileID: 1412921703640850}
 --- !u!114 &114914592535454974
