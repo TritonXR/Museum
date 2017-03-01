@@ -66,6 +66,11 @@ public class Resizable : MonoBehaviour {
 
     public void ResizeUp()
     {
+        if (infobox.activeSelf)
+        {
+            infobox.SetActive(false);
+        }
+
         transform.localScale = storedSize;
         transform.localPosition = storedPos;
         transform.localRotation = storedRotation;
