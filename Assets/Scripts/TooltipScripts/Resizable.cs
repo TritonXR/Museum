@@ -10,13 +10,17 @@ public class Resizable : MonoBehaviour {
     public bool isImmune;
     [HideInInspector]
     public bool isGrabbed;
+    [HideInInspector]
+    public bool isShown;
 
+    public GameObject infobox;
     public float scaleMutiplier;
 
     private Vector3 storedSize;
     private Vector3 storedPos;
-
     private Quaternion storedRotation;
+
+
 
     
 
@@ -24,10 +28,11 @@ public class Resizable : MonoBehaviour {
 	void Start () {
 
         isLittle = false;
-
         isImmune = false;
-
         isGrabbed = false;
+        isShown = false;
+
+        infobox.SetActive(false);
 
         storedSize = transform.localScale;
 
@@ -37,7 +42,12 @@ public class Resizable : MonoBehaviour {
 
 		
 	}
-    
+
+    public void CloseInfoBox()
+    {
+        infobox.SetActive(false);
+    }
+
     public void ResizeDown()
     {
         isLittle = true;
@@ -46,9 +56,13 @@ public class Resizable : MonoBehaviour {
         float currScaleValue = transform.localScale.x;
         float newScaleValue = currScaleValue * scaleMutiplier;
         transform.localScale = new Vector3(newScaleValue, newScaleValue, newScaleValue);
-        
-    }
 
+        if (!isShown)
+        {
+            isShown = true;
+            infobox.SetActive(true);
+        }
+    }
 
     public void ResizeUp()
     {

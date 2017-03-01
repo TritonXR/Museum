@@ -46,6 +46,7 @@ public class ViveGrip_Grabbable : MonoBehaviour {
     void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {
         if (gameObject.tag == "resizable")
         {
+            gameObject.GetComponent<Resizable>().CloseInfoBox();
             gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
         }
     }
