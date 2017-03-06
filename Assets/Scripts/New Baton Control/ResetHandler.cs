@@ -10,8 +10,8 @@ public class ResetHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        planeResetLoc = transform.position;
-        planeResetRot = transform.rotation;
+        planeResetLoc = transform.parent.position;
+        planeResetRot = transform.parent.rotation;
 	}
 	
 	// Update is called once per frame
@@ -28,8 +28,8 @@ public class ResetHandler : MonoBehaviour {
 
     public void reset() {
         Instantiate(explosion, transform.position, Quaternion.identity);
-        transform.position = planeResetLoc;
-        transform.rotation = planeResetRot;
+        transform.parent.position = planeResetLoc;
+        transform.parent.rotation = planeResetRot;
         BatonHandler.instance.StopAllCoroutines();
         BatonHandler.instance.deactivateAllInput();
     }

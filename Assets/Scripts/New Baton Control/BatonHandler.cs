@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BatonHandler : MonoBehaviour {
-    
+
+    public bool enableBackwards;    
+
     //Combination Panels 
     public BatonControl ULPanel;
     public BatonControl URPanel;
@@ -69,17 +71,21 @@ public class BatonHandler : MonoBehaviour {
         }
 
         //Backward
+
         else if (BLPanel.active && BRPanel.active)
         {
-            if (plane != null)
+            if (enableBackwards)
             {
-                if (moving)
+                if (plane != null)
                 {
-                    moving = false;
-                    deactivateTransInput();
-                    StopCoroutine(moveCoroutine);
+                    if (moving)
+                    {
+                        moving = false;
+                        deactivateTransInput();
+                        StopCoroutine(moveCoroutine);
+                    }
+                    moveCoroutine = StartCoroutine(planeBackward(plane));
                 }
-                moveCoroutine = StartCoroutine(planeBackward(plane));
             }
         }
 
