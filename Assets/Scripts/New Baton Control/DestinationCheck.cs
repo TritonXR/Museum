@@ -12,6 +12,9 @@ public class DestinationCheck : MonoBehaviour {
     public static DestinationCheck instance;
     public Material finishedMat;
 
+    public LevelChanger nextLevel;
+    
+
 	// Use this for initialization
 	void Start () {
         if (instance == null)
@@ -37,6 +40,9 @@ public class DestinationCheck : MonoBehaviour {
             GetComponent<Renderer>().material = finishedMat;
             Debug.Log("Plane at destination!");
             Destroy(BatonHandler.instance.plane.GetComponent<IsPlane>());
+
+            //Activate Next Level on Controller
+            
 
         }
     }

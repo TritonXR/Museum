@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BatonHandler : MonoBehaviour {
 
-    public bool enableBackwards;    
+    public bool enableBackwards;
+    public bool enableStop;
 
     //Combination Panels 
     public BatonControl ULPanel;
@@ -121,9 +122,13 @@ public class BatonHandler : MonoBehaviour {
 
         //Stop
         else if (LPanel.active && RPanel.active) {
-            if(plane!=null) {
-                StopAllCoroutines();
-                deactivateAllInput();
+            if (enableStop)
+            {
+                if (plane != null)
+                {
+                    StopAllCoroutines();
+                    deactivateAllInput();
+                }
             }
         }
 
