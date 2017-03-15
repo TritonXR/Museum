@@ -20,7 +20,7 @@ public class directPlane : VRTK_InteractableObject {
 
     private bool atPlayer = false;
     RaycastHit hit;
-    static bool running;
+    bool running;
 
     Vector3 startPos; //Beginning position of the lerp
     Vector3 endPos; 
@@ -31,8 +31,6 @@ public class directPlane : VRTK_InteractableObject {
     RotateWingAngle[] wingAngleArray;
 
     Rotate[] propellers;
-
-
 
 	protected override void Start () {
         base.Start();
@@ -46,15 +44,15 @@ public class directPlane : VRTK_InteractableObject {
 
     protected override void Update()
     {
-       if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+       //if (Input.GetMouseButtonDown(0))
+       // {
+       //     Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if(Physics.Raycast(ray, out hit))
-            {
-                Debug.Log(hit.transform.gameObject.name);
-            }
-        }
+       //     if(Physics.Raycast(ray, out hit))
+       //     {
+       //         Debug.Log(hit.transform.gameObject.name);
+       //     }
+       // }
     }
     
     //For movement of the object on click
@@ -175,21 +173,17 @@ public class directPlane : VRTK_InteractableObject {
 
     public override void StartUsing(GameObject usingObject)
     {
-
         Debug.Log("Plane Start");
         base.StartUsing(usingObject);
         Activate();
-
     }
 
 
     public override void StopUsing(GameObject usingObject)
     {
-
         Debug.Log("Plane Stop");
         base.StopUsing(usingObject);
         Activate();
-
     }
     //If object has this script, set a boolean to true
     //Coroutine to deactivate boolean 

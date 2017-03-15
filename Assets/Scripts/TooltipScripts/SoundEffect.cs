@@ -15,15 +15,11 @@ public class SoundEffect : MonoBehaviour
     //private AudioSource m_Landing;
     //private AudioSource m_EngineStart;
 
-    float MAX_DISTANCE = 35.0f;
-    float MIN_DISTANCE = 5.0f;
-
     void Start()
     {
         engineSounds = this.gameObject.AddComponent<AudioSource>();
         engineSounds.spatialBlend = 1.0f;
-        engineSounds.maxDistance = MAX_DISTANCE;
-        engineSounds.minDistance = MIN_DISTANCE;
+
         engineSounds.clip = engineIdleSound;
     }
 
