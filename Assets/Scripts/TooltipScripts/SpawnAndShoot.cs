@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpawnAndShoot : MonoBehaviour {
 
@@ -17,14 +18,18 @@ public class SpawnAndShoot : MonoBehaviour {
     public Transform spawnPos;
     public float fireForce = 3f;
     public GameObject arrow;
+    public Transform loadingBar;
+    public float ActivationTime;
+
     private GameObject myPlasma;
     private GameObject myLine;
     private GameObject hittedObj;
-
+    private bool readToShoot;
+    private float timeElapsed = 0;
 
     // Use this for initialization
     void Start () {
-
+        readToShoot = false;
         leftDevice = leftController.gameObject.GetComponent<SteamVR_TrackedController>();
         trackedObj = leftController.gameObject.GetComponent<SteamVR_TrackedObject>();
         //leftDeviceGeneral = leftController.gameObject.GetComponent<SteamVR_TrackedObject>();
@@ -38,16 +43,49 @@ public class SpawnAndShoot : MonoBehaviour {
 
     void TriggerClicked(object sender, ClickedEventArgs e)
     {
+        timeElapsed = 0;
+        readToShoot = false;
+        StartCoroutine(StartLoading());
         CreatePlasma();
         arrow.SetActive(true);
     }
     
     void TriggerUnClicked(object sender, ClickedEventArgs e)
     {
-        ShootPlasma();
+        if (readToShoot)
+        {
+            ShootPlasma();
+        }
+        else
+        {
+            // Destroy Plasma and do nothing
+            DestroyPlasma();
+        }
+        timeElapsed = 0;
         arrow.SetActive(false);
     }
 
+
+    IEnumerator StartLoading()
+    {
+        while (true)
+        {
+            timeElapsed += Time.deltaTime;
+            LoadingImage(ActivationTime);
+
+            if (timeElapsed >= ActivationTime)
+            {
+                // LoadingBar Disappear
+                // set readyToShoot to be true
+                readToShoot = true;
+                break;
+            }
+
+            yield return null;
+        }
+
+        yield return null;
+    }
     void CreatePlasma()
     {
         //Debug.Log("I am about to create a plasma");
@@ -120,6 +158,23 @@ public class SpawnAndShoot : MonoBehaviour {
         Destroy(myPlasma, 10);
         myPlasma = null;
     }
+
+    void DestroyPlasma()
+    {
+        Destroy(myPlasma);
+        myPlasma = null;
+    }
+
+    void LoadingImage(float activationTime)
+    {
+        var image = loadingBar.GetComponent<Image>();
+        loadingBar.GetComponent<Image>().fillAmount = Mathf.Clamp(timeElapsed / activationTime, 0, 1);
+        Color c = image.color;
+        c = Color.white;
+        c.a = 0.2f;
+        image.color = c;
+    }
+
 
 
 }
