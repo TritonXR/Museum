@@ -17,17 +17,24 @@ public class BatonPickUp : MonoBehaviour {
 
     private void OnTriggerStay(Collider col)
     {
+        if(col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)")
+        {
+            Debug.Log("HERE");
+        }
 
-        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && (col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)") && col.attachedRigidbody.isKinematic == false)
+
+            if (device.GetPressDown(SteamVR_Controller.ButtonMask.Grip) && (col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)") && col.attachedRigidbody.isKinematic == false)
         {
             Debug.Log("You have collided with " + col.name + " while holding down grip.");
             col.gameObject.transform.SetParent(gameObject.transform);
             col.attachedRigidbody.isKinematic = true;
+            col.attachedRigidbody.useGravity = false;
         }
         if (device.GetPressUp(SteamVR_Controller.ButtonMask.Grip))
         {
             col.gameObject.transform.SetParent(null);
             col.attachedRigidbody.isKinematic = false;
+            col.attachedRigidbody.useGravity = true;
         }
     }
 }

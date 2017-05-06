@@ -9,6 +9,7 @@ TagManager:
   - resizable
   - infobox
   - Plane
+  - baton
   layers:
   - Default
   - TransparentFX

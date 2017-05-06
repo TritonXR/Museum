@@ -6,7 +6,9 @@ using UnityEngine;
 public class ModelActiveState : MonoBehaviour {
     SteamVR_TrackedObject trackedObj;
     SteamVR_Controller.Device device;
-	// Use this for initialization
+    // Use this for initialization
+
+    public GameObject model;
 	void Awake () {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
     }
@@ -20,17 +22,20 @@ public class ModelActiveState : MonoBehaviour {
     {
         if((col.tag == "resizable" || col.tag == "baton") && device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
-            trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = false;
+            //trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = false;
+            model.SetActive(false);
         }
-        else if(trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled == false && !device.GetPress(SteamVR_Controller.ButtonMask.Grip))
+        else if(model.activeSelf == false && !device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
-            trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = true;
+            //trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = true;
+            model.SetActive(true);
         }
     }
 
     private void OnTriggerExit(Collider col)
     {
-        if((col.tag == "resizable" || col.tag == "baton"))
-        trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = true;
+        if ((col.tag == "resizable" || col.tag == "baton") && model.activeSelf == false)
+            //trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = true;
+            model.SetActive(true);
     }
 }
