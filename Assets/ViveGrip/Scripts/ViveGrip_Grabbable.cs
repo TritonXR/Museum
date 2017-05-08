@@ -42,19 +42,34 @@ public class ViveGrip_Grabbable : MonoBehaviour {
     // Called when highlighting changes
     //   void ViveGripHighlightStart(ViveGrip_GripPoint gripPoint) {}
     //   void ViveGripHighlightStop(ViveGrip_GripPoint gripPoint) {}
-
+    private int count=0;
     void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {
         if (gameObject.tag == "resizable")
         {
             gameObject.GetComponent<Resizable>().CloseInfoBox();
             gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
         }
+        /*
+        if(gameObject.tag == "baton")
+        {
+            Debug.Log("HERE!!!");
+            count++;
+            if (count == 2)
+                Debug.Log("Load Scene now!" + count);
+            //Load new scene here
+        }*/
     }
     void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {
         if (gameObject.tag == "resizable")
         {
             gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
-        }
+        }/*
+        if(gameObject.tag == "baton")
+        {
+            Debug.Log("You let go of a baton!");
+            count--;
+            Debug.Log("Scene can't load!" + count);
+        }*/
     }
 
 
