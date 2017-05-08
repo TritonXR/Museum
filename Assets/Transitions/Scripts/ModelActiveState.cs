@@ -24,6 +24,7 @@ public class ModelActiveState : MonoBehaviour {
         {
             //trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = false;
             model.SetActive(false);
+            trackedObj.GetComponent<CapsuleCollider>().enabled = false; //Potential fix to inability to pick up planes
         }
         else if(model.activeSelf == false && !device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
