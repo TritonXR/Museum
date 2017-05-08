@@ -25,7 +25,6 @@ public class ViveGrip_Grabbable : MonoBehaviour {
   public Rotation rotation;
   private Vector3 grabCentre;
 
-    public GameObject controllerL, controllerR;
   void Start() {
     ViveGrip_Highlighter.AddTo(gameObject);
   }
@@ -71,11 +70,6 @@ public class ViveGrip_Grabbable : MonoBehaviour {
             count--;
             Debug.Log("Scene can't load!" + count);
         }*/
-
-        if (controllerL.GetComponent<CapsuleCollider>().enabled == false) //Potential fix to inability to pick up planes
-            controllerL.GetComponent<CapsuleCollider>().enabled = true;
-        else if (controllerR.GetComponent<CapsuleCollider>().enabled == false)
-            controllerR.GetComponent<CapsuleCollider>().enabled = true;
     }
 
 
