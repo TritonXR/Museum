@@ -38,12 +38,12 @@ public class PickUpObject : MonoBehaviour
             col.attachedRigidbody.isKinematic = false;
             col.attachedRigidbody.position = trackedObj.GetComponent<Rigidbody>().position;
             col.attachedRigidbody.rotation = trackedObj.GetComponent<Rigidbody>().rotation;
-            if (check)
-                moveOn();
+          //  if (check)
+            //    moveOn();
            
         }
         
-        if ((device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger) || device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger)))
+        if ((device.GetTouchUp(SteamVR_Controller.ButtonMask.Trigger) || device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger)) && (col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)"))
         {
             col.gameObject.transform.SetParent(null);
             col.attachedRigidbody.isKinematic = true;
@@ -59,5 +59,5 @@ public class PickUpObject : MonoBehaviour
         if (!(lightstick1.isKinematic || lightstick2.isKinematic))
             UnityEngine.SceneManagement.SceneManager.LoadScene(Scene2);
     }
-    
+   
     }

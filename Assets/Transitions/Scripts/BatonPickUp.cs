@@ -30,7 +30,7 @@ public class BatonPickUp : MonoBehaviour {
             col.attachedRigidbody.isKinematic = true;
             col.attachedRigidbody.useGravity = false;
         }
-        if (device.GetPressUp(SteamVR_Controller.ButtonMask.Grip))
+        if (device.GetPressUp(SteamVR_Controller.ButtonMask.Grip) && (col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)"))
         {
             col.gameObject.transform.SetParent(null);
             col.attachedRigidbody.isKinematic = false;
