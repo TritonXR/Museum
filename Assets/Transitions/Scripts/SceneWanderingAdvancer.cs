@@ -7,7 +7,7 @@ public class SceneWanderingAdvancer : MonoBehaviour {
 
     public string nextScene;
     public GameObject baton1, baton2;
-    public int Delay;
+    public double Delay;
     private float time=0;
     private Vector3 pos1, pos2;
     // Use this for initialization

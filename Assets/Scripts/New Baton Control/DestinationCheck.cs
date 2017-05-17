@@ -12,8 +12,8 @@ public class DestinationCheck : MonoBehaviour {
     public static DestinationCheck instance;
     public Material finishedMat;
 
+    public GameObject transitionObject;
     public LevelChanger nextLevel;
-    
 
 	// Use this for initialization
 	void Start () {
@@ -25,6 +25,7 @@ public class DestinationCheck : MonoBehaviour {
         {
             Destroy(this);
         }
+        transitionObject.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -42,7 +43,7 @@ public class DestinationCheck : MonoBehaviour {
             Destroy(BatonHandler.instance.plane.GetComponent<IsPlane>());
 
             //Activate Next Level on Controller
-            
+            transitionObject.SetActive(true);
 
         }
     }

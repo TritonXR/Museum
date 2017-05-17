@@ -38,8 +38,8 @@ public class PickUpObject : MonoBehaviour
             col.attachedRigidbody.isKinematic = false;
             col.attachedRigidbody.position = trackedObj.GetComponent<Rigidbody>().position;
             col.attachedRigidbody.rotation = trackedObj.GetComponent<Rigidbody>().rotation;
-          //  if (check)
-            //    moveOn();
+            if (check)
+                moveOn();
            
         }
         
