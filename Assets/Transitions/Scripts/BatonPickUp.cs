@@ -14,12 +14,22 @@ public class BatonPickUp : MonoBehaviour {
 	void FixedUpdate () {
 		device = SteamVR_Controller.Input((int)trackedObj.index);
     }
-
+    private bool cld = true;
     private void OnTriggerStay(Collider col)
     {
-        if(col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)")
+
+        if(col.name == "groundcrew light stick" || col.name == "groundcrew light stick (1)") //Potential fix for not picking up batons on first try
         {
-            Debug.Log("HERE");
+           while(cld) 
+            {
+                col.attachedRigidbody.isKinematic = true;
+                col.attachedRigidbody.useGravity = false;
+
+                col.attachedRigidbody.isKinematic = false;
+                col.attachedRigidbody.useGravity = true;
+
+                cld = false;
+            }
         }
 
 
