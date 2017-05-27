@@ -14,21 +14,25 @@ public class BalloonCollide : MonoBehaviour {
     public GameObject popText;
     IEnumerator delay()
     {
-        time += Time.deltaTime;
-        if (time >= Delay)
+        while (true)
         {
-            //yield return new WaitForSeconds(Delay);
-            Debug.Log("Loading " + nextScene);
-            SceneManager.LoadScene(nextScene);
-            yield return null;
+            time += Time.deltaTime;
+            if (time >= Delay)
+            {
+                //yield return new WaitForSeconds(Delay);
+                Debug.Log("Loading " + nextScene);
+                SceneManager.LoadScene(nextScene);
+                yield return null;
+            }
+            else
+                yield return null;
         }
-        else
-            yield return null;
     }
     private void OnTriggerEnter(Collider col)
     {
         Balloonmodel.SetActive(false);
         popText.SetActive(false);
         StartCoroutine(delay());
+        
     }
 }
