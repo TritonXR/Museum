@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f07ecea5ccbde410db2b2743b7fc79a8
+guid: 32eac0542943099468e77c64c18897a5
 labels:
 - Hypotenuse
 - Drafting
@@ -10,6 +10,7 @@ labels:
 timeCreated: 1474297890
 licenseType: Store
 NativeFormatImporter:
+  mainObjectFileID: -1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
