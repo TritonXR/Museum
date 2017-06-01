@@ -48,7 +48,7 @@ public class Resizable : MonoBehaviour {
         infobox.SetActive(false);
     }
 
-    public void ResizeDown()
+    public void ResizeDown(Transform spawnLoc)
     {
         isLittle = true;
         GetComponent<ViveGrip_Grabbable>().enabled = true;
@@ -56,6 +56,8 @@ public class Resizable : MonoBehaviour {
         float currScaleValue = transform.localScale.x;
         float newScaleValue = currScaleValue * scaleMutiplier;
         transform.localScale = new Vector3(newScaleValue, newScaleValue, newScaleValue);
+
+        transform.position = spawnLoc.position;
 
         if (!isShown)
         {

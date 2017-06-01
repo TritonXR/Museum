@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlasmaHit : MonoBehaviour {
+public class ButtonClicked : MonoBehaviour {
 
-
+    public GameObject planeToResize;
     public GameObject myRibbon;
 
     public bool isExecuting;
@@ -22,23 +22,20 @@ public class PlasmaHit : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
 
-        //Debug.Log("I am Plasma, I hitted the plane");
-
-        if(collision.gameObject.tag == "resizable")
+        if(collision.gameObject.tag == "Controller")
         {
-            GameObject hittedObj = collision.gameObject;
 
             // if plane is big right now
-            if (!hittedObj.GetComponent<Resizable>().isLittle)
+            if (!planeToResize.GetComponent<Resizable>().isLittle)
             {
-                if (!hittedObj.GetComponent<Resizable>().isImmune && !hittedObj.GetComponent<Resizable>().isGrabbed)
+                if (!planeToResize.GetComponent<Resizable>().isImmune && !planeToResize.GetComponent<Resizable>().isGrabbed)
                 {
                     if (!isExecuting)
                     {
                         isExecuting = true;
-                        hittedObj.GetComponent<Resizable>().ToggleImmune(true);
+                        planeToResize.GetComponent<Resizable>().ToggleImmune(true);
                         foreach (Transform child in transform) { if (child.gameObject.activeSelf) child.gameObject.SetActive(false); }
-                        StartCoroutine(WaitAndResizeDown(hittedObj));
+                        StartCoroutine(WaitAndResizeDown(planeToResize));
                     }
                 }
             }
@@ -46,14 +43,14 @@ public class PlasmaHit : MonoBehaviour {
             // if the plane is already little
             else
             {
-                if (!hittedObj.GetComponent<Resizable>().isImmune && !hittedObj.GetComponent<Resizable>().isGrabbed)
+                if (!planeToResize.GetComponent<Resizable>().isImmune && !planeToResize.GetComponent<Resizable>().isGrabbed)
                 {
                     if (!isExecuting)
                     {
                         isExecuting = true;
-                        hittedObj.GetComponent<Resizable>().ToggleImmune(true);
+                        planeToResize.GetComponent<Resizable>().ToggleImmune(true);
                         foreach (Transform child in transform) { if (child.gameObject.activeSelf) child.gameObject.SetActive(false); }
-                        StartCoroutine(WaitAndResizeUp(hittedObj));
+                        StartCoroutine(WaitAndResizeUp(planeToResize));
                     }
                 }
                 else
@@ -64,7 +61,6 @@ public class PlasmaHit : MonoBehaviour {
 
 
         }
-
     }
 
     IEnumerator WaitAndResizeDown(GameObject hittedObj)
@@ -75,7 +71,7 @@ public class PlasmaHit : MonoBehaviour {
         hittedObj.GetComponent<Resizable>().DoSaftyCheck(tempRibbon);
 
         yield return new WaitForSeconds(1f);
-        hittedObj.GetComponent<Resizable>().ResizeDown();
+        hittedObj.GetComponent<Resizable>().ResizeDown(null);
         yield return new WaitForSeconds(0.5f);
         Destroy(tempRibbon);
 
