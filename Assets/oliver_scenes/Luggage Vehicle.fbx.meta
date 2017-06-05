@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 8b71639537225e243b62a6b61dbdc49b
+timeCreated: 1496700242
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Rail
+    100004: Rail1
+    100006: Temp_Wheel_2_2
+    100008: Temp_Wheel_2_3
+    100010: Temp_Wheel_2_4
+    100012: Temp_Wheel_2_5
+    100014: Temp_Wheel_2_6
+    100016: Temp_Wheel_2_7
+    100018: Temp_Wheel_2_8
+    100020: Temp_Wheel_2_9
+    100022: Vehicle_2
+    100024: Vehicle_3
+    100026: WheelPlate_2_1
+    100028: WheelPlate_2_1 1
+    100030: WheelPlate_2_1 2
+    100032: WheelPlate_2_1 3
+    100034: WheelPlate_2_1 4
+    100036: WheelPlate_2_2
+    100038: WheelPlate_2_2 1
+    100040: WheelPlate_2_2 2
+    100042: WheelPlate_2_2 3
+    100044: WheelPlate_2_2 4
+    100046: WheelPlate_2_3
+    100048: WheelPlate_2_4
+    100050: WheelPlate_2_5
+    100052: WheelPlate_2_6
+    100054: WheelPlate_2_7
+    100056: WheelPlate_2_8
+    400000: //RootNode
+    400002: Rail
+    400004: Rail1
+    400006: Temp_Wheel_2_2
+    400008: Temp_Wheel_2_3
+    400010: Temp_Wheel_2_4
+    400012: Temp_Wheel_2_5
+    400014: Temp_Wheel_2_6
+    400016: Temp_Wheel_2_7
+    400018: Temp_Wheel_2_8
+    400020: Temp_Wheel_2_9
+    400022: Vehicle_2
+    400024: Vehicle_3
+    400026: WheelPlate_2_1
+    400028: WheelPlate_2_1 1
+    400030: WheelPlate_2_1 2
+    400032: WheelPlate_2_1 3
+    400034: WheelPlate_2_1 4
+    400036: WheelPlate_2_2
+    400038: WheelPlate_2_2 1
+    400040: WheelPlate_2_2 2
+    400042: WheelPlate_2_2 3
+    400044: WheelPlate_2_2 4
+    400046: WheelPlate_2_3
+    400048: WheelPlate_2_4
+    400050: WheelPlate_2_5
+    400052: WheelPlate_2_6
+    400054: WheelPlate_2_7
+    400056: WheelPlate_2_8
+    2300000: Rail
+    2300002: Rail1
+    2300004: Temp_Wheel_2_2
+    2300006: Temp_Wheel_2_3
+    2300008: Temp_Wheel_2_4
+    2300010: Temp_Wheel_2_5
+    2300012: Temp_Wheel_2_6
+    2300014: Temp_Wheel_2_7
+    2300016: Temp_Wheel_2_8
+    2300018: Temp_Wheel_2_9
+    2300020: Vehicle_2
+    2300022: Vehicle_3
+    2300024: WheelPlate_2_1
+    2300026: WheelPlate_2_1 1
+    2300028: WheelPlate_2_1 2
+    2300030: WheelPlate_2_1 3
+    2300032: WheelPlate_2_1 4
+    2300034: WheelPlate_2_2
+    2300036: WheelPlate_2_2 1
+    2300038: WheelPlate_2_2 2
+    2300040: WheelPlate_2_2 3
+    2300042: WheelPlate_2_2 4
+    2300044: WheelPlate_2_3
+    2300046: WheelPlate_2_4
+    2300048: WheelPlate_2_5
+    2300050: WheelPlate_2_6
+    2300052: WheelPlate_2_7
+    2300054: WheelPlate_2_8
+    3300000: Rail
+    3300002: Rail1
+    3300004: Temp_Wheel_2_2
+    3300006: Temp_Wheel_2_3
+    3300008: Temp_Wheel_2_4
+    3300010: Temp_Wheel_2_5
+    3300012: Temp_Wheel_2_6
+    3300014: Temp_Wheel_2_7
+    3300016: Temp_Wheel_2_8
+    3300018: Temp_Wheel_2_9
+    3300020: Vehicle_2
+    3300022: Vehicle_3
+    3300024: WheelPlate_2_1
+    3300026: WheelPlate_2_1 1
+    3300028: WheelPlate_2_1 2
+    3300030: WheelPlate_2_1 3
+    3300032: WheelPlate_2_1 4
+    3300034: WheelPlate_2_2
+    3300036: WheelPlate_2_2 1
+    3300038: WheelPlate_2_2 2
+    3300040: WheelPlate_2_2 3
+    3300042: WheelPlate_2_2 4
+    3300044: WheelPlate_2_3
+    3300046: WheelPlate_2_4
+    3300048: WheelPlate_2_5
+    3300050: WheelPlate_2_6
+    3300052: WheelPlate_2_7
+    3300054: WheelPlate_2_8
+    4300000: Vehicle_2
+    4300002: Temp_Wheel_2_2
+    4300004: WheelPlate_2_1
+    4300006: WheelPlate_2_2
+    4300008: Temp_Wheel_2_3
+    4300010: WheelPlate_2_1
+    4300012: WheelPlate_2_2
+    4300014: Temp_Wheel_2_4
+    4300016: WheelPlate_2_1
+    4300018: WheelPlate_2_2
+    4300020: Temp_Wheel_2_5
+    4300022: WheelPlate_2_1
+    4300024: WheelPlate_2_2
+    4300026: Rail
+    4300028: Vehicle_3
+    4300030: WheelPlate_2_2
+    4300032: WheelPlate_2_1
+    4300034: Temp_Wheel_2_7
+    4300036: WheelPlate_2_3
+    4300038: WheelPlate_2_4
+    4300040: Rail1
+    4300042: Temp_Wheel_2_6
+    4300044: WheelPlate_2_5
+    4300046: WheelPlate_2_6
+    4300048: Temp_Wheel_2_8
+    4300050: WheelPlate_2_7
+    4300052: Temp_Wheel_2_9
+    4300054: WheelPlate_2_8
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
