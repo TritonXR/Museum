@@ -11,6 +11,8 @@ TagManager:
   - infobox
   - baton
   - Controller
+  - touchpadlink
+  - triggerlink
   layers:
   - Default
   - TransparentFX
