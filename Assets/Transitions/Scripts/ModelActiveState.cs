@@ -20,12 +20,12 @@ public class ModelActiveState : MonoBehaviour {
 
     private void OnTriggerStay(Collider col)
     {
-        if((col.tag == "resizable" || col.tag == "baton") && device.GetPress(SteamVR_Controller.ButtonMask.Trigger))
+        if((col.tag == "resizable" || col.tag == "baton") && device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
             //trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = false;
             model.SetActive(false);
         }
-        else if(model.activeSelf == false && !device.GetPress(SteamVR_Controller.ButtonMask.Trigger))
+        else if(model.activeSelf == false && !device.GetPress(SteamVR_Controller.ButtonMask.Grip))
         {
             //trackedObj.GetComponentInChildren<SteamVR_RenderModel>().enabled = true;
             model.SetActive(true);

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class BalloonCollide : MonoBehaviour {
 
@@ -9,6 +10,8 @@ public class BalloonCollide : MonoBehaviour {
     private float time;
     public double Delay;
 
+    public GameObject Balloonmodel;
+    public GameObject popText;
     IEnumerator delay()
     {
         while (true)
@@ -27,6 +30,8 @@ public class BalloonCollide : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider col)
     {
+        Balloonmodel.SetActive(false);
+        popText.SetActive(false);
         StartCoroutine(delay());
         
     }
