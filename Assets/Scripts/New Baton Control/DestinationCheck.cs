@@ -13,6 +13,8 @@ public class DestinationCheck : MonoBehaviour {
     public Material finishedMat;
 
     public GameObject transitionObject;
+    public GameObject popText;
+
     public LevelChanger nextLevel;
     
 
@@ -27,6 +29,7 @@ public class DestinationCheck : MonoBehaviour {
             Destroy(this);
         }
         transitionObject.SetActive(false);
+        popText.SetActive(false);
     }
 	
 	// Update is called once per frame

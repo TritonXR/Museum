@@ -4,54 +4,25 @@ using UnityEngine;
 
 public class SignActiveState : MonoBehaviour
 {
+    public GameObject sign;
 
-    public Transform thePlayer;
-    public float sensitiveDistance = 15;
-    public GameObject planeInfoBox;
-    public GameObject planeInfoBox2;
-
-    private float distance;
-
-    private bool littleStatus;
-
-    // Use this for initialization
-    void Start()
+    public void OnEnable()
     {
-        planeInfoBox.SetActive(false);
-        planeInfoBox2.SetActive(false);
-        StartCoroutine(checkIfUserGetsClose());
+        sign.SetActive(false);
     }
 
-
-    IEnumerator checkIfUserGetsClose()
+    private void OnTriggerEnter(Collider col)
     {
-        while (true)
+        if(col.name=="Camera (Head)")
         {
-            yield return new WaitForSeconds(1);
-            distance = Vector3.Distance(thePlayer.position, transform.position);
-            littleStatus = gameObject.GetComponent<Resizable>().isLittle;
-
-            if (!littleStatus)
-            {
-                if (distance < sensitiveDistance)
-                {
-                    //Debug.Log("I am plane, I am sensitive and about to show the UI");
-                    planeInfoBox.SetActive(true);
-                    planeInfoBox2.SetActive(true);
-                }
-                else
-                {
-                    planeInfoBox.SetActive(false);
-                    planeInfoBox2.SetActive(false);
-                }
-            }
-            else
-            {
-                planeInfoBox.SetActive(false);
-                planeInfoBox2.SetActive(false);
-            }
-
-            //Debug.Log("I am Plane, I am at distance of " + distance + " from player!! And my little status is " + littleStatus);
+            Debug.Log("You have entered the active zone");
+            sign.SetActive(true);
         }
+
     }
+    private void OnTriggerExit(Collider col)
+    {
+        sign.SetActive(false);
+    }
+
 }
