@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class SceneAdvancer : MonoBehaviour {
 
     public string nextScene;
+    private string thisScene; 
 	// Use this for initialization
-	void Start () {
-
-	}
+	void Awake () {
+        thisScene = SceneManager.GetActiveScene().name;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -17,6 +18,11 @@ public class SceneAdvancer : MonoBehaviour {
         {
             Debug.Log("Loading " + nextScene);
             SceneManager.LoadScene(nextScene);
+        }
+        else if (Input.GetKeyDown("r"))
+        {
+            Debug.Log("Resloading " + thisScene);
+            SceneManager.LoadScene(thisScene);
         }
 	}
 }

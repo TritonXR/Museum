@@ -8,10 +8,12 @@ public class BalloonCollide : MonoBehaviour {
 
     public string nextScene;
     private float time;
-    public double Delay;
+    private double Delay = 5;
 
     public GameObject Balloonmodel;
-    public GameObject popText;
+    //public GameObject popText;
+
+    public GameObject RedButton;
     IEnumerator delay()
     {
         while (true)
@@ -20,6 +22,7 @@ public class BalloonCollide : MonoBehaviour {
             if (time >= Delay)
             {
                 //yield return new WaitForSeconds(Delay);
+                RedButton.GetComponent<Animator>().enabled = false;
                 Debug.Log("Loading " + nextScene);
                 SceneManager.LoadScene(nextScene);
                 yield return null;
@@ -30,9 +33,13 @@ public class BalloonCollide : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider col)
     {
-        Balloonmodel.SetActive(false);
-        popText.SetActive(false);
-        StartCoroutine(delay());
-        
+        Debug.Log("The button has collided with " + col.name);
+        if (col.name == "VisualLBaton" || col.name == "VisualRBaton")
+        {
+            RedButton.GetComponent<Animator>().enabled = true;
+            //Balloonmodel.SetActive(false);
+            //popText.SetActive(false);
+            StartCoroutine(delay());
+        }
     }
 }
