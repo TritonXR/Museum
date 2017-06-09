@@ -21,7 +21,7 @@ public class SceneAdvancer : MonoBehaviour {
         }
         else if (Input.GetKeyDown("r"))
         {
-            Debug.Log("Resloading " + thisScene);
+            Debug.Log("Reloading " + thisScene);
             SceneManager.LoadScene(thisScene);
         }
 	}
