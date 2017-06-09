@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneAdvancer : MonoBehaviour {
 
     public string nextScene;
+    public string lastScene;
     private string thisScene; 
 	// Use this for initialization
 	void Awake () {
@@ -18,6 +19,11 @@ public class SceneAdvancer : MonoBehaviour {
         {
             Debug.Log("Loading " + nextScene);
             SceneManager.LoadScene(nextScene);
+        }
+        else if (Input.GetKeyDown("left"))
+        {
+            Debug.Log("Loading " + lastScene);
+            SceneManager.LoadScene(lastScene);
         }
         else if (Input.GetKeyDown("r"))
         {
