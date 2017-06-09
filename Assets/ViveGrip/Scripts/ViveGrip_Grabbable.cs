@@ -48,12 +48,29 @@ public class ViveGrip_Grabbable : MonoBehaviour {
         {
             gameObject.GetComponent<Resizable>().CloseInfoBox();
             gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
+            //Plane Physics
+            gameObject.GetComponent<Rigidbody>().freezeRotation = false;
+            gameObject.GetComponent<Rigidbody>().mass = 1f;
         }
     }
     void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {
         if (gameObject.tag == "resizable")
         {
             gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
+            //Plane Physics
+            if (gameObject.GetComponent<Rigidbody>().velocity.magnitude >= .1)
+            {
+                gameObject.GetComponent<Rigidbody>().mass = 0.5f;
+                if (System.Math.Pow(gameObject.GetComponent<Rigidbody>().velocity.x,2)+System.Math.Pow(gameObject.GetComponent<Rigidbody>().velocity.z, 2) < 1)
+                {
+                    gameObject.GetComponent<Rigidbody>().AddForce(gameObject.GetComponent<Rigidbody>().transform.forward * 3);
+                }
+                gameObject.GetComponent<Rigidbody>().AddForce(gameObject.GetComponent<Rigidbody>().transform.up * 3);
+                gameObject.GetComponent<Rigidbody>().transform.rotation = Quaternion.LookRotation(gameObject.GetComponent<Rigidbody>().velocity);
+                    gameObject.GetComponent<Rigidbody>().freezeRotation = true;
+                
+
+            }
         }
     }
 
