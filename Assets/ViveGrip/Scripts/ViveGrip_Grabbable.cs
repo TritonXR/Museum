@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 #if UNITY_EDITOR
 using UnityEditor;
+using System.Collections;
 #endif
 
 [RequireComponent (typeof (Rigidbody))]
@@ -42,10 +43,10 @@ public class ViveGrip_Grabbable : MonoBehaviour {
     // Called when highlighting changes
     //   void ViveGripHighlightStart(ViveGrip_GripPoint gripPoint) {}
     //   void ViveGripHighlightStop(ViveGrip_GripPoint gripPoint) {}
-
+  
     void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {
         if (gameObject.tag == "resizable")
-        {
+        {  
             gameObject.GetComponent<Resizable>().CloseInfoBox();
             gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
             //Plane Physics
@@ -58,22 +59,40 @@ public class ViveGrip_Grabbable : MonoBehaviour {
         {
             gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
             //Plane Physics
-            if (gameObject.GetComponent<Rigidbody>().velocity.magnitude >= .1)
+            Rigidbody planerb = gameObject.GetComponent<Rigidbody>();
+            if (planerb.velocity.magnitude >= .1)
             {
-                gameObject.GetComponent<Rigidbody>().mass = 0.5f;
-                if (System.Math.Pow(gameObject.GetComponent<Rigidbody>().velocity.x,2)+System.Math.Pow(gameObject.GetComponent<Rigidbody>().velocity.z, 2) < 1)
+                planerb.mass = 0.5f;
+                //Speeds up slow moving throws
+               
+                if (System.Math.Pow(planerb.velocity.x,2)+System.Math.Pow(planerb.velocity.z, 2) < 1)
                 {
-                    gameObject.GetComponent<Rigidbody>().AddForce(gameObject.GetComponent<Rigidbody>().transform.forward * 3);
+                    planerb.AddForce(planerb.transform.forward * 3);
                 }
-                gameObject.GetComponent<Rigidbody>().AddForce(gameObject.GetComponent<Rigidbody>().transform.up * 3);
-                gameObject.GetComponent<Rigidbody>().transform.rotation = Quaternion.LookRotation(gameObject.GetComponent<Rigidbody>().velocity);
-                    gameObject.GetComponent<Rigidbody>().freezeRotation = true;
-                
+                planerb.AddForce(planerb.transform.up * 3);
 
+                planerb.freezeRotation = true;
+                planerb.freezeRotation = false;
+
+                planePhysics(gameObject, planerb);
+
+              
+            
             }
+           
         }
     }
-
+    IEnumerator planePhysics(GameObject plane, Rigidbody planerb)
+    {
+        while (planerb.velocity != Vector3.zero)
+        {
+           // planerb.freezeRotation = false;
+            planerb.transform.rotation = Quaternion.LookRotation(planerb.velocity);
+           // planerb.freezeRotation = true;
+            yield return new WaitForSeconds(1f);
+        }
+        yield return null;
+    }
 
     public void OnDrawGizmosSelected() {
     if (anchor != null && anchor.enabled) {
