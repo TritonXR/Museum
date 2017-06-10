@@ -59,39 +59,13 @@ public class ViveGrip_Grabbable : MonoBehaviour {
         {
             gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
             //Plane Physics
-            Rigidbody planerb = gameObject.GetComponent<Rigidbody>();
-            if (planerb.velocity.magnitude >= .1)
+            if (gameObject.GetComponent<Rigidbody>().velocity.magnitude >= .1)
             {
-                planerb.mass = 0.5f;
-                //Speeds up slow moving throws
-               
-                if (System.Math.Pow(planerb.velocity.x,2)+System.Math.Pow(planerb.velocity.z, 2) < 1)
-                {
-                    planerb.AddForce(planerb.transform.forward * 3);
-                }
-                planerb.AddForce(planerb.transform.up * 3);
-
-                planerb.freezeRotation = true;
-                planerb.freezeRotation = false;
-
-                planePhysics(gameObject, planerb);
-
-              
+                gameObject.GetComponent<PlanePhysics>().enabled = true; 
             
             }
            
         }
-    }
-    IEnumerator planePhysics(GameObject plane, Rigidbody planerb)
-    {
-        while (planerb.velocity != Vector3.zero)
-        {
-           // planerb.freezeRotation = false;
-            planerb.transform.rotation = Quaternion.LookRotation(planerb.velocity);
-           // planerb.freezeRotation = true;
-            yield return new WaitForSeconds(1f);
-        }
-        yield return null;
     }
 
     public void OnDrawGizmosSelected() {
