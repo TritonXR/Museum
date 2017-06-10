@@ -13,6 +13,7 @@ TagManager:
   - Controller
   - touchpadlink
   - triggerlink
+  - table
   layers:
   - Default
   - TransparentFX
