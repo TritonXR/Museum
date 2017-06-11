@@ -48,6 +48,8 @@ public class DestinationCheck : MonoBehaviour {
 
             //Activate Next Level on Controller
             transitionObject.SetActive(true);
+            GameObject retryButton = GameObject.FindGameObjectWithTag("retry");
+            retryButton.SetActive(false);
 
         }
     }

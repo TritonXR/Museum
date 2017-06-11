@@ -8,6 +8,7 @@ public class turnedCollision : MonoBehaviour {
 
     private void OnTriggerStay(Collider col)
     {
+        
         if(col.name == "turnedCol")
         {
             Debug.Log("Player Turned Around!");
