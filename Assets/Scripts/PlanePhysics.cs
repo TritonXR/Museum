@@ -18,7 +18,7 @@ public class PlanePhysics : MonoBehaviour {
         {
             rb.AddForce(rb.transform.forward * 6);
         }
-        //rb.AddForce(rb.transform.up * 6);
+        rb.AddForce(rb.transform.up * 6);
 
         if (rb.velocity != Vector3.zero)
         {
