@@ -6,9 +6,11 @@ public class PlanePhysics : MonoBehaviour {
     public GameObject physicsCol;
     Rigidbody rb;
 	// Use this for initialization
-	void Awake () {
+	void OnEnable () {
+        Debug.Log("PlanePhysics enabled!");
         rb = gameObject.GetComponent<Rigidbody>();
-        physicsCol.SetActive(true);
+       // physicsCol.SetActive(true);
+       // physicsCol.GetComponent<GroundedPlane>().enabled = true;
     }
 	
 	// Update is called once per frame
@@ -18,6 +20,7 @@ public class PlanePhysics : MonoBehaviour {
         {
             rb.AddForce(rb.transform.forward * 6);
         }
+        Debug.Log("Adding Upward Force!");
         rb.AddForce(rb.transform.up * 6);
 
         if (rb.velocity != Vector3.zero)
@@ -25,15 +28,19 @@ public class PlanePhysics : MonoBehaviour {
           
             rb.transform.rotation = Quaternion.LookRotation(rb.velocity);
            
-        }/* else
-        {
-            Debug.Log("Grounded.");
-            grounded = true;
-           // gameObject.GetComponent<Rigidbody>().drag = 5;
-            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
-            gameObject.GetComponent<Rigidbody>().transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0);
-            gameObject.GetComponent<PlanePhysics>().enabled = false;
-        }*/
+        }
 
     }
+    private void OnTriggerEnter(Collider col)
+    {
+
+        if (col.name == "Plane (1)")
+        {
+            Debug.Log("Plane collided with " + col.name);
+           rb.velocity = Vector3.zero;
+           gameObject.GetComponent<PlanePhysics>().enabled = false;
+          
+        }
+    }
+
 }

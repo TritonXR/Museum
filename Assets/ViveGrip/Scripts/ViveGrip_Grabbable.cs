@@ -46,7 +46,9 @@ public class ViveGrip_Grabbable : MonoBehaviour {
   
     void ViveGripGrabStart(ViveGrip_GripPoint gripPoint) {
         if (gameObject.tag == "resizable")
-        {  
+        {
+            gameObject.GetComponent<PlanePhysics>().enabled = false;
+
             gameObject.GetComponent<Resizable>().CloseInfoBox();
             gameObject.GetComponent<Resizable>().ToggleGrabbed(true);
             //Plane Physics
@@ -55,6 +57,7 @@ public class ViveGrip_Grabbable : MonoBehaviour {
         }
     }
     void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {
+        Debug.Log("Released!");
         if (gameObject.tag == "resizable")
         {
             gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
