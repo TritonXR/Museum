@@ -4,36 +4,21 @@ using UnityEngine;
 
 public class LeaveSceneWarning : MonoBehaviour {
 
-    public Canvas warningSign;
+    public GameObject Part2Sign;
     private float time;
 
-    void OnEnable () {
+    void Start () {
         time = 0f;
+        Part2Sign.SetActive(false);
 	}
-
+    public float timeThreshold;
     private void Update()
     {
         time += Time.deltaTime;
-        Debug.Log("Warning Script Working!");
-    }
-    
-    private void OnTriggerEnter (Collider col) {
-        Debug.Log("Player has entered the warning zone in " + time + " seconds!");
-        Debug.Log(col.name);
-        if (col.name == "WarningCollider" && time < 30f)
+        if(time >= timeThreshold)
         {
-                warningSign.enabled = true;
-            Debug.Log("Player has entered the warning zone in less than 30 seconds!");
-        }
-	}
-
-    private void OnTriggerExit(Collider col)
-    {
-        if (col.name == "WarningCollider" && warningSign.isActiveAndEnabled)
-        {
-                warningSign.enabled = false;
-                time = 0f; //Resets time to make sure they look at Museum
-            Debug.Log("Player has left the warning zone!");
+            Debug.Log("Part 2 Sign is now Enabled!");
+            Part2Sign.SetActive(true);
         }
     }
 }

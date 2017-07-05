@@ -16,10 +16,11 @@ public class PlanePhysics : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
         //Speeds up slow moving throws
-        if ((System.Math.Pow(rb.velocity.x, 2) + System.Math.Pow(rb.velocity.z, 2) < 1))
+        double fVector = (System.Math.Pow(rb.velocity.x, 2) + System.Math.Pow(rb.velocity.z, 2));
+       /* if ( fVector < 10 && fVector > 5)
         {
             rb.AddForce(rb.transform.forward * 6);
-        }
+        }*/
         Debug.Log("Adding Upward Force!");
         rb.AddForce(rb.transform.up * 6);
 

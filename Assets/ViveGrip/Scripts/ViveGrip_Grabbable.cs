@@ -56,14 +56,17 @@ public class ViveGrip_Grabbable : MonoBehaviour {
             gameObject.GetComponent<Rigidbody>().mass = 1f;
         }
     }
+    public float throwThreshold;
     void ViveGripGrabStop(ViveGrip_GripPoint gripPoint) {
         Debug.Log("Released!");
         if (gameObject.tag == "resizable")
         {
             gameObject.GetComponent<Resizable>().ToggleGrabbed(false);
             //Plane Physics
-            if (gameObject.GetComponent<Rigidbody>().velocity.magnitude >= .1)
+            if (gameObject.GetComponent<Rigidbody>().velocity.magnitude >= throwThreshold)
             {
+                Debug.Log("Magnitude: " + gameObject.GetComponent<Rigidbody>().velocity.magnitude);
+                Debug.Log("Forward Vector Magnitude: " + (System.Math.Pow(gameObject.GetComponent<Rigidbody>().velocity.x, 2) + System.Math.Pow(gameObject.GetComponent<Rigidbody>().velocity.z, 2)));
                 gameObject.GetComponent<PlanePhysics>().enabled = true; 
             
             }
