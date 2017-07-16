@@ -1,20 +1,24 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerTurned : MonoBehaviour {
+    //Script used for Instructions Sign
+    public GameObject Instructions;
 
-    public GameObject sign;
-	// Use this for initialization
 	void Start () {
-        sign.SetActive(true);
-	}
-	
-	// Update is called once per frame
-	void FixedUpdate () {
-		if((transform.rotation.y>=.25 && transform.rotation.y<=.95) ) {
-            Debug.Log("Player has turned around!");
-            sign.SetActive(false);
-        }
-	}
+        Debug.Log("["+ DateTime.Now.ToString("h:mm:ss") + "] Instructions sign is active.");
+        Instructions.SetActive(true);
+        StartCoroutine(Timer());
+       
+    }
+
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(5);
+        Instructions.SetActive(false);
+        Debug.Log("[" + DateTime.Now.ToString("h:mm:ss") + "] Instructions sign is inactive.");
+        yield return null;
+    }
 }

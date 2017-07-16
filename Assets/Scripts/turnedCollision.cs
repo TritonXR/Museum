@@ -15,6 +15,7 @@ public class turnedCollision : MonoBehaviour {
             sign.SetActive(false);
             col.enabled = false;
             transform.GetComponent<BoxCollider>().enabled = false;
+            gameObject.GetComponent<PlayerTurned>().enabled = true;
         }
     }
 }
