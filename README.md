@@ -9,8 +9,9 @@ GoundCrew VR is a virtual reality game application on HTC Vive that we, on behal
 
 Here are some of our game screenshots:
 
-![alt text](https://raw.githubusercontent.com/RussellXie7/Museum/pics/img1.png)
-![alt text](https://raw.githubusercontent.com/RussellXie7/Museum/pics/img2.png)
+![alt text](https://github.com/TritonXR/Museum/blob/master/pics/img1.jpg?raw=true)
+![alt text](https://github.com/TritonXR/Museum/blob/master/pics/img2.jpg?raw=true)
+
 
 
 
